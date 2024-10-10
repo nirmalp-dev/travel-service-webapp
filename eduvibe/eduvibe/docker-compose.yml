@@ -1,12 +1,13 @@
-version: '3'
+version: '3.8'
+
 services:
   react-app:
     build: .
     ports:
-      - "3000:80"
+      - "3000:3000"
     volumes:
-      - .:/app
+      - ./src:/app/src
+      - ./public:/app/public
     environment:
-      - NODE_ENV=production
+      - CHOKIDAR_USEPOLLING=true
     stdin_open: true
-    tty: true
