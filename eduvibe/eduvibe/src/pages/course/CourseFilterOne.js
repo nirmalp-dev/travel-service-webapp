@@ -17,7 +17,7 @@ const CourseFilterOne = () => {
                 />
                     <div className="edu-course-area course-three-wrapper edu-section-gap bg-color-white position-relative">
                         <div className="container">
-                            <CourseTypeFilter itemToShow="9" />
+                            <CourseTypeFilter showLoadMore="enable" />
                         </div>
                     </div>
             </Layout>

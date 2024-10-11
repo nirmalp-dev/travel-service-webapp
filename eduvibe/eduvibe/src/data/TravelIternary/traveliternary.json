@@ -6,7 +6,9 @@
     "cost": 1500,
     "description": "A romantic getaway in the City of Lights, exploring iconic landmarks and savoring French cuisine.",
     "rating": 4.8,
+    "tripdays": 3,
     "filterParam": "Featured",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -35,7 +37,9 @@
     "cost": 1800,
     "description": "An exciting adventure in the vibrant capital of Japan, blending traditional culture with modern attractions.",
     "rating": 4.9,
+    "tripdays": 3,
     "filterParam": "Trending",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -64,7 +68,9 @@
     "cost": 1700,
     "description": "Experience the rich history, art, and culinary delights of Rome, from ancient ruins to modern gelato.",
     "rating": 4.7,
+    "tripdays": 3,
     "filterParam": "Popularity",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -93,7 +99,9 @@
     "cost": 1600,
     "description": "Discover the unique architecture, vibrant culture, and delicious tapas of Barcelona.",
     "rating": 4.6,
+    "tripdays": 3,
     "filterParam": "Featured",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -122,7 +130,9 @@
     "cost": 2000,
     "description": "Experience the hustle and bustle of NYC, visiting iconic sites and enjoying diverse cuisine.",
     "rating": 4.8,
+    "tripdays": 3,
     "filterParam": "Featured",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -151,7 +161,9 @@
     "cost": 2100,
     "description": "Explore the stunning landscapes, beaches, and culture of Sydney, from the Opera House to Bondi Beach.",
     "rating": 4.7,
+    "tripdays": 3,
     "filterParam": "Popularity",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -180,7 +192,9 @@
     "cost": 1900,
     "description": "Discover the vibrant culture and stunning beaches of Rio, from Copacabana to Christ the Redeemer.",
     "rating": 4.8,
+    "tripdays": 3,
     "filterParam": "Popularity",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -209,7 +223,9 @@
     "cost": 1750,
     "description": "A classic trip to London, exploring history, culture, and iconic landmarks.",
     "rating": 4.9,
+    "tripdays": 3,
     "filterParam": "Featured",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -238,7 +254,9 @@
     "cost": 1400,
     "description": "Explore the vibrant street life, ornate temples, and delicious food of Bangkok.",
     "rating": 4.6,
+    "tripdays": 3,
     "filterParam": "Trending",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -267,7 +285,9 @@
     "cost": 1600,
     "description": "Experience the imperial culture, stunning architecture, and classical music of Vienna.",
     "rating": 4.7,
+    "tripdays": 3,
     "filterParam": "Trending",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -296,7 +316,9 @@
     "cost": 1900,
     "description": "Discover the ancient wonders of Egypt, including the Pyramids of Giza and the Sphinx.",
     "rating": 4.8,
+    "tripdays": 3,
     "filterParam": "Featured",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -325,7 +347,9 @@
     "cost": 1650,
     "description": "Explore the rich history and vibrant culture of Istanbul, where East meets West.",
     "rating": 4.7,
+    "tripdays": 3,
     "filterParam": "Popularity",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -354,7 +378,9 @@
     "cost": 1750,
     "description": "Experience the modern marvels and rich heritage of Singapore, from Gardens by the Bay to Little India.",
     "rating": 4.8,
+    "tripdays": 3,
     "filterParam": "Popularity",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -383,7 +409,9 @@
     "cost": 2200,
     "description": "Experience the luxury and modernity of Dubai, from the Burj Khalifa to desert safaris.",
     "rating": 4.9,
+    "tripdays": 3,
     "filterParam": "Popularity",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -412,7 +440,9 @@
     "cost": 1600,
     "description": "Explore the picturesque canals, rich art scene, and vibrant culture of Amsterdam.",
     "rating": 4.6,
+    "tripdays": 3,
     "filterParam": "Trending",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -441,7 +471,9 @@
     "cost": 1500,
     "description": "Discover the stunning landscapes, rich culture, and delicious cuisine of Lisbon.",
     "rating": 4.7,
+    "tripdays": 3,
     "filterParam": "Trending",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -470,7 +502,9 @@
     "cost": 1700,
     "description": "Experience the dynamic culture and modern attractions of Seoul, from palaces to bustling markets.",
     "rating": 4.8,
+    "tripdays": 3,
     "filterParam": "Featured",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -499,7 +533,9 @@
     "cost": 1750,
     "description": "Immerse yourself in the rich traditions, stunning temples, and serene gardens of Kyoto.",
     "rating": 4.8,
+    "tripdays": 3,
     "filterParam": "Trending",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -528,7 +564,9 @@
     "cost": 1600,
     "description": "Explore the vibrant multicultural city of Toronto, from the CN Tower to diverse neighborhoods.",
     "rating": 4.6,
+    "tripdays": 3,
     "filterParam": "Trending",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,
@@ -557,7 +595,9 @@
     "cost": 2000,
     "description": "Experience the vibrant culture and stunning beaches of Rio de Janeiro.",
     "rating": 4.7,
+    "tripdays": 3,
     "filterParam": "Popularity",
+    "image": "Paris.jpeg",
     "days": [
       {
         "day": 1,

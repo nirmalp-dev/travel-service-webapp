@@ -16,7 +16,7 @@ const CourseTypeOne = ({ data, classes }) => {
             <div className="inner">
                 <div className="thumbnail">
                     <Link to={process.env.PUBLIC_URL + `/course-details/${data.itinerary_id}`}>
-                        <img className="w-100" src={`${process.env.PUBLIC_URL}/images/course/course-01/${data.image}`} alt="Course Thumb" />
+                        <img className="w-100" src={`${process.env.PUBLIC_URL}/images/travelplaces/${data.image}`} alt="Course Thumb" />
                     </Link>
                     <div className="wishlist-top-right">
                         <button className="wishlist-btn"><i className="icon-Heart"></i></button>
@@ -31,8 +31,9 @@ const CourseTypeOne = ({ data, classes }) => {
                     
                 </div>
                 <div className="content">
-                    {/* 
+                     
                     <div className="card-top">
+                        {/*
                         <div className="author-meta">
                             <div className="author-thumb">
                                 <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( data.instructor ) }`}>
@@ -41,11 +42,12 @@ const CourseTypeOne = ({ data, classes }) => {
                                 </Link>
                             </div>
                         </div>
+                        */}
                         <ul className="edu-meta meta-02">
-                            <li><i className="icon-file-list-3-line"></i>{data.lesson} Lessons</li>
+                            <li><i className="icon-file-list-3-line"></i>{data.tripdays} Days</li>
                         </ul>
                     </div>
-                    */}
+                    
                     <h6 className="title">
                         <Link to={process.env.PUBLIC_URL + `/course-details/${data.itinerary_id}`}>{data.destination}</Link>
                     </h6>
