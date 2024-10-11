@@ -320,7 +320,8 @@
     "rating": 4.7,
     "tripdays": 3,
     "filterParam": "Popularity",
-    "image": "Paris.jpeg",
+    "image": "Sydney.jpeg",
+    "fullimage": "Sydney.jpeg",
     "days": [
       {
         "day": 1,

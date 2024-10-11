@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import CourseTypeOne from './CourseTypeOne';
 import CourseData from '../../data/course/CourseData.json';
-import TripData from '../../data/travelIternary/traveliternary.json';
+import TripData from '../../data/traveliternary/traveliternary.json';
 
 const CourseTypeFilter = ({ itemToShow, showLoadMore, incrementPerClick }) => {
     const FilterControls = [...new Set(TripData.map(item => item.filterParam))];

@@ -4,6 +4,7 @@ import { slugify } from '../../utils';
 import InstructorData from '../../data/instructor/InstructorData.json';
 
 
+
 const CourseTypeOne = ({ data, classes }) => {
     //const indexOfInstructor = InstructorData.findIndex( function( instructor ) {
      //   return slugify( instructor.name ) === slugify( data.instructor );

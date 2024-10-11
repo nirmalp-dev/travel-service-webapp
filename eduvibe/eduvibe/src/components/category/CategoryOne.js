@@ -1,7 +1,7 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
-import TripData from '../../data/TravelIternary/traveliternary.json';
+import TripData from '../../data/traveliternary/traveliternary.json';
 
 const items = [
     {
