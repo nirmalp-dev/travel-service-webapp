@@ -44,7 +44,7 @@ const CourseTypeOne = ({ data, classes }) => {
                         </div>
                         */}
                         <ul className="edu-meta meta-02">
-                            <li><i className="icon-file-list-3-line"></i>{data.tripdays} Days</li>
+                            <li><i className="icon-file-list-3-line"></i>Trip Duration: {data.tripdays} Days</li>
                         </ul>
                     </div>
                     
@@ -53,8 +53,7 @@ const CourseTypeOne = ({ data, classes }) => {
                     </h6>
                     <div className="card-bottom">
                         <div className="price-list price-style-02">
-                            <div className="price current-price">${data.cost}</div>
-                            
+                            <div className="price current-price">${data.cost}</div>                           
                         </div>
                         <div className="edu-rating rating-default">
                             <div className="rating eduvibe-course-rating-stars">
@@ -92,15 +91,7 @@ const CourseTypeOne = ({ data, classes }) => {
                     <p className="description">{ data.description }</p>
 
                     <div className="price-list price-style-02">
-                        {
-                            data.price === '0' ?
-                                <div className="price current-price">Free</div>
-                            :
-                                <div className="price current-price">${data.price}</div>
-                        }
-                        { 
-                            data.oldPrice && <div className="price old-price">${data.oldPrice}</div> 
-                        }
+                        <div className="price current-price">${data.cost}</div>
                     </div>
 
                     {/* 
