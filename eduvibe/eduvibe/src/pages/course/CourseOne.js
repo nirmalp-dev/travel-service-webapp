@@ -22,7 +22,7 @@ const CourseOne = () => {
                         <div className="row g-5 mt--10">
                             { 
                                 CourseItems.map((item) => (
-                                    <div className="col-12 col-sm-6 col-lg-4" key={ item.id }>
+                                    <div className="col-12 col-sm-6 col-lg-4" key={item.itinerary_id }>
                                         <CourseTypeOne data={item} />
                                     </div>
                                 ) )
