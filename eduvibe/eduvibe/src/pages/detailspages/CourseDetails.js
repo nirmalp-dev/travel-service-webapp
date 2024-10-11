@@ -13,7 +13,7 @@ import RelatedCourses from '../../components/course/RelatedCourses';
 import CourseData from '../../data/course/CourseData.json';
 import InstructorData from '../../data/instructor/InstructorData.json';
 import CurriculumTabContent from '../../data/course/CurriculumTabContent.json';
-
+import TravelIternary from '../../data/travelIternary/traveliternary.json';
 const CustomToggle = ({ children, eventKey }) => {
     const { activeEventKey } = useContext(AccordionContext);
     const decoratedOnClick = useAccordionButton( eventKey );
@@ -21,9 +21,9 @@ const CustomToggle = ({ children, eventKey }) => {
     return <button type="button" onClick={decoratedOnClick} aria-expanded={ isCurrentEventKey ? true : false } className="edu-accordion-button">{children}</button>
 }
 
-const CurriculumContent = () => {
+const CurriculumContent = ({ iternaryDetails }) => {
     const [activeId, setActiveId] = useState( '0' );
-
+    console.log(iternaryDetails);
     function toggleActive( id ) {
         if (activeId === id) {
             setActiveId(null);
@@ -35,7 +35,7 @@ const CurriculumContent = () => {
     return (
         <Accordion bsPrefix="edu-accordion-02" defaultActiveKey={activeId} flush>
             {
-                CurriculumTabContent.map( ( accordion, i ) => (
+                iternaryDetails.map( ( accordion, i ) => (
                     <Accordion.Item eventKey={i.toString()} key={i} onClick={() => toggleActive(i.toString())} bsPrefix={`edu-accordion-item ${activeId === i.toString() ? 'bg-active' : ''}`}>
                         <div className="edu-accordion-header">
                             <CustomToggle eventKey={i.toString()}>{accordion.title}</CustomToggle>
@@ -62,32 +62,35 @@ const CurriculumContent = () => {
 
 const CourseDetails = () => {
     const { id } = useParams();
-    const courseId = parseInt( id, 10 );
-    const data = CourseData.filter( course => course.id === courseId );
-    const courseItem = data[0];
+    const travelId = parseInt( id, 10 );
+    const data = TravelIternary.filter( travel => travel.itinerary_id === travelId );
+    const travelItem = data[0];
 
-    const indexOfInstructor = InstructorData.findIndex( function( instructor ) {
-        return slugify( instructor.name ) === slugify( courseItem.instructor );
-    } );
-    const instructor = InstructorData[indexOfInstructor];
-    const instructorExcerpt = instructor.details.substring(0, 190) + "...";
+    // const indexOfInstructor = InstructorData.findIndex( function( instructor ) {
+    //     return slugify( instructor.name ) === slugify( "System" );
+    // } );
+    // const instructor = InstructorData[indexOfInstructor];
+    const instructorExcerpt  = "System" + "...";
 
     const [contentTab, setContentTab] = useState( 'overview' );
     const handleTab = ( content ) => {
         if ( content === 'overview' ) {
             setContentTab( 'overview' );
-        } else if ( content === 'curriculum' ) {
-            setContentTab( 'curriculum' );
-        } else if ( content === 'instructor' ) {
-            setContentTab( 'instructor' );
-        } else if ( content === 'reviews' ) {
+        }
+        else if ( content === 'itinerary' ) {
+            setContentTab( 'itinerary' );
+        }
+        // else if ( content === 'instructor' ) {
+        //     setContentTab( 'instructor' );
+        // }
+        else if ( content === 'reviews' ) {
             setContentTab( 'reviews' );
         }
     }
 
     return (
         <>
-            <SEO title={ courseItem.title } />
+            <SEO title={ travelItem.title } />
             <Layout>
                 <BreadcrumbOne 
                     title="Course Details"
@@ -100,7 +103,7 @@ const CourseDetails = () => {
                         <div className="row g-5">
                             <div className="col-lg-12">
                                 <div className="main-image thumbnail">
-                                    <img className="radius-small" src={`${process.env.PUBLIC_URL}/images/course/course-details/${courseItem.image}`} alt="Course Thumb" />
+                                    <img className="radius-small" src={`${process.env.PUBLIC_URL}/images/travel-details/${travelItem.fullimage}`} alt="Course Thumb" />
                                 </div>
                             </div>
                         </div>
@@ -110,14 +113,14 @@ const CourseDetails = () => {
                                 <div className="course-details-content">
 
                                     <div className="content-top">
-                                        <div className="author-meta">
-                                            <div className="author-thumb">
-                                                <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( courseItem.instructor ) }`}>
-                                                    <img src={`${process.env.PUBLIC_URL}/images/instructor/instructor-small/${instructor.image}`} alt="Author Thumb" />
-                                                    <span className="author-title">By { courseItem.instructor }</span>
-                                                </Link>
-                                            </div>
-                                        </div>
+                                        {/*<div className="author-meta">*/}
+                                        {/*    <div className="author-thumb">*/}
+                                        {/*        <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( travelItem.instructor ) }`}>*/}
+                                        {/*            <img src={`${process.env.PUBLIC_URL}/images/instructor/instructor-small/${instructor.image}`} alt="Author Thumb" />*/}
+                                        {/*            <span className="author-title">By { travelItem.instructor }</span>*/}
+                                        {/*        </Link>*/}
+                                        {/*    </div>*/}
+                                        {/*</div>*/}
                                         <div className="edu-rating rating-default eduvibe-course-rating-stars">
                                             <div className="rating eduvibe-course-rating-stars">
                                                 <i className="icon-Star"></i>
@@ -126,11 +129,11 @@ const CourseDetails = () => {
                                                 <i className="icon-Star"></i>
                                                 <i className="icon-Star"></i>
                                             </div>
-                                            <span className="rating-count">({courseItem.review} Review)</span>
+                                            <span className="rating-count">({travelItem.review} Review)</span>
                                         </div>
                                     </div>
 
-                                    <h3 className="title">{ courseItem.title }</h3>
+                                    <h3 className="title">{ travelItem.title }</h3>
                                     <ul className="edu-course-tab nav nav-tabs" role="tablist">
                                         <li className="nav-item">
                                             <button
@@ -144,15 +147,15 @@ const CourseDetails = () => {
                                         </li>
                                         <li className="nav-item">
                                             <button
-                                                className={contentTab === 'curriculum' ? 'nav-link active' : 'nav-link'}
+                                                className={contentTab === 'itinerary' ? 'nav-link active' : 'nav-link'}
                                                 type="button"
-                                                aria-label="Curriculum"
-                                                onClick={() => handleTab('curriculum')}
+                                                aria-label="Itinerary"
+                                                onClick={() => handleTab('itinerary')}
                                             >
-                                                Curriculum
+                                                Itinerary
                                             </button>
                                         </li>
-                                        <li className="nav-item">
+                                       {/* <li className="nav-item">
                                             <button
                                                 className={contentTab === 'instructor' ? 'nav-link active' : 'nav-link'}
                                                 type="button"
@@ -161,7 +164,7 @@ const CourseDetails = () => {
                                             >
                                                 Instructor
                                             </button>
-                                        </li>
+                                        </li>*/}
                                         <li className="nav-item">
                                             <button
                                                 className={contentTab === 'reviews' ? 'nav-link active' : 'nav-link'}
@@ -177,30 +180,36 @@ const CourseDetails = () => {
                                     <div className="tab-content">
                                         { contentTab === 'overview' && 
                                             <div className={`tab-pane fade show ${contentTab === 'overview' ? 'active' : '' } `}>
-                                                <div className="course-tab-content" dangerouslySetInnerHTML={{__html: courseItem.details}} />
+                                                <div className="course-tab-content" dangerouslySetInnerHTML={{__html: travelItem.details}} />
                                             </div>
                                         }
 
-                                        { contentTab === 'curriculum' && 
+                                        { contentTab === 'itinerary' &&
+                                            <div className={`tab-pane fade show ${contentTab === 'itinerary' ? 'active' : '' } `}>
+                                                <div className="course-tab-content">
+                                                    <CurriculumContent iternaryDetails={travelItem.iternaryDetails}/>
+                                                </div>
+                                            </div>
+                                        }
+                                      {/*  { contentTab === 'curriculum' &&
                                             <div className={`tab-pane fade show ${contentTab === 'curriculum' ? 'active' : '' } `}>
                                                 <div className="course-tab-content">
                                                     <CurriculumContent />
                                                 </div>
                                             </div>
-                                        }
-                                        
-                                        { contentTab === 'instructor' && 
+                                        }*/}
+                                        {/*{ contentTab === 'instructor' &&
                                             <div className={`tab-pane fade show ${contentTab === 'instructor' ? 'active' : '' } `}>
                                                 <div className="course-tab-content">
                                                     <div className="course-author-wrapper">
                                                         <div className="thumbnail">
-                                                            <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( courseItem.instructor ) }`}>
+                                                            <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( travelItem.instructor ) }`}>
                                                                 <img src={`${process.env.PUBLIC_URL}/images/instructor/course-details/${instructor.image}`} alt="Author Thumb" />
                                                             </Link>
                                                         </div>
                                                         <div className="author-content">
                                                             <h6 className="title">
-                                                                <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( courseItem.instructor ) }`}>{instructor.name}</Link>
+                                                                <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( travelItem.instructor ) }`}>{instructor.name}</Link>
                                                             </h6>
                                                             <span className="subtitle">{instructor.designation}</span>
                                                             <p>{ instructorExcerpt }</p>
@@ -214,7 +223,7 @@ const CourseDetails = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        }
+                                        }*/}
 
                                         { contentTab === 'reviews' && 
                                             <div className={`tab-pane fade show ${contentTab === 'reviews' ? 'active' : '' } `}>
@@ -222,7 +231,7 @@ const CourseDetails = () => {
                                                     <div className="row row--30">
                                                         <div className="col-lg-4">
                                                             <div className="rating-box">
-                                                                <div className="rating-number">{courseItem.rating}</div>
+                                                                <div className="rating-number">{travelItem.rating}</div>
                                                                 <div className="rating eduvibe-course-rating-stars">
                                                                     <i className="icon-Star"></i>
                                                                     <i className="icon-Star"></i>
@@ -230,7 +239,7 @@ const CourseDetails = () => {
                                                                     <i className="icon-Star"></i>
                                                                     <i className="icon-Star"></i>
                                                                 </div>
-                                                                <span>({courseItem.review} Review)</span>
+                                                                <span>({travelItem.review} Review)</span>
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-8">
@@ -319,12 +328,12 @@ const CourseDetails = () => {
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-5">
-                                <CourseInfo data={courseItem}/>
+                                <CourseInfo data={travelItem}/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <RelatedCourses courseID={ courseItem.id } />
+                                {/*<RelatedCourses courseID={ travelItem.id } />*/}
                             </div>
                         </div>
                     </div>
