@@ -68,12 +68,12 @@ function App() {
         <Router>
             <ScrollToTop>
                 <Routes>
-                    <Route exact path='/' element={<LandingDemo/>}/>
-                    <Route exact path={`${process.env.PUBLIC_URL + '/home-1'}`} element={<HomeOne/>}/>
-                    <Route exact path={`${process.env.PUBLIC_URL + '/home-2'}`} element={<HomeTwo/>}/>
+                    <Route exact path='/' element={<HomeOne />} />
+                    {/* <Route exact path={`${process.env.PUBLIC_URL + '/home-1'}`} element={<HomeOne/>}/> */}
+                    {/* <Route exact path={`${process.env.PUBLIC_URL + '/home-2'}`} element={<HomeTwo/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-3'}`} element={<HomeThree/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-4'}`} element={<HomeFour/>}/>
-                    <Route exact path={`${process.env.PUBLIC_URL + '/home-5'}`} element={<HomeFive/>}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/home-5'}`} element={<HomeFive/>}/> */}
                     <Route exact path={`${process.env.PUBLIC_URL + '/about-us-1'}`} element={<AboutUsOne/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/about-us-2'}`} element={<AboutUsTwo/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/about-us-3'}`} element={<AboutUsThree/>}/>

@@ -29,11 +29,11 @@ const HomeOne = () => {
 
             <TestimonialSectionFour />
 
-            <HomeOneInstructor />
-
+            {/* <HomeOneInstructor /> */}
+{/* 
             <VideoSectionTwo />
 
-            <NewsLettterOne />
+            <NewsLettterOne /> */}
 
             {/*<HomeOneBlog />     */}
 

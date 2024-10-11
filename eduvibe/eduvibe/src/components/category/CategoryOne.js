@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link } from 'react-router-dom';
+import TripData from '../../data/TravelIternary/traveliternary.json';
 
 const items = [
     {
@@ -34,10 +35,11 @@ const items = [
 ];
 
 const CategoryOne = ( { wrapperClass, styleClass, buttonStatus } ) => {
+    console.log(process.env.PUBLIC_URL)
     return (
         <>
             <div className={ `row ${ wrapperClass || 'g-5 mt--25' }` }>
-                { items.map( ( data , i ) => (
+                { TripData.slice( 0, 4 ).map( ( data , i ) => (
                     <ScrollAnimation 
                         animateIn="fadeInUp"
                         animateOut="fadeInOut"
@@ -48,14 +50,17 @@ const CategoryOne = ( { wrapperClass, styleClass, buttonStatus } ) => {
                         <div className="service-card service-card-1 radius-small">
                             <div className="inner">
                                 <div className="thumbnail">
-                                    <a href={ data.link }>
-                                        <img src={`${process.env.PUBLIC_URL}./images/category/category-01/${ data.image }`} alt="Category Thumb" />
+                                    <a href={ '#' }>
+                                        <img 
+                                            src={`${process.env.PUBLIC_URL}/images/travelplaces/270by200/${ data.image }`} 
+                                            alt={`${data.destination} Image`} 
+                                        />
                                     </a>
                                 </div>
                                 <div className="content">
-                                    <span className="course-total">{ data.numberOfCourses }</span>
-                                    <h6 className="title"><a href={ data.link }>{ data.title }</a></h6>
-                                    <p className="description">{ data.info }</p>
+                                    <span className="course-total">{ `${data.tripdays} Days` }</span>
+                                    <h6 className="title"><a href="#">{ data.destination }</a></h6>
+                                    <p className="description">{ data.description }</p>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +82,6 @@ const CategoryOne = ( { wrapperClass, styleClass, buttonStatus } ) => {
                     </div>
                 </div>
             }
-    
         </>
     )
 }
