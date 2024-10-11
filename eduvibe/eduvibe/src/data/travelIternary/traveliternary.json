@@ -749,7 +749,8 @@
     "rating": 4.6,
     "tripdays": 3,
     "filterParam": "Trending",
-    "image": "Paris.jpeg",
+    "image": "Amsterdam.jpg",
+    "fullimage": "Amsterdam.jpg",
     "days": [
       {
         "day": 1,
@@ -780,7 +781,8 @@
     "rating": 4.7,
     "tripdays": 3,
     "filterParam": "Trending",
-    "image": "Paris.jpeg",
+    "image": "Lisbon.jpg",
+    "fullimage": "Lisbon.jpg",
     "days": [
       {
         "day": 1,
@@ -811,7 +813,8 @@
     "rating": 4.8,
     "tripdays": 3,
     "filterParam": "Featured",
-    "image": "Paris.jpeg",
+    "image": "Seoul.jpg",
+    "fullimage": "Seoul.jpg",
     "days": [
       {
         "day": 1,
@@ -842,7 +845,8 @@
     "rating": 4.8,
     "tripdays": 3,
     "filterParam": "Trending",
-    "image": "Paris.jpeg",
+    "image": "Kyoto.jpg",
+    "fullimage": "Kyoto.jpg",
     "days": [
       {
         "day": 1,
@@ -873,7 +877,8 @@
     "rating": 4.6,
     "tripdays": 3,
     "filterParam": "Trending",
-    "image": "Paris.jpeg",
+    "image": "Toronto.jpg",
+    "fullimage": "Toronto.jpg",
     "days": [
       {
         "day": 1,
@@ -904,7 +909,8 @@
     "rating": 4.7,
     "tripdays": 3,
     "filterParam": "Popularity",
-    "image": "Paris.jpeg",
+    "image": "Rio.jpg",
+    "fullimage": "Rio.jpg",
     "days": [
       {
         "day": 1,
