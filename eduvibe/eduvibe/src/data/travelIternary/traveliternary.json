@@ -7,8 +7,12 @@
     "description": "A romantic getaway in the City of Lights, exploring iconic landmarks and savoring French cuisine.",
     "rating": 4.8,
     "tripdays": 3,
+    "numberOfSale": 50,
     "filterParam": "Featured",
     "image": "Paris.jpeg",
+    "fullimage": "Paris.jpeg",
+    "review": 1,
+
     "days": [
       {
         "day": 1,
@@ -28,7 +32,40 @@
         "meals_included": "Breakfast",
         "hotel": "Le Meurice"
       }
-    ]
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Eiffel Tower",
+        "content": [
+          "Welcome to Paris",
+          "Check-in at Le Meurice",
+          "Eiffel Tower tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Art and River Cruise",
+        "content": [
+          "Breakfast at Le Meurice",
+          "Visit to the Louvre Museum",
+          "Lunch at a local café",
+          "Seine River cruise",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Versailles Day Trip",
+        "content": [
+          "Breakfast at Le Meurice",
+          "Day trip to Versailles",
+          "Tour of the Palace of Versailles",
+          "Explore the Gardens of Versailles",
+          "Return to Paris",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Experience the magic of Paris with this 3-day romantic getaway. From the iconic Eiffel Tower to the world-renowned Louvre Museum, and a day trip to the magnificent Palace of Versailles, this itinerary offers a perfect blend of Parisian charm and French history.</p><h5>What You'll Experience on This Trip</h5><ul><li>Breathtaking views from the Eiffel Tower</li><li>World-class art at the Louvre Museum</li><li>Scenic Seine River cruise</li><li>The opulent Palace of Versailles and its stunning gardens</li><li>Exquisite French cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Le Meurice, a 5-star hotel in the heart of Paris, offering stunning views of the Tuileries Garden.</p>"
   },
   {
     "itinerary_id": 2,
@@ -58,6 +95,36 @@
         "activities": "Day trip to Mount Fuji",
         "meals_included": "Breakfast, Lunch",
         "hotel": "The Ritz-Carlton Tokyo"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Shinjuku Gyoen",
+        "content": [
+          "Welcome to Tokyo",
+          "Check-in at The Ritz-Carlton Tokyo",
+          "Visit Shinjuku Gyoen National Garden",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Tokyo Tower and Shibuya",
+        "content": [
+          "Breakfast at The Ritz-Carlton Tokyo",
+          "Visit Tokyo Tower",
+          "Explore Shibuya Crossing",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Mount Fuji Day Trip",
+        "content": [
+          "Breakfast at The Ritz-Carlton Tokyo",
+          "Day trip to Mount Fuji",
+          "Lunch included",
+          "Return to Tokyo",
+          "Farewell dinner"
+        ]
       }
     ]
   },
@@ -90,6 +157,36 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Hotel de Russie"
       }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Ancient Rome",
+        "content": [
+          "Welcome to Rome",
+          "Check-in at Hotel de Russie",
+          "Colosseum and Roman Forum tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Vatican City",
+        "content": [
+          "Breakfast at Hotel de Russie",
+          "Visit Vatican City",
+          "Explore the Sistine Chapel",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Trastevere and Gelato",
+        "content": [
+          "Breakfast at Hotel de Russie",
+          "Explore Trastevere neighborhood",
+          "Gelato tasting experience",
+          "Lunch included",
+          "Farewell dinner"
+        ]
+      }
     ]
   },
   {
@@ -120,6 +217,36 @@
         "activities": "Day trip to Montserrat",
         "meals_included": "Breakfast, Lunch",
         "hotel": "Hotel Arts Barcelona"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Park Güell",
+        "content": [
+          "Welcome to Barcelona",
+          "Check-in at Hotel Arts Barcelona",
+          "Visit Park Güell",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Sagrada Familia and Gothic Quarter",
+        "content": [
+          "Breakfast at Hotel Arts Barcelona",
+          "Tour of Sagrada Familia",
+          "Explore the Gothic Quarter",
+          "Free evening to enjoy tapas"
+        ]
+      },
+      {
+        "title": "Day 3: Montserrat Day Trip",
+        "content": [
+          "Breakfast at Hotel Arts Barcelona",
+          "Day trip to Montserrat",
+          "Lunch included",
+          "Return to Barcelona",
+          "Farewell dinner"
+        ]
       }
     ]
   },
@@ -152,6 +279,36 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "The St. Regis New York"
       }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Times Square",
+        "content": [
+          "Welcome to New York City",
+          "Check-in at The St. Regis New York",
+          "Times Square exploration",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Statue of Liberty and Central Park",
+        "content": [
+          "Breakfast at The St. Regis New York",
+          "Visit Statue of Liberty",
+          "Explore Central Park",
+          "Free evening to enjoy NYC nightlife"
+        ]
+      },
+      {
+        "title": "Day 3: Broadway and Rockefeller Center",
+        "content": [
+          "Breakfast at The St. Regis New York",
+          "Attend a Broadway show",
+          "Visit Rockefeller Center",
+          "Lunch included",
+          "Farewell dinner"
+        ]
+      }
     ]
   },
   {
@@ -182,6 +339,36 @@
         "activities": "Day trip to Blue Mountains",
         "meals_included": "Breakfast, Lunch",
         "hotel": "Sydney Harbour Marriott"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Sydney Opera House",
+        "content": [
+          "Welcome to Sydney",
+          "Check-in at Sydney Harbour Marriott",
+          "Sydney Opera House tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Bondi Beach and Coastal Walk",
+        "content": [
+          "Breakfast at Sydney Harbour Marriott",
+          "Visit Bondi Beach",
+          "Enjoy the Coastal Walk",
+          "Free evening to explore Sydney"
+        ]
+      },
+      {
+        "title": "Day 3: Blue Mountains Day Trip",
+        "content": [
+          "Breakfast at Sydney Harbour Marriott",
+          "Day trip to Blue Mountains",
+          "Lunch included",
+          "Return to Sydney",
+          "Farewell dinner"
+        ]
       }
     ]
   },
@@ -214,6 +401,36 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Copacabana Palace"
       }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Sugarloaf Mountain",
+        "content": [
+          "Welcome to Rio de Janeiro",
+          "Check-in at Copacabana Palace",
+          "Visit Sugarloaf Mountain",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Christ the Redeemer and Ipanema Beach",
+        "content": [
+          "Breakfast at Copacabana Palace",
+          "Visit Christ the Redeemer statue",
+          "Relax at Ipanema Beach",
+          "Free evening to enjoy Rio's nightlife"
+        ]
+      },
+      {
+        "title": "Day 3: Tijuca National Park",
+        "content": [
+          "Breakfast at Copacabana Palace",
+          "Day trip to Tijuca National Park",
+          "Lunch included",
+          "Return to Rio",
+          "Farewell dinner"
+        ]
+      }
     ]
   },
   {
@@ -244,6 +461,36 @@
         "activities": "Day trip to Windsor Castle",
         "meals_included": "Breakfast, Lunch",
         "hotel": "The Savoy"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and London Eye",
+        "content": [
+          "Welcome to London",
+          "Check-in at The Savoy",
+          "London Eye experience",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Tower of London and Buckingham Palace",
+        "content": [
+          "Breakfast at The Savoy",
+          "Visit the Tower of London",
+          "Explore Buckingham Palace",
+          "Free evening to enjoy London's West End"
+        ]
+      },
+      {
+        "title": "Day 3: Windsor Castle Day Trip",
+        "content": [
+          "Breakfast at The Savoy",
+          "Day trip to Windsor Castle",
+          "Lunch included",
+          "Return to London",
+          "Farewell dinner"
+        ]
       }
     ]
   },
@@ -276,6 +523,36 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "The Peninsula Bangkok"
       }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Wat Pho",
+        "content": [
+          "Welcome to Bangkok",
+          "Check-in at The Peninsula Bangkok",
+          "Wat Pho temple tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Grand Palace and River Cruise",
+        "content": [
+          "Breakfast at The Peninsula Bangkok",
+          "Visit the Grand Palace",
+          "Chao Phraya River cruise",
+          "Free evening to explore Bangkok's night markets"
+        ]
+      },
+      {
+        "title": "Day 3: Ayutthaya Day Trip",
+        "content": [
+          "Breakfast at The Peninsula Bangkok",
+          "Day trip to Ayutthaya",
+          "Lunch included",
+          "Return to Bangkok",
+          "Farewell dinner"
+        ]
+      }
     ]
   },
   {
@@ -306,6 +583,36 @@
         "activities": "Day trip to Wachau Valley",
         "meals_included": "Breakfast, Lunch",
         "hotel": "Hotel Sacher"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Schönbrunn Palace",
+        "content": [
+          "Welcome to Vienna",
+          "Check-in at Hotel Sacher",
+          "Schönbrunn Palace tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Belvedere Palace and Vienna State Opera",
+        "content": [
+          "Breakfast at Hotel Sacher",
+          "Visit Belvedere Palace",
+          "Explore Vienna State Opera",
+          "Free evening to enjoy a classical concert"
+        ]
+      },
+      {
+        "title": "Day 3: Wachau Valley Day Trip",
+        "content": [
+          "Breakfast at Hotel Sacher",
+          "Day trip to Wachau Valley",
+          "Lunch included",
+          "Return to Vienna",
+          "Farewell dinner"
+        ]
       }
     ]
   },
