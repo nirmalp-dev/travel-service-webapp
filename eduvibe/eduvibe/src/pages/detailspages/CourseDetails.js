@@ -13,7 +13,7 @@ import RelatedCourses from '../../components/course/RelatedCourses';
 import CourseData from '../../data/course/CourseData.json';
 import InstructorData from '../../data/instructor/InstructorData.json';
 import CurriculumTabContent from '../../data/course/CurriculumTabContent.json';
-import TravelIternary from '../../data/travelIternary/traveliternary.json';
+import TravelIternary from '../../data/traveliternary/traveliternary.json';
 const CustomToggle = ({ children, eventKey }) => {
     const { activeEventKey } = useContext(AccordionContext);
     const decoratedOnClick = useAccordionButton( eventKey );
