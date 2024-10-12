@@ -9,7 +9,7 @@
     "tripdays": 3,
     "numberOfSale": 50,
     "filterParam": "Featured",
-    "image": "Paris.jpeg",
+    "image": "Paris.jpg",
     "fullimage": "Paris.jpeg",
     "review": 1,
 
@@ -76,7 +76,8 @@
     "rating": 4.9,
     "tripdays": 3,
     "filterParam": "Trending",
-    "image": "Paris.jpeg",
+    "image": "Japan.jpg",
+    "fullimage": "Japan.jpg",
     "days": [
       {
         "day": 1,
@@ -137,7 +138,8 @@
     "rating": 4.7,
     "tripdays": 3,
     "filterParam": "Popularity",
-    "image": "Paris.jpeg",
+    "image": "Italy.jpg",
+    "fullimage": "Rome.jpg",
     "days": [
       {
         "day": 1,
@@ -198,7 +200,8 @@
     "rating": 4.6,
     "tripdays": 3,
     "filterParam": "Featured",
-    "image": "Paris.jpeg",
+    "image": "Spain.jpg",
+    "fullimage": "Barcelona.jpg",
     "days": [
       {
         "day": 1,
@@ -259,7 +262,8 @@
     "rating": 4.8,
     "tripdays": 3,
     "filterParam": "Featured",
-    "image": "Paris.jpeg",
+    "image": "NewYork.jpg",
+    "fullimage": "NewYork.jpg",
     "days": [
       {
         "day": 1,
