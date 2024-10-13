@@ -382,7 +382,8 @@
     "rating": 4.8,
     "tripdays": 3,
     "filterParam": "Popularity",
-    "image": "Paris.jpeg",
+    "image": "Rio.jpg",
+    "fullimage": "Rio.jpg",
     "days": [
       {
         "day": 1,
@@ -443,7 +444,8 @@
     "rating": 4.9,
     "tripdays": 3,
     "filterParam": "Featured",
-    "image": "Paris.jpeg",
+    "image": "London.jpeg",
+    "fullimage": "London.jpeg",
     "days": [
       {
         "day": 1,

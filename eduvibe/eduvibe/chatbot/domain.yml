@@ -1,0 +1,62 @@
+version: '3.1'
+intents:
+- affirm
+- bot_challenge
+- chitchat
+- deny
+- goodbye
+- greet
+- inform
+- mood_great
+- mood_unhappy
+- request_travel_info
+entities:
+- days
+- destination
+slots:
+  destination:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: destination
+  days:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: days
+forms:
+  travel_form:
+    required_slots:
+    - destination
+    - days
+    ignored_intents:
+    - chitchat
+responses:
+  utter_weather:
+  - text: the weather is good today
+  utter_greet:
+  - text: Hey! How are you?
+  utter_ask_destination:
+  - text: Where would you like to travel?
+  utter_ask_days:
+  - text: How many days will you be traveling?
+  utter_slots_values:
+  - text: You want to travel to {destination} for {days} days.
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_goodbye
+- utter_greet
+- utter_slots_values
