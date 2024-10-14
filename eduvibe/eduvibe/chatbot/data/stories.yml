@@ -47,6 +47,7 @@ stories:
   - action: travel_form
   - active_loop: null
   - action: utter_slots_values
+  - action: action_recommend_travel_plan
 
 - story: interactive_story_1
   steps:
@@ -75,5 +76,6 @@ stories:
     - requested_slot: null
   - active_loop: null
   - action: utter_slots_values
+  - action: action_recommend_travel_plan
   - intent: goodbye
   - action: utter_goodbye

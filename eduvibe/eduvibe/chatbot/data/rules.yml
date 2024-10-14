@@ -25,4 +25,5 @@ rules:
   - action: travel_form
   - active_loop: null
   - action: utter_slots_values
+  - action: action_recommend_travel_plan
 
