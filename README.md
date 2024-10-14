@@ -7,3 +7,4 @@ code
  docker build -t my-react-app . 
 
  rasa run --enable-api --cors "*"
+ rasa run action
