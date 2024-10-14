@@ -43,6 +43,7 @@ stories:
     entities:
     - destination: "Paris"
     - days: "5 days"
+    - travel_date: "October 15th"
   - action: travel_form
   - active_loop: null
   - action: utter_slots_values
@@ -74,7 +75,5 @@ stories:
     - requested_slot: null
   - active_loop: null
   - action: utter_slots_values
-  - intent: goodbye
-  - action: utter_goodbye
   - intent: goodbye
   - action: utter_goodbye

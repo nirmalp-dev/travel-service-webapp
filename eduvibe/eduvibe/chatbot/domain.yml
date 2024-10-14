@@ -13,6 +13,7 @@ intents:
 entities:
 - days
 - destination
+- travel_date
 slots:
   destination:
     type: text
@@ -24,11 +25,17 @@ slots:
     mappings:
     - type: from_entity
       entity: days
+  travel_date:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: travel_date
 forms:
   travel_form:
     required_slots:
     - destination
     - days
+    - travel_date
     ignored_intents:
     - chitchat
 responses:
@@ -40,8 +47,10 @@ responses:
   - text: Where would you like to travel?
   utter_ask_days:
   - text: How many days will you be traveling?
+  utter_ask_travel_date:
+  - text: Which date do you want to start your trip?
   utter_slots_values:
-  - text: You want to travel to {destination} for {days} days.
+  - text: You want to travel to {destination} for {days} starting on {travel_date}.
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -57,6 +66,6 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
+- utter_slots_values
 - utter_goodbye
 - utter_greet
-- utter_slots_values
