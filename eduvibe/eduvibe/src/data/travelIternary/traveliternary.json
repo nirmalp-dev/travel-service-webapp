@@ -371,7 +371,8 @@
           "Farewell dinner"
         ]
       }
-    ]
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Discover the vibrant city of Sydney with this 3-day adventure. From the iconic Sydney Opera House to the picturesque Bondi Beach and the stunning Blue Mountains, this itinerary offers a perfect blend of urban excitement and natural beauty.</p><h5>What You'll Experience on This Trip</h5><ul><li>A guided tour of the world-famous Sydney Opera House</li><li>Relaxation on the sandy shores of Bondi Beach</li><li>Scenic Coastal Walk with breathtaking ocean views</li><li>A full day exploring the majestic Blue Mountains</li><li>Delicious Australian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the Sydney Harbour Marriott, a luxurious 5-star hotel offering breathtaking views of the harbour and easy access to Sydney's top attractions.</p>"
   },
   {
     "itinerary_id": 7,
@@ -433,7 +434,8 @@
           "Farewell dinner"
         ]
       }
-    ]
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the lively spirit of Rio de Janeiro with this 3-day adventure. From the breathtaking views atop Sugarloaf Mountain to the iconic Christ the Redeemer statue and the serene beaches of Copacabana and Ipanema, this itinerary offers a perfect balance of cultural exploration and natural beauty.</p><h5>What You'll Experience on This Trip</h5><ul><li>Spectacular views from Sugarloaf Mountain</li><li>A visit to the awe-inspiring Christ the Redeemer statue</li><li>Relaxation on the world-famous Ipanema Beach</li><li>An adventure through the lush Tijuca National Park</li><li>Delicious Brazilian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Copacabana Palace, a historic 5-star hotel overlooking the famous Copacabana Beach, offering refined comfort and elegant amenities.</p>"
   },
   {
     "itinerary_id": 8,
@@ -495,7 +497,8 @@
           "Farewell dinner"
         ]
       }
-    ]
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Experience the rich history and vibrant culture of London with this 3-day classic adventure. From the iconic London Eye to the historic Tower of London and the grandeur of Windsor Castle, this itinerary is designed to immerse you in the essence of one of the world's most beloved cities.</p><h5>What You'll Experience on This Trip</h5><ul><li>Stunning views of the city from the London Eye</li><li>A guided tour of the historic Tower of London</li><li>A visit to the majestic Buckingham Palace</li><li>A day trip to the royal Windsor Castle</li><li>Delicious British cuisine</li></ul><h5>Accommodation</h5><p>Stay at The Savoy, an iconic 5-star hotel that combines luxurious comfort with an excellent location on the banks of the River Thames, close to many of London's key attractions.</p>"
   },
   {
     "itinerary_id": 9,
@@ -556,7 +559,8 @@
           "Farewell dinner"
         ]
       }
-    ]
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the vibrant culture and rich history of Bangkok with this 3-day adventure. Explore ornate temples, indulge in delicious street food, and take in the sights of the Grand Palace and the historic city of Ayutthaya, making this trip a feast for the senses.</p><h5>What You'll Experience on This Trip</h5><ul><li>A guided tour of the stunning Wat Pho temple</li><li>Visit to the magnificent Grand Palace</li><li>A scenic cruise along the Chao Phraya River</li><li>A day trip to the ancient city of Ayutthaya</li><li>Authentic Thai cuisine and local delicacies</li></ul><h5>Accommodation</h5><p>Stay at The Peninsula Bangkok, a luxurious riverside hotel known for its exceptional service and stunning views of the city, providing the perfect base for your exploration of Bangkok.</p>"
   },
   {
     "itinerary_id": 10,
@@ -617,7 +621,8 @@
           "Farewell dinner"
         ]
       }
-    ]
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Discover the imperial charm and rich musical heritage of Vienna with this captivating 3-day itinerary. Experience stunning architecture, explore grand palaces, and enjoy classical concerts that make Vienna a cultural hub of Europe.</p><h5>What You'll Experience on This Trip</h5><ul><li>A guided tour of Schönbrunn Palace, a UNESCO World Heritage site</li><li>Visit to the opulent Belvedere Palace</li><li>An evening at the renowned Vienna State Opera</li><li>A picturesque day trip to Wachau Valley, famous for its vineyards and charming towns</li><li>Authentic Viennese cuisine and exquisite dining experiences</li></ul><h5>Accommodation</h5><p>Stay at Hotel Sacher, an iconic luxury hotel known for its historic significance and exceptional service, located in the heart of Vienna, providing the perfect base for your exploration of this magnificent city.</p>"
   },
   {
     "itinerary_id": 11,
