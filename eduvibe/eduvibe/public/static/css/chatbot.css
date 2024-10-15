@@ -1,0 +1,236 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensures the chatbot is above other elements */
+}
+
+
+.imgProfile {
+    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 #00000096;
+    border-radius: 50px;
+    width: 60%;
+}
+
+.profile_div {
+    /* display: none; */
+    position: fixed;
+    padding: 5px;
+    width: 10%;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.widget {
+    display: none;
+    width: 350px;
+    right: 15px;
+    height: 500px;
+    bottom: 5%;
+    position: fixed;
+    background: #fff;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 5px 0 #00000096;
+}
+
+.chat_header {
+    height: 60px;
+    background: #060dcfc7;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.chat_header_title {
+    color: white;
+    float: left;
+    margin-top: 3%;
+    margin-left: 35%;
+}
+
+#close,
+#restart,
+#clear {
+    cursor: pointer;
+}
+
+.dropdown-trigger {
+    cursor: pointer;
+    color: white;
+    margin-right: 5px;
+    float: right;
+    margin-top: 3%;
+}
+
+.dropdown-content {
+    display: block;
+    width: 100px;
+    transform-origin: 100% 0px;
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+    margin-top: 20px;
+    list-style-type: none; 
+    padding-left: 30px; 
+}
+
+.dropdown-container {
+    position: absolute;
+    right: 0; 
+    background: white; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 1001;
+    border-radius: 5px; 
+    margin-right:5px;
+    height:100px;
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+    color: #060dcfc7;
+    display: block;
+    font-size: 16px;
+}
+
+
+.chats {
+    /* display: none; */
+    height: 385px;
+    padding: 2px;
+    border-radius: 1px;
+    overflow-y: scroll;
+    margin-top: 1px;
+    transition: 0.2s;
+}
+
+div.chats::-webkit-scrollbar {
+    overflow-y: hidden;
+    width: 0px;
+    /* remove scrollbar space /
+    background: transparent;
+    / optional: just make scrollbar invisible */
+}
+
+.clearfix {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.keypad {
+    /* display: none;  */
+    background: white;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+    border-top: 1px solid #e3e7ee;
+}
+
+.usrInput {
+    padding: 0.5em;
+    width: 80%;
+    margin-left: 4%;
+    border: 0;
+    padding-left: 15px;
+    height: 40px;
+    box-shadow: none;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    font-family: Lato;
+}
+
+#sendButton {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #060dcfc7;
+}
+
+textarea {
+  box-shadow: none;
+  resize: none;
+  outline: none;
+  overflow: hidden;
+  font-family: Lato;
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: Lato;
+}
+
+textarea-webkit-scrollbar {
+  width: 0 !important;
+}
+
+
+.clearfix {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.botAvatar {
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    float: left;
+    margin-left: 5px;
+    /* border: 2px solid  #060DCF ; */
+}
+
+.botMsg {
+    float: left;
+    margin-top: 5px;
+    background: #e3e7ee;
+    color: black;
+    /* box-shadow: 2px 3px 9px 0px #9a82842e; */
+    margin-left: 0.5em;
+    padding: 10px;
+    border-radius: 1.5em;
+    max-width: 60%;
+    min-width: 25%;
+    font-size: 13px;
+    word-wrap: break-word;
+    border-radius: 5px 20px 20px 20px;
+}
+
+div.chats > pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+    margin: 0 !important;
+    /* display: inline !important; */
+    white-space: initial !important;
+}
+
+div.chats > ul:not(.browser-default) {
+    padding-left: 1em;
+}
+
+    div.chats > ul:not(.browser-default) > li {
+        list-style-type: initial;
+    }
+
+div.chats > span.botMsg > ol {
+    padding-left: 1em;
+}
+
+.userAvatar {
+    animation: animateElement linear 0.3s;
+    animation-iteration-count: 1;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    float: right;
+    margin-right: 5px;
+    /* border: 2px solid  #060DCF ; */
+}
