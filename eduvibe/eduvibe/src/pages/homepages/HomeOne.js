@@ -11,6 +11,8 @@ import VideoSectionTwo from '../../components/video-section/VideoSectionTwo';
 import NewsLettterOne from '../../components/newsletter/NewsLettterOne';
 import HomeOneBlog from '../../components/home-one/HomeOneBlog';
 import FooterOne from '../../common/footer/FooterOne';
+//import Chatbot from '../chatbot/chatbot';
+
 
 const HomeOne = () => {
     return (
@@ -18,6 +20,11 @@ const HomeOne = () => {
             <SEO title="Home 1" />
 
             <HeaderTwo styles="header-transparent header-style-2" />
+
+            <iframe
+                src="/Chatbots.html" 
+                title="Chatbot"
+            />
 
             <BannerOne />
             
