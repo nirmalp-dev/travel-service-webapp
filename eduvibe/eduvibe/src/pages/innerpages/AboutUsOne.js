@@ -8,7 +8,9 @@ import AboutSix from '../../components/about/AboutSix';
 import AboutOne from '../../components/about/AboutThree';
 import AboutUsOneTeam from '../../components/about-us-one/AboutUsOneTeam';
 import HomeTwoTestimonial from '../../components/home-two/HomeTwoTestimonial';
-import FooterTwo from '../../common/footer/FooterTwo';
+// import FooterTwo from '../../common/footer/FooterTwo';
+import FooterOne from '../../common/footer/FooterOne';
+import HomeOneInstructor from '../../components/home-one/HomeOneInstructor';
 
 const AboutUsOne = () => {
     return (
@@ -18,7 +20,7 @@ const AboutUsOne = () => {
             <HeaderOne />
 
             <BreadcrumbOne 
-                title="About Us-1"
+                title="Who We Are"
                 rootUrl="/"
                 parentUrl="Home"
                 currentUrl="About Us"
@@ -28,15 +30,17 @@ const AboutUsOne = () => {
             
             <AboutUsOneService />
 
-            <AboutSix />
+            {/* <AboutSix /> */}
 
-            <AboutOne />
+            {/* <AboutOne /> */}
 
-            <AboutUsOneTeam />
+            <HomeOneInstructor />
 
-            <HomeTwoTestimonial />
+            {/* <AboutUsOneTeam /> */}
 
-            <FooterTwo />
+            {/* <HomeTwoTestimonial /> */}
+
+            <FooterOne />
         </>
     )
 }

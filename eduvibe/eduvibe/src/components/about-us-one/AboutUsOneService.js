@@ -10,8 +10,8 @@ const AboutUsOneService = () => {
                     <div className="col-lg-12">
                         <SectionTitle
                             classes = "text-center"
-                            slogan = "What We Offer"
-                            title = "Learn New Skills When And <br /> Where You Like"
+                            slogan = "Travel is a force for good"
+                            title = "Strengthening connections broadening <br /> horizons bridging divides  "
                         />
                     </div>
                 </div>

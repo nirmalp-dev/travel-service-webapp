@@ -3,29 +3,29 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const FeatureItems = [
     {
-        title: 'Remote Learning',
-        info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        title: 'Travel with Us',
+        info: 'No matter who you are, or where you are going, our travel brands help every type of traveler not only find the trip that’s right for them, but get the best value every time.',
         image: 'feature-image-01.png',
         bgColor: 'card-bg-1',
         link: '#'
     },
     {
-        title: 'Awesome Tutors',
-        info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        title: 'Partner with Us',
+        info: 'We connect partners big and small to the universe of travelers, giving access to data, tools and technology that empowers, maximizes potential and builds their business.',
         image: 'feature-image-02.png',
         bgColor: 'card-bg-2',
         link: '#'
     },
     {
-        title: 'Global Certificate',
-        info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        title: 'Explore the World with Us',
+        info: 'Wherever your journey takes you, we help you discover, book, and enjoy the perfect trip with unbeatable value.',
         image: 'feature-image-03.png',
         bgColor: 'card-bg-3',
         link: '#'
     },
     {
-        title: 'Carrier Guideline',
-        info: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+        title: 'Grow Your Business with Us',
+        info: 'Partner with us to unlock the power of travel insights, cutting-edge tools, and technology to expand your reach and boost success.',
         image: 'feature-image-04.png',
         bgColor: 'card-bg-4',
         link: '#'
