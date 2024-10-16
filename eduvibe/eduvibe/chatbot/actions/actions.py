@@ -27,7 +27,9 @@
 #         return []
 import json
 from rasa_sdk import Action
+from rasa_sdk.interfaces import Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
 import re
 
 class ActionRecommendTravelPlan(Action):
@@ -68,3 +70,17 @@ class ActionRecommendTravelPlan(Action):
             dispatcher.utter_message(text="Sorry, I couldn't find any travel packages matching your criteria.")
 
         return []
+
+class ActionResetSlots(Action):
+    def name(self) -> str:
+        print("ActionResetSlots called --------------")
+        return "reset_slots"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: dict) -> list:
+        # Resetting the slots
+        destination = tracker.get_slot("destination")
+        days = tracker.get_slot("days")
+        print(f"Resetting slots: destination={destination}, days={days}")
+        return [SlotSet("destination", None), 
+                SlotSet("days", None), 
+                SlotSet("travel_date", None)]

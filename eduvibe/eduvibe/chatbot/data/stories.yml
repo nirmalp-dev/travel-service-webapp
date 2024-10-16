@@ -2,17 +2,17 @@ version: "3.1"
 
 stories:
 
+- story: greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
 - story: happy path
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
-
-- story: tell weather
-  steps:
-  - user: "what is the weather today"
-  - action: utter_weather
 
 - story: sad path 1
   steps:
@@ -48,34 +48,36 @@ stories:
   - active_loop: null
   - action: utter_slots_values
   - action: action_recommend_travel_plan
+  - action: utter_thank_you # Add thank you response at the end
+  - action: reset_slots
 
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: travel_form
-  - active_loop: travel_form
-  - slot_was_set:
-    - requested_slot: destination
-  - intent: inform
-    entities:
-    - destination: Paris
-  - slot_was_set:
-    - destination: Paris
-  - action: travel_form
-  - slot_was_set:
-    - requested_slot: days
-  - intent: inform
-    entities:
-    - days: 6 days
-  - slot_was_set:
-    - days: 6 days
-  - action: travel_form
-  - slot_was_set:
-    - requested_slot: null
-  - active_loop: null
-  - action: utter_slots_values
-  - action: action_recommend_travel_plan
-  - intent: goodbye
-  - action: utter_goodbye
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: travel_form
+#   - active_loop: travel_form
+#   - slot_was_set:
+#     - requested_slot: destination
+#   - intent: inform
+#     entities:
+#     - destination: Paris
+#   - slot_was_set:
+#     - destination: Paris
+#   - action: travel_form
+#   - slot_was_set:
+#     - requested_slot: days
+#   - intent: inform
+#     entities:
+#     - days: 6 days
+#   - slot_was_set:
+#     - days: 6 days
+#   - action: travel_form
+#   - slot_was_set:
+#     - requested_slot: null
+#   - active_loop: null
+#   - action: utter_slots_values
+#   - action: action_recommend_travel_plan
+#   - intent: goodbye
+#   - action: utter_goodbye

@@ -1,7 +1,6 @@
 version: "3.1"
 
 rules:
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -31,4 +30,12 @@ rules:
   - active_loop: null
   - action: utter_slots_values
   - action: action_recommend_travel_plan
+  - action: utter_thank_you  # Thank the user after submitting travel form
+  - action: reset_slots
+
+
+- rule: Greet the user when they say hello
+  steps:
+  - intent: greet
+  - action: utter_greet
 
