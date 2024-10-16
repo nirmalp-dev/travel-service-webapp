@@ -23,8 +23,8 @@ const AboutSeven = () => {
                             </div>
                             <div className="finished-session">
                                 <div className="inner">
-                                    <div className="text">2.98</div>
-                                    <span className="finished-title">Finished <br /> Sessions</span>
+                                    <div className="text">500B+</div>
+                                    <span className="finished-title">AI predictions</span>
                                 </div>
                             </div>
                         </div>
@@ -33,26 +33,27 @@ const AboutSeven = () => {
                         <div className="inner mt_md--40 mt_sm--40">
                             <div className="section-title text-start">
                                 <span className="pre-title">About Us</span>
-                                <h3 className="title">Knowledge is power, Information is liberating.</h3>
+                                <h3 className="title">We believe in a world where everyone can be Well-Traveled</h3>
                             </div>
-                            <p className="description mt--40 mt_md--20 mt_sm--20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, venenatis dictum et nec. Fringilla dictum tristique cras pellentesque consequat.</p>
-                                <h6 className="subtitle mb--20">People Love To Learn With Us</h6>
+                            <p className="description mt--40 mt_md--20 mt_sm--20">At TravelVibe, we believe in the power of travel to bring people together. Our mission is to make global travel accessible for everyone, everywhere. We are dedicated to creating an inclusive travel experience for all, ensuring every traveler has the opportunity to explore the world and broaden their horizons.</p>
+                            <p className="description mt--40 mt_md--20 mt_sm--20">Whether it’s a family vacation, business trip, or the adventure of a lifetime, TravelVibe unlocks endless possibilities for every kind of traveler. Through our platform, we aim to champion equal access to travel and foster meaningful connections across the globe</p>
+                                <h6 className="subtitle mb--20">Why People Love Us</h6>
 
                             <div className="about-feature-list">
                                 <div className="row g-5">
                                     <div className="col-lg-6">
                                         <div className="feature-style-3">
                                             <div className="feature-content">
-                                                <h6 className="feature-title">90%</h6>
-                                                <p className="feature-description">90% of students see their course through to completion.</p>
+                                                <h6 className="feature-title">75+</h6>
+                                                <p className="feature-description">We have travel locations across 75+ countries.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="feature-style-3">
                                             <div className="feature-content">
-                                                <h6 className="feature-title">9/10</h6>
-                                                <p className="feature-description">9/10 users reported better learning outcomes.</p>
+                                                <h6 className="feature-title">10Gb+ Data</h6>
+                                                <p className="feature-description">Powered by more than 10+ GigaByte of data, TravelVibe is one of the world’s largest travel platforms. </p>
                                             </div>
                                         </div>
                                     </div>
