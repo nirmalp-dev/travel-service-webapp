@@ -41,16 +41,20 @@ forms:
 responses:
   utter_weather:
   - text: the weather is good today
-  utter_greet:
-  - text: Hey! How are you?
   utter_ask_destination:
   - text: Where would you like to travel?
   utter_ask_days:
   - text: How many days will you be traveling?
   utter_ask_travel_date:
   - text: Which date do you want to start your trip?
+  utter_greet:
+  - text: "Hello! How can I help you today?"
+  utter_thank_you:
+  - text: "Thank you for talking with me!"
   utter_slots_values:
-  - text: You want to travel to {destination} for {days} starting on {travel_date}.
+  - text: "Here are the details of your trip: Destination: {destination}, Days: {days}, Travel Date: {travel_date}."
+  utter_goodbye:
+  - text: "Goodbye! Have a great day!"
   utter_recommendation:
   - text: "Based on your preferences, here are some travel plans I recommend: {recommendations}"
   utter_cheer_up:
@@ -60,8 +64,6 @@ responses:
   - text: Did that help you?
   utter_happy:
   - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
 session_config:
@@ -69,6 +71,7 @@ session_config:
   carry_over_slots_to_new_session: true
 actions:
 - action_recommend_travel_plan  
+- reset_slots
 - utter_slots_values
 - utter_goodbye
 - utter_greet

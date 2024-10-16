@@ -18,6 +18,13 @@ nlu:
 - intent: inform
   examples: |
     - I want to go to [Paris](destination)
+    - I want to visit [Rome](destination)
+    - I'm planning a trip to [London](destination)
+    - I'm traveling to [Berlin](destination)
+    - My trip is to [Sydney](destination)
+    - The trip will be to [Dubai](destination)
+    - Let's plan a vacation in [New York](destination)
+    - I'll fly to [Tokyo](destination)
     - I will travel to [New York](destination)
     - My destination is [Tokyo](destination)
     - I will stay for [5 days](days)
@@ -26,8 +33,65 @@ nlu:
     - I want to travel on [October 15th](travel_date)
     - The travel date is [next Monday](travel_date)
     - I will leave on [September 30th](travel_date)
-    - i want to go to [Paris](destination)
     - Let's plan for [4 Days](days)
+
+- lookup: destination
+  examples: |
+    - Paris
+    - New York City
+    - Tokyo
+    - London
+    - Sydney
+    - Barcelona
+    - Rio de Janeiro
+    - Berlin
+    - Dubai
+    - Amsterdam
+    - Rome
+    - Miami
+    - Venice
+    - Vienna
+    - Budapest
+    - Moscow
+    - Mexico City
+    - Madrid
+    - Bangkok
+    - Jakarta
+    - Singapore
+    - Lisbon
+    - Athens
+    - Istanbul
+    - Mumbai
+    - Beijing
+    - Seoul
+    - Kyoto
+    - Toronto
+    - Shanghai
+    - Guangzhou
+    - Shenzhen
+    - Hong Kong
+    - Taiwan
+    - Seattle
+    - San Francisco
+    - Los Angeles
+    - Chicago
+    - Denver
+    - San Diego
+    - Las Vegas
+    - Phoenix
+    - Orlando
+    - Dallas
+    - Houston
+    - San Antonio
+    - San Jose
+    - Austin
+    - Fort Worth
+    - Charlotte
+    - Birmingham
+    - Nashville
+    - Atlanta
+    - Vienna
+    - Cairo
 - intent: request_travel_info
   examples: |
     - I want to plan a trip
