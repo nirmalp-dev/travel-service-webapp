@@ -11,40 +11,38 @@ import VideoSectionTwo from '../../components/video-section/VideoSectionTwo';
 import NewsLettterOne from '../../components/newsletter/NewsLettterOne';
 import HomeOneBlog from '../../components/home-one/HomeOneBlog';
 import FooterOne from '../../common/footer/FooterOne';
-//import Chatbot from '../chatbot/chatbot';
+import Chatbot from '../chatbot/chatbot';
 
 
 const HomeOne = () => {
     return (
         <>
-            <SEO title="Home 1" />
+            <SEO title="Home 1"/>
 
-            <HeaderTwo styles="header-transparent header-style-2" />
+            <HeaderTwo styles="header-transparent header-style-2"/>
 
-            <iframe
-                src="/Chatbots.html" 
-                title="Chatbot"
-            />
+            <BannerOne/>
+            {/*<iframe*/}
+            {/*    src="/Chatbots.html"*/}
+            {/*    title="Chatbot"*/}
+            {/*/>*/}
+            <HomeOneAbout/>
 
-            <BannerOne />
-            
-            <HomeOneAbout />
+            <HomeOneCategory/>
 
-            <HomeOneCategory />
+            <HomeOneCourses/>
 
-            <HomeOneCourses />
-
-            <TestimonialSectionFour />
+            <TestimonialSectionFour/>
 
             {/* <HomeOneInstructor /> */}
-{/* 
+            {/*
             <VideoSectionTwo />
 
             <NewsLettterOne /> */}
 
             {/*<HomeOneBlog />     */}
 
-            <FooterOne />   
+            <FooterOne/>
         </>
     )
 }

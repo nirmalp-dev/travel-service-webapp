@@ -10,6 +10,7 @@ import HomeFourTeam from '../../components/home-four/HomeFourTeam';
 import CallToActionTwo from '../../components/cta/CallToActionTwo';
 import TestimonialSectionOne from '../../components/testimonial-section/TestimonialSectionOne';
 import HomeFourBlog from '../../components/home-four/HomeFourBlog';
+import Chatbot from "../chatbot/chatbot";
 
 const HomeFour = () => {
     return (
@@ -19,8 +20,11 @@ const HomeFour = () => {
             <Layout>
 
                 <BannerFour />
+                <Chatbot/>
 
                 <HomeFourServices />
+
+                {/*<CustomWidget />*/}
 
                 <HomeFourAbout />
 
