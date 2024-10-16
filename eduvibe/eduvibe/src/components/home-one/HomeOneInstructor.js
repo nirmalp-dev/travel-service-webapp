@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { slugify } from '../../utils';
 import SectionTitle from '../sectionTitle/SectionTitle';
+import TripData from '../../data/traveliternary/traveliternary.json';
 
 const HomeOneInstructor = () => {
     const [visible, setVisible] = useState( 'team3' );
@@ -13,7 +14,7 @@ const HomeOneInstructor = () => {
                         <SectionTitle
                             classes = "text-white text-center"
                             slogan = "Team Member"
-                            title = "Meet Our Instructor"
+                            title = "Meet The Team"
                         />
                     </div>
                 </div>
@@ -29,8 +30,8 @@ const HomeOneInstructor = () => {
                                         </Link>
                                     </div>
                                     <div className="edu-instructor-info">
-                                        <h5 className="title"><Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'James Carlson' ) }`}>James Carlson</Link></h5>
-                                        <span className="desc">WordPress Expert</span>
+                                        <h5 className="title"><Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'James Carlson' ) }`}>Nirmal Patel</Link></h5>
+                                        <span className="desc">Chief Experience Architect</span>
                                         <div className="team-share-info bg-transparent">
                                             <a className="linkedin" href="#"><i className="icon-linkedin"></i></a>
                                             <a className="facebook" href="#"><i className="icon-Fb"></i></a>
@@ -53,8 +54,8 @@ const HomeOneInstructor = () => {
                                         </Link>
                                     </div>
                                     <div className="edu-instructor-info">
-                                        <h5 className="title"><Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'Nancy Phipps' ) }`}>Nancy Phipps</Link></h5>
-                                        <span className="desc">Digital Marketer</span>
+                                        <h5 className="title"><Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'Nancy Phipps' ) }`}>Heyt Gala</Link></h5>
+                                        <span className="desc">Destination Data Guru</span>
                                         <div className="team-share-info bg-transparent">
                                             <a className="linkedin" href="#"><i className="icon-linkedin"></i></a>
                                             <a className="facebook" href="#"><i className="icon-Fb"></i></a>
@@ -77,8 +78,8 @@ const HomeOneInstructor = () => {
                                         </Link>
                                     </div>
                                     <div className="edu-instructor-info">
-                                        <h5 className="title"><Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'Troy Hall' ) }`}>Troy Hall</Link></h5>
-                                        <span className="desc">PHP Expert</span>
+                                        <h5 className="title"><Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'Troy Hall' ) }`}>Jay Gohel</Link></h5>
+                                        <span className="desc">Tech Visionary & Innovator</span>
                                         <div className="team-share-info bg-transparent">
                                             <a className="linkedin" href="#"><i className="icon-linkedin"></i></a>
                                             <a className="facebook" href="#"><i className="icon-Fb"></i></a>
@@ -101,8 +102,8 @@ const HomeOneInstructor = () => {
                                         </Link>
                                     </div>
                                     <div className="edu-instructor-info">
-                                        <h5 className="title"><Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'Isabelle Bruner' ) }`}>Isabelle Bruner</Link></h5>
-                                        <span className="desc">UI Designer</span>
+                                        <h5 className="title"><Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'Isabelle Bruner' ) }`}>Rishabh Darji</Link></h5>
+                                        <span className="desc">User Interface & Adventure Designer</span>
                                         <div className="team-share-info bg-transparent">
                                             <a className="linkedin" href="#"><i className="icon-linkedin"></i></a>
                                             <a className="facebook" href="#"><i className="icon-Fb"></i></a>
