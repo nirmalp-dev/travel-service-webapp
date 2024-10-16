@@ -28,6 +28,7 @@ nlu:
     - I will leave on [September 30th](travel_date)
     - i want to go to [Paris](destination)
     - Let's plan for [4 Days](days)
+    - [Singapore](destination)
 - intent: request_travel_info
   examples: |
     - I want to plan a trip

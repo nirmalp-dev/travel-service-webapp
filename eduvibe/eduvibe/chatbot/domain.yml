@@ -68,7 +68,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 actions:
-- action_recommend_travel_plan  
+- action_recommend_travel_plan
+- inform_action
 - utter_slots_values
 - utter_goodbye
 - utter_greet
