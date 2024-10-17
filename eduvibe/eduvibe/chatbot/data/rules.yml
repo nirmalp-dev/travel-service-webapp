@@ -11,10 +11,10 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: test rule
-  steps:
-  - intent: inform
-  - action: inform_action
+# - rule: test rule
+#   steps:
+#   - intent: inform
+#   - action: inform_action
 
 - rule: Activate travel form
   steps:
