@@ -75,9 +75,11 @@
     "description": "An exciting adventure in the vibrant capital of Japan, blending traditional culture with modern attractions.",
     "rating": 4.9,
     "tripdays": 3,
+    "numberOfSale": 50,
     "filterParam": "Trending",
     "image": "Japan.jpg",
     "fullimage": "Japan.jpg",
+    "review": 5,
     "days": [
       {
         "day": 1,
@@ -114,6 +116,7 @@
           "Breakfast at The Ritz-Carlton Tokyo",
           "Visit Tokyo Tower",
           "Explore Shibuya Crossing",
+          "Lunch at a local shop",
           "Free evening to explore"
         ]
       },
@@ -127,7 +130,8 @@
           "Farewell dinner"
         ]
       }
-    ]
+    ],
+  "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the fascinating blend of modernity and tradition in Tokyo with this 3-day adventure. From tranquil gardens and historic landmarks to bustling city streets, and a day trip to the iconic Mount Fuji, this itinerary offers a rich experience of Japan's culture and natural beauty.</p><h5>What You'll Experience on This Trip</h5><ul><li>Relaxing stroll in Shinjuku Gyoen National Garden</li><li>Panoramic views from Tokyo Tower</li><li>Cross the famous Shibuya Crossing</li><li>A scenic day trip to Mount Fuji</li><li>Delicious Japanese cuisine and authentic local experiences</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Ritz-Carlton Tokyo, offering breathtaking views of the city skyline and unparalleled comfort in the heart of the city.</p>" 
   },
   {
     "itinerary_id": 3,
@@ -137,9 +141,12 @@
     "description": "Experience the rich history, art, and culinary delights of Rome, from ancient ruins to modern gelato.",
     "rating": 4.7,
     "tripdays": 3,
+    "numberOfSale": 85,
     "filterParam": "Popularity",
     "image": "Italy.jpg",
     "fullimage": "Rome.jpg",
+    "review": 2,
+
     "days": [
       {
         "day": 1,
@@ -176,6 +183,7 @@
           "Breakfast at Hotel de Russie",
           "Visit Vatican City",
           "Explore the Sistine Chapel",
+          "Visiting all the well known churches",
           "Free evening to explore"
         ]
       },
@@ -189,7 +197,8 @@
           "Farewell dinner"
         ]
       }
-    ]
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Uncover the heart of Italy with this 3-day tour of Rome. From the ancient Colosseum to the Vatican's artistic treasures, you'll experience the perfect blend of history, culture, and cuisine in the Eternal City.</p><h5>What You'll Experience on This Trip</h5><ul><li>Walk through the Colosseum and Roman Forum</li><li>Visit the Vatican and admire the Sistine Chapel</li><li>Explore the charming Trastevere neighborhood</li><li>Taste authentic Italian gelato</li><li>Savor exquisite Italian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the elegant Hotel de Russie, a luxury 5-star hotel situated near Piazza del Popolo, offering lush gardens and world-class service.</p>"
   },
   {
     "itinerary_id": 4,
@@ -199,6 +208,7 @@
     "description": "Discover the unique architecture, vibrant culture, and delicious tapas of Barcelona.",
     "rating": 4.6,
     "tripdays": 3,
+    "numberOfSale": 45,
     "filterParam": "Featured",
     "image": "Spain.jpg",
     "fullimage": "Barcelona.jpg",
@@ -251,7 +261,8 @@
           "Farewell dinner"
         ]
       }
-    ]
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Experience the vibrant culture of Barcelona with this 3-day getaway. From the stunning architecture of the Sagrada Familia to the historic charm of the Gothic Quarter, and a scenic day trip to Montserrat, this itinerary offers an immersive exploration of Spain’s Catalonia region.</p><h5>What You'll Experience on This Trip</h5><ul><li>A visit to Gaudí's famous Park Güell</li><li>The iconic Sagrada Familia</li><li>Exploring the medieval streets of the Gothic Quarter</li><li>A day trip to Montserrat and its monastery</li><li>Delicious Spanish cuisine including tapas and local specialties</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Hotel Arts Barcelona, a 5-star beachfront hotel offering stunning views of the Mediterranean Sea and the city skyline.</p>"
   },
   {
     "itinerary_id": 5,
@@ -261,9 +272,11 @@
     "description": "Experience the hustle and bustle of NYC, visiting iconic sites and enjoying diverse cuisine.",
     "rating": 4.8,
     "tripdays": 3,
+    "numberOfSale": 65,
     "filterParam": "Featured",
     "image": "NewYork.jpg",
     "fullimage": "NewYork.jpg",
+    "review": 1,
     "days": [
       {
         "day": 1,
@@ -313,7 +326,8 @@
           "Farewell dinner"
         ]
       }
-    ]
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Discover the energy of New York City with this 3-day adventure. From the lights of Times Square to the grandeur of the Statue of Liberty, and the iconic Central Park, you'll experience the best that NYC has to offer.</p><h5>What You'll Experience on This Trip</h5><ul><li>Times Square's vibrant energy</li><li>A visit to the Statue of Liberty</li><li>Central Park's natural beauty</li><li>A Broadway show experience</li><li>Exquisite New York City cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious The St. Regis New York, a 5-star hotel located in the heart of Manhattan, offering upscale amenities and world-class service.</p>"
   },
   {
     "itinerary_id": 6,
@@ -386,9 +400,12 @@
     "description": "Discover the vibrant culture and stunning beaches of Rio, from Copacabana to Christ the Redeemer.",
     "rating": 4.8,
     "tripdays": 3,
+    "numberOfSale": 75,
     "filterParam": "Popularity",
     "image": "Rio.jpg",
     "fullimage": "Rio.jpg",
+    "review": 2,
+
     "days": [
       {
         "day": 1,
@@ -449,9 +466,12 @@
     "description": "A classic trip to London, exploring history, culture, and iconic landmarks.",
     "rating": 4.9,
     "tripdays": 3,
+    "numberOfSale": 60,
     "filterParam": "Featured",
     "image": "London.jpeg",
     "fullimage": "London.jpeg",
+    "review": 1,
+
     "days": [
       {
         "day": 1,
@@ -512,8 +532,11 @@
     "description": "Explore the vibrant street life, ornate temples, and delicious food of Bangkok.",
     "rating": 4.6,
     "tripdays": 3,
+    "numberOfSale": 60,
     "filterParam": "Trending",
     "image": "Paris.jpeg",
+    "review": 3,
+
     "days": [
       {
         "day": 1,
@@ -574,8 +597,12 @@
     "description": "Experience the imperial culture, stunning architecture, and classical music of Vienna.",
     "rating": 4.7,
     "tripdays": 3,
+    "numberOfSale": 40,
     "filterParam": "Trending",
-    "image": "Paris.jpeg",
+    "image": "Vienna.jpg",
+    "fullimage": "Vienna_full.jpeg",
+    "review": 2,
+    
     "days": [
       {
         "day": 1,
@@ -627,7 +654,7 @@
       }
     ],
     "details": "<h5>Itinerary Description</h5><p>Discover the imperial charm and rich musical heritage of Vienna with this captivating 3-day itinerary. Experience stunning architecture, explore grand palaces, and enjoy classical concerts that make Vienna a cultural hub of Europe.</p><h5>What You'll Experience on This Trip</h5><ul><li>A guided tour of Schönbrunn Palace, a UNESCO World Heritage site</li><li>Visit to the opulent Belvedere Palace</li><li>An evening at the renowned Vienna State Opera</li><li>A picturesque day trip to Wachau Valley, famous for its vineyards and charming towns</li><li>Authentic Viennese cuisine and exquisite dining experiences</li></ul><h5>Accommodation</h5><p>Stay at Hotel Sacher, an iconic luxury hotel known for its historic significance and exceptional service, located in the heart of Vienna, providing the perfect base for your exploration of this magnificent city.</p>"
-  },
+  },  
   {
     "itinerary_id": 11,
     "destination": "Cairo, Egypt",
@@ -636,8 +663,12 @@
     "description": "Discover the ancient wonders of Egypt, including the Pyramids of Giza and the Sphinx.",
     "rating": 4.8,
     "tripdays": 3,
+    "numberOfSale": 45,
     "filterParam": "Featured",
-    "image": "Paris.jpeg",
+    "image": "Cairo.jpg",
+    "fullimage": "Cairo.jpeg",
+    "review": 1,
+  
     "days": [
       {
         "day": 1,
@@ -657,8 +688,44 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Four Seasons Hotel Cairo"
       }
-    ]
-  },
+    ],
+    
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Giza Plateau",
+        "content": [
+          "Welcome to Cairo",
+          "Check-in at Four Seasons Hotel Cairo",
+          "Tour of the Giza Plateau",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Museums and Markets",
+        "content": [
+          "Breakfast at the hotel",
+          "Visit to the Egyptian Museum",
+          "Lunch at a local Egyptian restaurant",
+          "Explore Khan El Khalili bazaar",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Luxor Day Trip",
+        "content": [
+          "Breakfast at the hotel",
+          "Fly to Luxor",
+          "Tour of the Valley of the Kings",
+          "Lunch in Luxor",
+          "Explore the Karnak Temple",
+          "Return to Cairo in the evening",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    
+    "details": "<h5>Itinerary Description</h5><p>Explore the ancient history of Egypt with this 3-day adventure. From the monumental Pyramids of Giza to the awe-inspiring Valley of the Kings, and bustling markets like Khan El Khalili, this itinerary offers a comprehensive look at Egypt's most iconic landmarks.</p><h5>What You'll Experience on This Trip</h5><ul><li>The grand Pyramids of Giza and the Sphinx</li><li>Ancient treasures at the Egyptian Museum</li><li>A vibrant shopping experience at Khan El Khalili bazaar</li><li>A day trip to Luxor, home to the Valley of the Kings and Karnak Temple</li><li>Delicious Egyptian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Four Seasons Hotel Cairo, offering comfort and stunning views of the Nile.</p>"
+  },  
   {
     "itinerary_id": 12,
     "destination": "Istanbul, Turkey",
@@ -667,8 +734,12 @@
     "description": "Explore the rich history and vibrant culture of Istanbul, where East meets West.",
     "rating": 4.7,
     "tripdays": 3,
+    "numberOfSale": 40,
     "filterParam": "Popularity",
-    "image": "Paris.jpeg",
+    "image": "Istanbul.jpg",
+    "fullimage": "Istanbul.jpeg",
+    "review": 1,
+  
     "days": [
       {
         "day": 1,
@@ -688,7 +759,42 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Ciragan Palace Kempinski"
       }
-    ]
+    ],
+  
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Hagia Sophia",
+        "content": [
+          "Welcome to Istanbul",
+          "Check-in at Ciragan Palace Kempinski",
+          "Visit to Hagia Sophia",
+          "Evening dinner at a local restaurant"
+        ]
+      },
+      {
+        "title": "Day 2: Palaces and Bazaars",
+        "content": [
+          "Breakfast at Ciragan Palace Kempinski",
+          "Explore Topkapi Palace",
+          "Lunch at a traditional Turkish restaurant",
+          "Shopping at the Grand Bazaar",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Cappadocia Adventure",
+        "content": [
+          "Breakfast at Ciragan Palace Kempinski",
+          "Day trip to Cappadocia",
+          "Hot air balloon ride over the fairy chimneys",
+          "Explore the underground cities",
+          "Lunch at a local Cappadocian restaurant",
+          "Return to Istanbul for a farewell dinner"
+        ]
+      }
+    ],
+  
+    "details": "<h5>Itinerary Description</h5><p>Discover the vibrant culture of Istanbul, where East meets West. This 3-day journey takes you through historical landmarks like Hagia Sophia, the majestic Topkapi Palace, and the bustling Grand Bazaar. You'll also enjoy a magical day trip to the stunning landscapes of Cappadocia.</p><h5>What You'll Experience on This Trip</h5><ul><li>Marvel at Hagia Sophia's architectural splendor</li><li>Explore the palatial Topkapi Palace</li><li>Shop for treasures at the Grand Bazaar</li><li>Experience Cappadocia's fairy chimneys and underground cities</li><li>Savor authentic Turkish cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Ciragan Palace Kempinski, a 5-star hotel on the Bosphorus with breathtaking views of Istanbul.</p>"
   },
   {
     "itinerary_id": 13,
@@ -698,8 +804,12 @@
     "description": "Experience the modern marvels and rich heritage of Singapore, from Gardens by the Bay to Little India.",
     "rating": 4.8,
     "tripdays": 3,
+    "numberOfSale": 65,
     "filterParam": "Popularity",
-    "image": "Paris.jpeg",
+    "image": "Singapore.jpg",
+    "fullimage": "Singaporefull.jpeg",
+    "review": 1,
+    
     "days": [
       {
         "day": 1,
@@ -719,7 +829,42 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Marina Bay Sands"
       }
-    ]
+    ],
+  
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Marina Bay Sands",
+        "content": [
+          "Welcome to Singapore",
+          "Check-in at Marina Bay Sands",
+          "Evening visit to Marina Bay Sands SkyPark",
+          "Dinner at a fine dining restaurant"
+        ]
+      },
+      {
+        "title": "Day 2: Sentosa Island and Universal Studios",
+        "content": [
+          "Breakfast at Marina Bay Sands",
+          "Full day at Sentosa Island",
+          "Visit Universal Studios Singapore",
+          "Enjoy thrilling rides and shows",
+          "Free evening to explore Sentosa"
+        ]
+      },
+      {
+        "title": "Day 3: Chinatown and Orchard Road",
+        "content": [
+          "Breakfast at Marina Bay Sands",
+          "Morning visit to Chinatown",
+          "Explore the vibrant streets and markets",
+          "Lunch at a local eatery",
+          "Afternoon shopping on Orchard Road",
+          "Farewell dinner"
+        ]
+      }
+    ],
+  
+    "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the vibrant city of Singapore with this 3-day journey. From the iconic Marina Bay Sands to the exciting Sentosa Island, this itinerary blends modern attractions with Singapore's rich heritage.</p><h5>What You'll Experience on This Trip</h5><ul><li>Panoramic views from Marina Bay Sands SkyPark</li><li>Thrilling rides at Universal Studios Singapore</li><li>Exploring the cultural heart of Chinatown</li><li>Shopping at the world-famous Orchard Road</li><li>Indulging in Singapore's diverse cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Marina Bay Sands, one of the most iconic hotels in the world, with its rooftop infinity pool and breathtaking views of the city skyline.</p>"
   },
   {
     "itinerary_id": 14,
@@ -729,8 +874,12 @@
     "description": "Experience the luxury and modernity of Dubai, from the Burj Khalifa to desert safaris.",
     "rating": 4.9,
     "tripdays": 3,
+    "numberOfSale": 75,
     "filterParam": "Popularity",
-    "image": "Paris.jpeg",
+    "image": "Dubai.jpg",
+    "fullimage": "Dubai.jpeg",
+    "review": 1,
+  
     "days": [
       {
         "day": 1,
@@ -750,7 +899,40 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Burj Al Arab"
       }
-    ]
+    ],
+  
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Burj Khalifa",
+        "content": [
+          "Welcome to Dubai",
+          "Check-in at Burj Al Arab",
+          "Burj Khalifa tour",
+          "Dinner at an exclusive rooftop restaurant"
+        ]
+      },
+      {
+        "title": "Day 2: Desert Adventure and Dubai Marina",
+        "content": [
+          "Breakfast at Burj Al Arab",
+          "Desert safari with camel rides and dune bashing",
+          "Lunch at a traditional Bedouin camp",
+          "Evening at Dubai Marina"
+        ]
+      },
+      {
+        "title": "Day 3: Shopping and Waterpark Fun",
+        "content": [
+          "Breakfast at Burj Al Arab",
+          "Visit to Dubai Mall for shopping and indoor entertainment",
+          "Lunch at a world-class restaurant",
+          "Afternoon at Atlantis Aquaventure Waterpark",
+          "Farewell dinner"
+        ]
+      }
+    ],
+  
+    "details": "<h5>Itinerary Description</h5><p>Discover the best of Dubai in this 3-day luxury getaway. Explore the iconic Burj Khalifa, experience thrilling desert safaris, and indulge in the city's modern attractions like Dubai Mall and the Atlantis Aquaventure Waterpark.</p><h5>What You'll Experience on This Trip</h5><ul><li>Breathtaking views from the Burj Khalifa</li><li>Adventure-filled desert safari</li><li>Shopping at the largest mall in the world, Dubai Mall</li><li>Fun at the Atlantis Aquaventure Waterpark</li><li>Exquisite meals and 7-star luxury accommodation</li></ul><h5>Accommodation</h5><p>Stay at the iconic Burj Al Arab, one of the world's most luxurious hotels, offering breathtaking views of the Arabian Gulf.</p>"
   },
   {
     "itinerary_id": 15,
@@ -760,9 +942,12 @@
     "description": "Explore the picturesque canals, rich art scene, and vibrant culture of Amsterdam.",
     "rating": 4.6,
     "tripdays": 3,
+    "numberOfSale": 40,
     "filterParam": "Trending",
     "image": "Amsterdam.jpg",
-    "fullimage": "Amsterdam.jpg",
+    "fullimage": "Amsterdam.jpeg",
+    "review": 1,
+  
     "days": [
       {
         "day": 1,
@@ -782,7 +967,41 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Hotel Pulitzer Amsterdam"
       }
-    ]
+    ],
+  
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Anne Frank House",
+        "content": [
+          "Welcome to Amsterdam",
+          "Check-in at Hotel Pulitzer Amsterdam",
+          "Visit to the Anne Frank House",
+          "Evening dinner at a local restaurant"
+        ]
+      },
+      {
+        "title": "Day 2: Art Tour",
+        "content": [
+          "Breakfast at Hotel Pulitzer",
+          "Visit to Van Gogh Museum",
+          "Lunch at a local café",
+          "Explore Rijksmuseum",
+          "Free evening to enjoy the city"
+        ]
+      },
+      {
+        "title": "Day 3: Canal Cruise and Jordaan District",
+        "content": [
+          "Breakfast at Hotel Pulitzer",
+          "Morning canal cruise",
+          "Lunch in the Jordaan district",
+          "Explore Jordaan's local markets and shops",
+          "Farewell dinner"
+        ]
+      }
+    ],
+  
+    "details": "<h5>Itinerary Description</h5><p>Discover the charm of Amsterdam with this 3-day trip that highlights the city's iconic canals, world-class museums, and historic landmarks. Immerse yourself in the vibrant culture while staying at the luxurious Hotel Pulitzer.</p><h5>What You'll Experience on This Trip</h5><ul><li>Visit the historic Anne Frank House</li><li>Explore masterpieces at the Van Gogh Museum and Rijksmuseum</li><li>Relax on a scenic canal cruise</li><li>Wander through the trendy Jordaan district</li><li>Enjoy Dutch cuisine and local delicacies</li></ul><h5>Accommodation</h5><p>Stay at Hotel Pulitzer Amsterdam, a luxurious 5-star hotel with stunning views of the Amsterdam canals and a perfect blend of modern comfort and classic charm.</p>"
   },
   {
     "itinerary_id": 16,
@@ -792,9 +1011,12 @@
     "description": "Discover the stunning landscapes, rich culture, and delicious cuisine of Lisbon.",
     "rating": 4.7,
     "tripdays": 3,
+    "numberOfSale": 35,
     "filterParam": "Trending",
     "image": "Lisbon.jpg",
     "fullimage": "Lisbon.jpg",
+    "review": 1,
+  
     "days": [
       {
         "day": 1,
@@ -814,7 +1036,43 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Pestana Palace Lisboa"
       }
-    ]
+    ],
+  
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Alfama District",
+        "content": [
+          "Welcome to Lisbon",
+          "Check-in at Pestana Palace Lisboa",
+          "Explore the historic Alfama district",
+          "Evening dinner at a traditional Portuguese restaurant"
+        ]
+      },
+      {
+        "title": "Day 2: Historic Landmarks of Lisbon",
+        "content": [
+          "Breakfast at Pestana Palace Lisboa",
+          "Visit to Belém Tower",
+          "Explore Jerónimos Monastery",
+          "Lunch at a local seafood restaurant",
+          "Free evening to enjoy the nightlife"
+        ]
+      },
+      {
+        "title": "Day 3: Sintra Day Trip",
+        "content": [
+          "Breakfast at Pestana Palace Lisboa",
+          "Day trip to Sintra",
+          "Tour of the Pena Palace and Quinta da Regaleira",
+          "Explore Sintra’s scenic landscapes",
+          "Lunch in Sintra’s town square",
+          "Return to Lisbon",
+          "Farewell dinner"
+        ]
+      }
+    ],
+  
+    "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the charm of Lisbon with this 3-day adventure. From the historic Alfama district to the iconic Belém Tower and a breathtaking day trip to Sintra, this itinerary offers a perfect blend of cultural exploration and Portuguese heritage.</p><h5>What You'll Experience on This Trip</h5><ul><li>Wandering through the ancient streets of Alfama</li><li>Visiting the majestic Belém Tower and Jerónimos Monastery</li><li>A day exploring the picturesque town of Sintra</li><li>Savoring authentic Portuguese cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Pestana Palace Lisboa, a 5-star hotel with opulent decor and a stunning view of Lisbon’s skyline.</p>"
   },
   {
     "itinerary_id": 17,
@@ -824,9 +1082,12 @@
     "description": "Experience the dynamic culture and modern attractions of Seoul, from palaces to bustling markets.",
     "rating": 4.8,
     "tripdays": 3,
+    "numberOfSale": 45,
     "filterParam": "Featured",
     "image": "Seoul.jpg",
     "fullimage": "Seoul.jpg",
+    "review": 1,
+  
     "days": [
       {
         "day": 1,
@@ -846,7 +1107,42 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "The Shilla Seoul"
       }
-    ]
+    ],
+  
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Palace Tour",
+        "content": [
+          "Welcome to Seoul",
+          "Check-in at The Shilla Seoul",
+          "Tour of Gyeongbokgung Palace",
+          "Dinner at a traditional Korean restaurant"
+        ]
+      },
+      {
+        "title": "Day 2: Culture and Cityscape",
+        "content": [
+          "Breakfast at The Shilla Seoul",
+          "Visit to Bukchon Hanok Village",
+          "Lunch at a local Korean BBQ spot",
+          "Visit to N Seoul Tower for panoramic city views",
+          "Free evening to explore Myeongdong"
+        ]
+      },
+      {
+        "title": "Day 3: DMZ Day Trip",
+        "content": [
+          "Breakfast at The Shilla Seoul",
+          "Day trip to the Demilitarized Zone (DMZ)",
+          "Guided tour of key sites like the 3rd Tunnel and Dora Observatory",
+          "Lunch at a local restaurant near the DMZ",
+          "Return to Seoul",
+          "Farewell dinner"
+        ]
+      }
+    ],
+  
+    "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the vibrant culture and history of Seoul with this 3-day getaway. From exploring ancient palaces to visiting modern attractions like N Seoul Tower, this itinerary blends the best of Seoul's past and present. A day trip to the famous Demilitarized Zone (DMZ) will add a unique historical experience to your journey.</p><h5>What You'll Experience on This Trip</h5><ul><li>Explore the grandeur of Gyeongbokgung Palace</li><li>Stroll through the traditional Bukchon Hanok Village</li><li>Get panoramic views of the city from N Seoul Tower</li><li>Take a fascinating day trip to the DMZ</li><li>Savor delicious Korean cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious The Shilla Seoul, a 5-star hotel renowned for its excellent service and prime location, offering a perfect base to explore the city.</p>"
   },
   {
     "itinerary_id": 18,
@@ -854,11 +1150,14 @@
     "arrival": "2024-12-20",
     "cost": 1750,
     "description": "Immerse yourself in the rich traditions, stunning temples, and serene gardens of Kyoto.",
-    "rating": 4.8,
+    "rating": 4.9,
     "tripdays": 3,
+    "numberOfSale": 35,
     "filterParam": "Trending",
     "image": "Kyoto.jpg",
-    "fullimage": "Kyoto.jpg",
+    "fullimage": "Kyoto.jpeg",
+    "review": 1,
+    
     "days": [
       {
         "day": 1,
@@ -878,7 +1177,40 @@
         "meals_included": "Breakfast",
         "hotel": "The Ritz-Carlton Kyoto"
       }
-    ]
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Fushimi Inari Shrine",
+        "content": [
+          "Welcome to Kyoto",
+          "Check-in at The Ritz-Carlton Kyoto",
+          "Visit to Fushimi Inari Shrine",
+          "Dinner at a traditional Kaiseki restaurant"
+        ]
+      },
+      {
+        "title": "Day 2: Temples and Bamboo Grove",
+        "content": [
+          "Breakfast at The Ritz-Carlton Kyoto",
+          "Visit to the Golden Pavilion (Kinkaku-ji)",
+          "Stroll through Arashiyama Bamboo Grove",
+          "Lunch at a local tea house",
+          "Free evening to explore Gion district"
+        ]
+      },
+      {
+        "title": "Day 3: Castles and Philosophical Walk",
+        "content": [
+          "Breakfast at The Ritz-Carlton Kyoto",
+          "Tour of Nijo Castle",
+          "Walk along the Philosopher's Path",
+          "Lunch at a riverside café",
+          "Return to Kyoto city center",
+          "Farewell dinner at a Michelin-starred restaurant"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Explore the tranquil beauty of Kyoto with this 3-day cultural immersion. Discover iconic temples, scenic gardens, and the historic Philosopher's Path, while enjoying the best of traditional Japanese cuisine and hospitality.</p><h5>What You'll Experience on This Trip</h5><ul><li>The vibrant Fushimi Inari Shrine with its iconic torii gates</li><li>The Golden Pavilion and serene Arashiyama Bamboo Grove</li><li>Historical insights at Nijo Castle</li><li>A reflective walk along the Philosopher's Path</li><li>Exceptional dining at traditional and Michelin-starred restaurants</li></ul><h5>Accommodation</h5><p>Stay at the luxurious The Ritz-Carlton Kyoto, a 5-star hotel offering views of the Kamogawa River and nearby mountains.</p>"
   },
   {
     "itinerary_id": 19,
@@ -888,9 +1220,12 @@
     "description": "Explore the vibrant multicultural city of Toronto, from the CN Tower to diverse neighborhoods.",
     "rating": 4.6,
     "tripdays": 3,
+    "numberOfSale": 45,
     "filterParam": "Trending",
     "image": "Toronto.jpg",
     "fullimage": "Toronto.jpg",
+    "review": 1,
+    
     "days": [
       {
         "day": 1,
@@ -910,7 +1245,39 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Shangri-La Toronto"
       }
-    ]
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and CN Tower",
+        "content": [
+          "Welcome to Toronto",
+          "Check-in at Shangri-La Toronto",
+          "CN Tower visit",
+          "Dinner at the revolving 360 Restaurant"
+        ]
+      },
+      {
+        "title": "Day 2: Museums and Local Culture",
+        "content": [
+          "Breakfast at Shangri-La",
+          "Visit to the Royal Ontario Museum",
+          "Lunch at St. Lawrence Market",
+          "Tour of the Distillery District",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Niagara Falls Day Trip",
+        "content": [
+          "Breakfast at Shangri-La",
+          "Day trip to Niagara Falls",
+          "Lunch at a local restaurant",
+          "Return to Toronto",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Discover the cultural diversity and exciting landmarks of Toronto with this 3-day city escape. Visit the iconic CN Tower, explore world-class museums, and take a scenic day trip to Niagara Falls.</p><h5>What You'll Experience on This Trip</h5><ul><li>Breathtaking views from the CN Tower</li><li>Royal Ontario Museum’s fascinating exhibits</li><li>Charming cobblestone streets of the Distillery District</li><li>A spectacular day at Niagara Falls</li><li>Diverse and flavorful cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Shangri-La Toronto, located in the heart of the city.</p>"
   },
   {
     "itinerary_id": 20,
@@ -920,9 +1287,12 @@
     "description": "Experience the vibrant culture and stunning beaches of Rio de Janeiro.",
     "rating": 4.7,
     "tripdays": 3,
+    "numberOfSale": 60,
     "filterParam": "Popularity",
     "image": "Rio.jpg",
     "fullimage": "Rio.jpg",
+    "review": 1,
+    
     "days": [
       {
         "day": 1,
@@ -942,7 +1312,40 @@
         "meals_included": "Breakfast, Lunch",
         "hotel": "Copacabana Palace"
       }
-    ]
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Copacabana Beach",
+        "content": [
+          "Welcome to Rio de Janeiro",
+          "Check-in at Copacabana Palace",
+          "Relax on Copacabana Beach",
+          "Dinner at a beachfront restaurant"
+        ]
+      },
+      {
+        "title": "Day 2: Landmarks and Culture",
+        "content": [
+          "Breakfast at Copacabana Palace",
+          "Tour of Sugarloaf Mountain",
+          "Lunch in a local Brazilian restaurant",
+          "Visit to Christ the Redeemer",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Tijuca National Park",
+        "content": [
+          "Breakfast at Copacabana Palace",
+          "Day trip to Tijuca National Park",
+          "Guided tour of the park’s waterfalls",
+          "Lunch in the forest",
+          "Return to Rio",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the excitement of Rio de Janeiro with this 3-day itinerary. Relax on Copacabana Beach, take in stunning views from Sugarloaf Mountain, and visit the world-famous Christ the Redeemer statue. A day trip to Tijuca National Park offers a serene escape into nature.</p><h5>What You'll Experience on This Trip</h5><ul><li>Relaxing on the sandy shores of Copacabana Beach</li><li>Stunning views from Sugarloaf Mountain</li><li>Awe-inspiring Christ the Redeemer statue</li><li>Exploring the lush Tijuca National Park</li><li>Sampling traditional Brazilian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the elegant Copacabana Palace, offering luxurious accommodations and top-notch service.</p>"
   }
 
 ]
