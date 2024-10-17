@@ -80,6 +80,7 @@
     "image": "Japan.jpg",
     "fullimage": "Japan.jpg",
     "review": 5,
+
     "days": [
       {
         "day": 1,
@@ -212,6 +213,8 @@
     "filterParam": "Featured",
     "image": "Spain.jpg",
     "fullimage": "Barcelona.jpg",
+    "review": 3,
+
     "days": [
       {
         "day": 1,
@@ -277,6 +280,7 @@
     "image": "NewYork.jpg",
     "fullimage": "NewYork.jpg",
     "review": 1,
+
     "days": [
       {
         "day": 1,
@@ -337,9 +341,12 @@
     "description": "Explore the stunning landscapes, beaches, and culture of Sydney, from the Opera House to Bondi Beach.",
     "rating": 4.7,
     "tripdays": 3,
+    "numberOfSale": 50,
     "filterParam": "Popularity",
     "image": "Sydney.jpeg",
     "fullimage": "Sydney.jpeg",
+    "review": 2,
+
     "days": [
       {
         "day": 1,
@@ -534,8 +541,9 @@
     "tripdays": 3,
     "numberOfSale": 60,
     "filterParam": "Trending",
-    "image": "Paris.jpeg",
-    "review": 3,
+    "image": "Bangkok.jpg",
+    "fullimage": "Bangkok.jpg",
+    "review": 1,
 
     "days": [
       {
@@ -600,7 +608,7 @@
     "numberOfSale": 40,
     "filterParam": "Trending",
     "image": "Vienna.jpg",
-    "fullimage": "Vienna_full.jpeg",
+    "fullimage": "Vienna.jpg",
     "review": 2,
     
     "days": [
@@ -666,7 +674,7 @@
     "numberOfSale": 45,
     "filterParam": "Featured",
     "image": "Cairo.jpg",
-    "fullimage": "Cairo.jpeg",
+    "fullimage": "Cairo.jpg",
     "review": 1,
   
     "days": [
@@ -737,7 +745,7 @@
     "numberOfSale": 40,
     "filterParam": "Popularity",
     "image": "Istanbul.jpg",
-    "fullimage": "Istanbul.jpeg",
+    "fullimage": "Istanbul.jpg",
     "review": 1,
   
     "days": [
@@ -807,7 +815,7 @@
     "numberOfSale": 65,
     "filterParam": "Popularity",
     "image": "Singapore.jpg",
-    "fullimage": "Singaporefull.jpeg",
+    "fullimage": "Singapore.jpg",
     "review": 1,
     
     "days": [
@@ -877,7 +885,7 @@
     "numberOfSale": 75,
     "filterParam": "Popularity",
     "image": "Dubai.jpg",
-    "fullimage": "Dubai.jpeg",
+    "fullimage": "Dubai.jpg",
     "review": 1,
   
     "days": [
@@ -945,7 +953,7 @@
     "numberOfSale": 40,
     "filterParam": "Trending",
     "image": "Amsterdam.jpg",
-    "fullimage": "Amsterdam.jpeg",
+    "fullimage": "Amsterdam.jpg",
     "review": 1,
   
     "days": [
@@ -1155,7 +1163,7 @@
     "numberOfSale": 35,
     "filterParam": "Trending",
     "image": "Kyoto.jpg",
-    "fullimage": "Kyoto.jpeg",
+    "fullimage": "Kyoto.jpg",
     "review": 1,
     
     "days": [
