@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 import { FaPlay } from 'react-icons/fa';
-import CourseTypeFilter from '../../components/course/CourseTypeFilter';
+import TravelPlanFilter from '../course/TravelPlanFilter';
 
 const HomeTwoCourses = () => {
     const [toggler, setToggler] = useState( false );
@@ -10,7 +10,7 @@ const HomeTwoCourses = () => {
         <>
             <div className="edu-course-area eduvibe-home-two-course course-three-wrapper edu-section-gap bg-color-white">
                 <div className="container eduvibe-animated-shape">
-                    <CourseTypeFilter />
+                    <TravelPlanFilter />
                     <div className="row">
                         <div className="col-lg-10 offset-lg-1">
                             <div className="video-gallery-wrapper edu-section-gapTop video-section-overlayto-another">

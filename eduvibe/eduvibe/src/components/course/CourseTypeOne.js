@@ -16,7 +16,7 @@ const CourseTypeOne = ({ data, classes }) => {
         <div className={`edu-card card-type-3 radius-small ${ classes ? classes : '' }`}>
             <div className="inner">
                 <div className="thumbnail">
-                    <Link to={process.env.PUBLIC_URL + `/course-details/${data.itinerary_id}`}>
+                    <Link to={process.env.PUBLIC_URL + `/course-details/${data._id}`}>
                         <img className="w-100" src={`${process.env.PUBLIC_URL}/images/travelplaces/${data.image}`} alt="Course Thumb" />
                     </Link>
                     <div className="wishlist-top-right">
@@ -50,7 +50,7 @@ const CourseTypeOne = ({ data, classes }) => {
                     </div>
                     
                     <h6 className="title">
-                        <Link to={process.env.PUBLIC_URL + `/course-details/${data.itinerary_id}`}>{data.destination}</Link>
+                        <Link to={process.env.PUBLIC_URL + `/course-details/${data._id}`}>{data.destination}</Link>
                     </h6>
                     <div className="card-bottom">
                         <div className="price-list price-style-02">
@@ -86,7 +86,7 @@ const CourseTypeOne = ({ data, classes }) => {
                     </div>
 
                     <h6 className="title">
-                        <Link to={process.env.PUBLIC_URL + `/course-details/${data.itinerary_id}`}>{data.destination}</Link>
+                        <Link to={process.env.PUBLIC_URL + `/course-details/${data._id}`}>{data.destination}</Link>
                     </h6>
 
                     <p className="description">{ data.description }</p>
@@ -111,7 +111,7 @@ const CourseTypeOne = ({ data, classes }) => {
                     </div>
                     */}
                     <div className="read-more-btn">
-                        <Link className="edu-btn btn-medium btn-white" to={process.env.PUBLIC_URL + `/course-details/${data.itinerary_id}`}>
+                        <Link className="edu-btn btn-medium btn-white" to={process.env.PUBLIC_URL + `/course-details/${data._id}`}>
                             Enroll Now<i className="icon-arrow-right-line-right"></i>
                         </Link>
                     </div>

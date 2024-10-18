@@ -49,7 +49,7 @@ stories:
   - action: utter_slots_values
   - action: action_recommend_travel_plan
   - action: utter_thank_you # Add thank you response at the end
-  - action: reset_slots
+  - action: action_restart
 
 # - story: interactive_story_1
 #   steps:

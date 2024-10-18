@@ -50,7 +50,7 @@ responses:
   utter_greet:
   - text: "Hello! How can I help you today?"
   utter_thank_you:
-  - text: "Thank you for talking with me!"
+  - text: "Thank you! Let me know if you need more help."
   utter_slots_values:
   - text: "Here are the details of your trip: Destination: {destination}, Days: {days}, Travel Date: {travel_date}."
   utter_goodbye:
@@ -71,7 +71,6 @@ session_config:
   carry_over_slots_to_new_session: true
 actions:
 - action_recommend_travel_plan  
-- reset_slots
 - utter_slots_values
 - utter_goodbye
 - utter_greet
