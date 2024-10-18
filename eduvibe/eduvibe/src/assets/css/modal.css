@@ -1,0 +1,58 @@
+/* Overlay for modal */
+.custom-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.custom-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Modal buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.modal-close-btn, .modal-confirm-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-close-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.modal-confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hover effects */
+.modal-close-btn:hover {
+    background-color: #d32f2f;
+}
+
+.modal-confirm-btn:hover {
+    background-color: #388e3c;
+}
