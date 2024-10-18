@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
+import axiosClient from '../../utils/axiosClient'; // Adjust the path as needed
+import '../../assets/css/modal.css';
 
 const CourseInfo = ( { data }) => {
     const [toggler, setToggler] = useState(false);
@@ -29,12 +31,30 @@ const CourseInfo = ( { data }) => {
             [name]: value
         });
     };
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // You can process or send the formData to an API here
-        console.log(formData);
-        // Close the modal after submission
-        closeModal();
+        try {
+            const orderCreate = {
+                name: formData.name,
+                age: parseInt(formData.age),
+                passport_number: formData.passportNumber,
+                credit_card_number: formData.creditCard,
+                address: formData.address
+            };
+            try {
+                const addToCartResponse = await axiosClient.post('http://localhost:8000/cart/add', {'package_id': data._id});
+            } catch (error){
+                console.log(error);
+            }
+            const response = await axiosClient.post('http://localhost:8000/order/checkout', orderCreate);
+            console.log('Order created:', response.data);
+            alert("Your trip has been booked !!")
+            // Handle successful order creation (e.g., show a success message, redirect to order confirmation page)
+            closeModal();
+        } catch (error) {
+            console.error('Error creating order:', error);
+            // Handle error (e.g., show error message to user)
+        }
     };
 
     return (
@@ -91,7 +111,9 @@ const CourseInfo = ( { data }) => {
                     <div className="custom-modal-content bg-color-white edu-section-gap">
                         <div className="container">
                             <div className="row g-5">
-                                
+                                <div className="col-lg-12">
+                                    <h4>Enter Your Details</h4>
+                                </div>
                             </div>
                             <div className="row g-5">
                                 <div className="col-lg-12">
@@ -104,50 +126,67 @@ const CourseInfo = ( { data }) => {
                                             onChange={handleChange}
                                         />
 
-                                        <div className="form-group">
-                                            <label>Name:</label>
-                                            <input
-                                                type="text"
-                                                name="name"
-                                                value={formData.name}
-                                                onChange={handleChange}
-                                                required
-                                                className="form-control"
-                                            />
+                                        {/* Name and Age on one row */}
+                                        <div className="row g-3">
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                    <label>Name:</label>
+                                                    <input
+                                                        type="text"
+                                                        name="name"
+                                                        value={formData.name}
+                                                        onChange={handleChange}
+                                                        required
+                                                        className="form-control"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                    <label>Age:</label>
+                                                    <input
+                                                        type="number"
+                                                        name="age"
+                                                        value={formData.age}
+                                                        onChange={handleChange}
+                                                        required
+                                                        className="form-control"
+                                                    />
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="form-group">
-                                            <label>Age:</label>
-                                            <input
-                                                type="number"
-                                                name="age"
-                                                value={formData.age}
-                                                onChange={handleChange}
-                                                required
-                                                className="form-control"
-                                            />
+
+                                        {/* Credit Card Number and Passport Number on another row */}
+                                        <div className="row g-3">
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                    <label>Credit Card Number:</label>
+                                                    <input
+                                                        type="number"
+                                                        name="creditCard"
+                                                        value={formData.creditCard}
+                                                        onChange={handleChange}
+                                                        required
+                                                        className="form-control"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="col-lg-6">
+                                                <div className="form-group">
+                                                    <label>Passport Number:</label>
+                                                    <input
+                                                        type="text"
+                                                        name="passportNumber"
+                                                        value={formData.passportNumber}
+                                                        onChange={handleChange}
+                                                        required
+                                                        className="form-control"
+                                                    />
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="form-group">
-                                            <label>Credit Card Number:</label>
-                                            <input
-                                                type="number"
-                                                name="creditCard"
-                                                value={formData.creditCard}
-                                                onChange={handleChange}
-                                                required
-                                                className="form-control"
-                                            />
-                                        </div>
-                                        <div className="form-group">
-                                            <label>Passport Number:</label>
-                                            <input
-                                                type="text"
-                                                name="passportNumber"
-                                                value={formData.passportNumber}
-                                                onChange={handleChange}
-                                                required
-                                                className="form-control"
-                                            />
-                                        </div>
+
+                                        {/* Address field */}
                                         <div className="form-group">
                                             <label>Address:</label>
                                             <input
@@ -159,9 +198,11 @@ const CourseInfo = ( { data }) => {
                                                 className="form-control"
                                             />
                                         </div>
+
+                                        {/* Modal buttons */}
                                         <div className="modal-buttons mt--30 text-center">
                                             <button onClick={closeModal} type="button" className="edu-btn btn-bg-alt w-100 text-center">Cancel</button>
-                                            <button type="submit" className="edu-btn w-100 text-center mt--10">Submit</button>
+                                            <button type="submit" className="edu-btn w-100 ml--10 text-center">Submit</button>
                                         </div>
                                     </form>
                                 </div>
