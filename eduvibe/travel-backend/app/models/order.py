@@ -13,6 +13,8 @@ class OrderItem(BaseModel):
 
 class OrderCreate(BaseModel):
     name: str
+    age: int
+    passport_number: str
     credit_card_number: str
     address: str
 
