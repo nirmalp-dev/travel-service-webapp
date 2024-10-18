@@ -7,7 +7,7 @@ import CourseTypeFilter from '../../components/course/CourseTypeFilter';
 const TripPlans = () => {
     return (
         <>
-            <SEO title="Course Filter 1" />
+            <SEO title="Trip Plans" />
             <Layout>
                 <BreadcrumbOne 
                     title="Trip Plans"
@@ -15,7 +15,7 @@ const TripPlans = () => {
                     parentUrl="Home"
                     currentUrl="Trip Plans"
                 />
-                    <div className="edu-course-area course-three-wrapper bg-color-white position-relative">
+                    <div className="edu-course-area course-three-wrapper edu-section-gap bg-color-white position-relative">
                         <div className="container">
                             <CourseTypeFilter showLoadMore="enable" />
                         </div>
