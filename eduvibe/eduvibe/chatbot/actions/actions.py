@@ -59,7 +59,7 @@ class ActionRecommendTravelPlan(Action):
                 # Prepare a response message
                 response_messages = []
                 for package in matching_packages:
-                    web_link = f"http://localhost:3000/course-details/{str(package['_id'])}"
+                    web_link = f"http://localhost:3000/package-details/{str(package['_id'])}"
                     message = (
                         f"I found a travel plan to {package['destination']} for {package['tripdays']} days. "
                         f"It costs ${package['cost']} and includes: {package['description']} "

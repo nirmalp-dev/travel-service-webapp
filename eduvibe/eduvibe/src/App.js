@@ -29,7 +29,7 @@ import ContactUs from './pages/innerpages/ContactUs';
 //import CourseFive from './pages/course/CourseFive';
 import TripPlans from './pages/course/TripPlans';
 //import CourseCategoryArchive from './pages/archive/CourseCategoryArchive';
-import CourseDetails from './pages/detailspages/CourseDetails';
+import PackageDetails from './pages/detailspages/PackageDetails';
 //import CourseDetailsTwo from './pages/detailspages/CourseDetailsTwo';
 //import EventGrid from './pages/innerpages/EventGrid';
 //import EventList from './pages/innerpages/EventList';
@@ -85,7 +85,7 @@ function App() {
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-carousel'}`} element={<CourseCarousel/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-load-more'}`} element={<CourseLoadMore/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-category/:slug'}`} element={<CourseCategoryArchive/>}/>*/}
-                    <Route exact path={`${process.env.PUBLIC_URL + '/course-details/:id'}`} element={<CourseDetails/>}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/package-details/:id'}`} element={<PackageDetails/>}/>
                     {/*<Route exact path={`${process.env.PUBLIC_URL + '/course-details-two/:id'}`} element={<CourseDetailsTwo/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-filter-sidebar'}`} element={<CourseFilterSidebar />}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/event-grid'}`} element={<EventGrid/>}/>

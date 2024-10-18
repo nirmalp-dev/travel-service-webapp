@@ -13,7 +13,7 @@ const CourseTypeFour = ({ data, classes, bgWhite }) => {
         <div className={`edu-card card-type-4 radius-small eduvibe-course-style-four ${ classes ? classes : '' } ${bgWhite === 'enable' ? 'bg-white' : '' }`}>
             <div className="inner">
                 <div className="thumbnail">
-                    <Link to={process.env.PUBLIC_URL + `/course-details/${data.id}`}>
+                    <Link to={process.env.PUBLIC_URL + `/package-details/${data.id}`}>
                         <img className="w-100" src={`${process.env.PUBLIC_URL}/images/course/course-01/${data.image}`} alt="Course Thumb" />
                     </Link>
                     <div className="wishlist-top-right">
@@ -42,7 +42,7 @@ const CourseTypeFour = ({ data, classes, bgWhite }) => {
                         <li className="meta-user"><i className="icon-group-line"></i>{data.student}</li>
                     </ul>
                     <h6 className="title">
-                        <Link to={process.env.PUBLIC_URL + `/course-details/${data.id}`}>{data.title}</Link>
+                        <Link to={process.env.PUBLIC_URL + `/package-details/${data.id}`}>{data.title}</Link>
                     </h6>
                     <div className="card-bottom">
                         <div className="price-list price-style-03">

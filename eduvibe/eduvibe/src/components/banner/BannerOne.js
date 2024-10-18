@@ -28,7 +28,7 @@ const BannerOne = () => {
                                 <div className="edu-card card-type-6 radius-small">
                                     <div className="inner">
                                         <div className="thumbnail">
-                                            <Link to="/course-details/2">
+                                            <Link to="/package-details/2">
                                                 <img className="w-100" src="images/banner/banner-01/banner-course.jpg"
                                                     alt="Course Meta" />
                                             </Link>
@@ -41,7 +41,7 @@ const BannerOne = () => {
                                                 <li><i className="icon-file-list-3-line"></i>39 Lessons</li>
                                                 <li><i className="icon-time-line"></i>8 Hours 28 min</li>
                                             </ul>
-                                            <h6 className="title"><Link to="/course-details/2">Learning How To Write As A Professional Author</Link></h6>
+                                            <h6 className="title"><Link to="/package-details/2">Learning How To Write As A Professional Author</Link></h6>
                                             <div className="card-bottom">
                                                 <p>Nunc laoreet, lectue dapibus maximus sapien and tincidunted  nequed for an finibu euarcu.</p>
                                             </div>

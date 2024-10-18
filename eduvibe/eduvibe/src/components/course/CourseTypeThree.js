@@ -6,7 +6,7 @@ const CourseTypeThree = ({ data, classes, bgWhite }) => {
         <div className={`edu-card card-type-1 radius-small ${ classes ? classes : '' } ${bgWhite === 'enable' ? 'bg-white' : '' }`}>
             <div className="inner">
                 <div className="thumbnail">
-                    <Link to={process.env.PUBLIC_URL + `/course-details/${data.id}`}>
+                    <Link to={process.env.PUBLIC_URL + `/package-details/${data.id}`}>
                         <img className="w-100" src={`${process.env.PUBLIC_URL}/images/course/course-01/${data.image}`} alt="Course Thumb" />
                     </Link>
                     <div className="top-position status-group left-top">
@@ -22,7 +22,7 @@ const CourseTypeThree = ({ data, classes, bgWhite }) => {
                         <li><i className="icon-time-line"></i>{data.duration}</li>
                     </ul>
                     <h6 className="title">
-                        <Link to={process.env.PUBLIC_URL + `/course-details/${data.id}`}>{data.title}</Link>
+                        <Link to={process.env.PUBLIC_URL + `/package-details/${data.id}`}>{data.title}</Link>
                     </h6>
                     <div className="edu-rating rating-default">
                         <div className="rating eduvibe-course-rating-stars">

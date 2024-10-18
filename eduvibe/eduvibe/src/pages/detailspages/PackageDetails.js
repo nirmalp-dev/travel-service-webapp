@@ -55,7 +55,7 @@ const CurriculumContent = ({ iternaryDetails }) => {
     )
 }
 
-const CourseDetails = () => {
+const PackageDetails = () => {
     const { id } = useParams();
     const [travelItem, setTravelItem] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -349,4 +349,4 @@ const CourseDetails = () => {
         </>
     )
 }
-export default CourseDetails;
+export default PackageDetails;

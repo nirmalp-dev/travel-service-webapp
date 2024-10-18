@@ -10,7 +10,7 @@ const CourseTwo = ({ data, classes }) => {
         <div className={`edu-card card-type-5 radius-small ${ classes ? classes : '' }`}>
             <div className="inner">
                 <div className="thumbnail">
-                    <Link to={process.env.PUBLIC_URL + `/course-details/${data.id}`}>
+                    <Link to={process.env.PUBLIC_URL + `/package-details/${data.id}`}>
                         <img className="w-100" src={`${process.env.PUBLIC_URL}/images/course/course-01/${data.image}`} alt="Course Thumb" />
                     </Link>
                     <div className="top-position status-group left-top">
@@ -34,7 +34,7 @@ const CourseTwo = ({ data, classes }) => {
                         }
                     </div>
                     <h6 className="title">
-                        <Link to={process.env.PUBLIC_URL + `/course-details/${data.id}`}>{data.title}</Link>
+                        <Link to={process.env.PUBLIC_URL + `/package-details/${data.id}`}>{data.title}</Link>
                     </h6>
                     <ul className="edu-meta meta-01">
                         <li><i className="icon-time-line"></i>{data.duration}</li>
@@ -42,7 +42,7 @@ const CourseTwo = ({ data, classes }) => {
                     </ul>
                     <div className="card-bottom">
                         <div className="read-more-btn">
-                            <Link className="btn-transparent" to={process.env.PUBLIC_URL + `/course-details/${data.id}`}>
+                            <Link className="btn-transparent" to={process.env.PUBLIC_URL + `/package-details/${data.id}`}>
                                 Enroll Now<i className="icon-arrow-right-line-right"></i>
                             </Link>
                         </div>
