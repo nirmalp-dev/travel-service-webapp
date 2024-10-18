@@ -1354,6 +1354,1588 @@
       }
     ],
     "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the excitement of Rio de Janeiro with this 3-day itinerary. Relax on Copacabana Beach, take in stunning views from Sugarloaf Mountain, and visit the world-famous Christ the Redeemer statue. A day trip to Tijuca National Park offers a serene escape into nature.</p><h5>What You'll Experience on This Trip</h5><ul><li>Relaxing on the sandy shores of Copacabana Beach</li><li>Stunning views from Sugarloaf Mountain</li><li>Awe-inspiring Christ the Redeemer statue</li><li>Exploring the lush Tijuca National Park</li><li>Sampling traditional Brazilian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the elegant Copacabana Palace, offering luxurious accommodations and top-notch service.</p>"
-  }
+  },
+  {
+    "itinerary_id": 21,
+    "destination": "Paris, France",
+    "arrival": "2024-11-10",
+    "cost": 2500,
+    "description": "A romantic getaway in the City of Lights, exploring iconic landmarks and savoring French cuisine.",
+    "rating": 4.8,
+    "tripdays": 5,
+    "numberOfSale": 50,
+    "filterParam": "Featured",
+    "image": "Paris.jpg",
+    "fullimage": "Paris.jpeg",
+    "review": 1,
+
+    "days": [
+        {
+            "day": 1,
+            "activities": "Arrival, Eiffel Tower tour",
+            "meals_included": "Dinner",
+            "hotel": "Le Meurice"
+        },
+        {
+            "day": 2,
+            "activities": "Louvre Museum, Seine River cruise",
+            "meals_included": "Breakfast",
+            "hotel": "Le Meurice"
+        },
+        {
+            "day": 3,
+            "activities": "Day trip to Versailles",
+            "meals_included": "Breakfast",
+            "hotel": "Le Meurice"
+        },
+        {
+            "day": 4,
+            "activities": "Montmartre and Sacré-Cœur",
+            "meals_included": "Lunch",
+            "hotel": "Le Meurice"
+        },
+        {
+            "day": 5,
+            "activities": "Champs-Élysées, Arc de Triomphe",
+            "meals_included": "Dinner",
+            "hotel": "Le Meurice"
+        }
+    ],
+    "iternaryDetails": [
+        {
+            "title": "Day 1: Arrival and Eiffel Tower",
+            "content": [
+                "Welcome to Paris",
+                "Check-in at Le Meurice",
+                "Eiffel Tower tour",
+                "Evening dinner"
+            ]
+        },
+        {
+            "title": "Day 2: Art and River Cruise",
+            "content": [
+                "Breakfast at Le Meurice",
+                "Visit to the Louvre Museum",
+                "Lunch at a local café",
+                "Seine River cruise",
+                "Free evening to explore"
+            ]
+        },
+        {
+            "title": "Day 3: Versailles Day Trip",
+            "content": [
+                "Breakfast at Le Meurice",
+                "Day trip to Versailles",
+                "Tour of the Palace of Versailles",
+                "Explore the Gardens of Versailles",
+                "Return to Paris",
+                "Farewell dinner"
+            ]
+        },
+        {
+            "title": "Day 4: Montmartre and Sacré-Cœur",
+            "content": [
+                "Breakfast at Le Meurice",
+                "Explore the artistic streets of Montmartre",
+                "Lunch near Sacré-Cœur",
+                "Evening free to relax"
+            ]
+        },
+        {
+            "title": "Day 5: Champs-Élysées and Arc de Triomphe",
+            "content": [
+                "Breakfast at Le Meurice",
+                "Stroll down Champs-Élysées",
+                "Visit the Arc de Triomphe",
+                "Shopping and leisure time",
+                "Evening farewell dinner"
+            ]
+        }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Experience the magic of Paris with this 5-day romantic getaway. From the iconic Eiffel Tower to the world-renowned Louvre Museum, and a day trip to the magnificent Palace of Versailles, this itinerary offers a perfect blend of Parisian charm and French history.</p><h5>What You'll Experience on This Trip</h5><ul><li>Breathtaking views from the Eiffel Tower</li><li>World-class art at the Louvre Museum</li><li>Scenic Seine River cruise</li><li>The opulent Palace of Versailles and its stunning gardens</li><li>Exploring Montmartre and Sacré-Cœur</li><li>Strolling the Champs-Élysées and visiting the Arc de Triomphe</li><li>Exquisite French cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Le Meurice, a 5-star hotel in the heart of Paris, offering stunning views of the Tuileries Garden.</p>"
+},
+{
+  "itinerary_id": 22,
+  "destination": "Paris, France",
+  "arrival": "2024-11-10",
+  "cost": 3500,
+  "description": "A romantic getaway in the City of Lights, exploring iconic landmarks and savoring French cuisine.",
+  "rating": 4.8,
+  "tripdays": 7,
+  "numberOfSale": 50,
+  "filterParam": "Featured",
+  "image": "Paris.jpg",
+  "fullimage": "Paris.jpeg",
+  "review": 3,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Eiffel Tower tour",
+      "meals_included": "Dinner",
+      "hotel": "Le Meurice"
+    },
+    {
+      "day": 2,
+      "activities": "Louvre Museum, Seine River cruise",
+      "meals_included": "Breakfast",
+      "hotel": "Le Meurice"
+    },
+    {
+      "day": 3,
+      "activities": "Day trip to Versailles",
+      "meals_included": "Breakfast",
+      "hotel": "Le Meurice"
+    },
+    {
+      "day": 4,
+      "activities": "Montmartre and Sacré-Cœur Basilica",
+      "meals_included": "Breakfast",
+      "hotel": "Le Meurice"
+    },
+    {
+      "day": 5,
+      "activities": "Notre-Dame Cathedral, Latin Quarter",
+      "meals_included": "Breakfast",
+      "hotel": "Le Meurice"
+    },
+    {
+      "day": 6,
+      "activities": "Shopping at Champs-Élysées, Arc de Triomphe",
+      "meals_included": "Breakfast",
+      "hotel": "Le Meurice"
+    },
+    {
+      "day": 7,
+      "activities": "Leisure day, Departure",
+      "meals_included": "Breakfast",
+      "hotel": "Le Meurice"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Eiffel Tower",
+      "content": [
+        "Welcome to Paris",
+        "Check-in at Le Meurice",
+        "Eiffel Tower tour",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Art and River Cruise",
+      "content": [
+        "Breakfast at Le Meurice",
+        "Visit to the Louvre Museum",
+        "Lunch at a local café",
+        "Seine River cruise",
+        "Free evening to explore"
+      ]
+    },
+    {
+      "title": "Day 3: Versailles Day Trip",
+      "content": [
+        "Breakfast at Le Meurice",
+        "Day trip to Versailles",
+        "Tour of the Palace of Versailles",
+        "Explore the Gardens of Versailles",
+        "Return to Paris",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Montmartre and Sacré-Cœur",
+      "content": [
+        "Breakfast at Le Meurice",
+        "Walk through Montmartre",
+        "Visit the Sacré-Cœur Basilica",
+        "Explore local art galleries and cafés",
+        "Dinner in Montmartre"
+      ]
+    },
+    {
+      "title": "Day 5: Notre-Dame and Latin Quarter",
+      "content": [
+        "Breakfast at Le Meurice",
+        "Visit Notre-Dame Cathedral",
+        "Walk through the Latin Quarter",
+        "Lunch in a traditional bistro",
+        "Explore bookshops and hidden gems"
+      ]
+    },
+    {
+      "title": "Day 6: Champs-Élysées and Arc de Triomphe",
+      "content": [
+        "Breakfast at Le Meurice",
+        "Shopping at Champs-Élysées",
+        "Visit the Arc de Triomphe",
+        "Enjoy a scenic evening walk",
+        "Dinner at a rooftop restaurant"
+      ]
+    },
+    {
+      "title": "Day 7: Leisure and Departure",
+      "content": [
+        "Breakfast at Le Meurice",
+        "Free time for leisure or last-minute shopping",
+        "Check-out and departure"
+      ]
+    }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Experience the magic of Paris with this 7-day romantic getaway. From the iconic Eiffel Tower to the world-renowned Louvre Museum, and a day trip to the magnificent Palace of Versailles, this itinerary offers a perfect blend of Parisian charm and French history.</p><h5>What You'll Experience on This Trip</h5><ul><li>Breathtaking views from the Eiffel Tower</li><li>World-class art at the Louvre Museum</li><li>Scenic Seine River cruise</li><li>The opulent Palace of Versailles and its stunning gardens</li><li>Exquisite French cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Le Meurice, a 5-star hotel in the heart of Paris, offering stunning views of the Tuileries Garden.</p>"
+},
+{
+  "itinerary_id": 23,
+  "destination": "Tokyo, Japan",
+  "arrival": "2024-12-01",
+  "cost": 2800,
+  "description": "An exciting adventure in the vibrant capital of Japan, blending traditional culture with modern attractions.",
+  "rating": 4.9,
+  "tripdays": 5,
+  "numberOfSale": 50,
+  "filterParam": "Trending",
+  "image": "Japan.jpg",
+  "fullimage": "Japan.jpg",
+  "review": 5,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Shinjuku Gyoen National Garden visit",
+      "meals_included": "Dinner",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 2,
+      "activities": "Tokyo Tower, Shibuya Crossing",
+      "meals_included": "Breakfast",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 3,
+      "activities": "Day trip to Mount Fuji",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 4,
+      "activities": "Visit Asakusa and Senso-ji Temple, Tokyo Skytree",
+      "meals_included": "Breakfast",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 5,
+      "activities": "Tsukiji Fish Market, Odaiba, Departure",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "The Ritz-Carlton Tokyo"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Shinjuku Gyoen",
+      "content": [
+        "Welcome to Tokyo",
+        "Check-in at The Ritz-Carlton Tokyo",
+        "Visit Shinjuku Gyoen National Garden",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Tokyo Tower and Shibuya",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Visit Tokyo Tower",
+        "Explore Shibuya Crossing",
+        "Lunch at a local shop",
+        "Free evening to explore"
+      ]
+    },
+    {
+      "title": "Day 3: Mount Fuji Day Trip",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Day trip to Mount Fuji",
+        "Lunch included",
+        "Return to Tokyo",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Asakusa and Senso-ji Temple",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Visit Asakusa district",
+        "Explore Senso-ji Temple",
+        "Visit Tokyo Skytree for panoramic city views",
+        "Dinner at a nearby restaurant"
+      ]
+    },
+    {
+      "title": "Day 5: Tsukiji Fish Market and Odaiba",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Morning visit to Tsukiji Fish Market",
+        "Lunch at a sushi restaurant",
+        "Explore Odaiba for shopping and leisure",
+        "Evening departure from Tokyo"
+      ]
+    }
+  ],
+"details": "<h5>Itinerary Description</h5><p>Immerse yourself in the fascinating blend of modernity and tradition in Tokyo with this 5-day adventure. From tranquil gardens and historic landmarks to bustling city streets and iconic cultural experiences, this itinerary offers a comprehensive exploration of Japan's capital.</p><h5>What You'll Experience on This Trip</h5><ul><li>Relaxing stroll in Shinjuku Gyoen National Garden</li><li>Panoramic views from Tokyo Tower and Tokyo Skytree</li><li>Cross the famous Shibuya Crossing</li><li>A scenic day trip to Mount Fuji</li><li>Visit to Senso-ji Temple, the heart of Asakusa</li><li>Explore Tsukiji Fish Market and savor fresh sushi</li><li>Shopping and entertainment in Odaiba</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Ritz-Carlton Tokyo, offering breathtaking views of the city skyline and unparalleled comfort in the heart of the city.</p>"
+},
+{
+  "itinerary_id": 24,
+  "destination": "Tokyo, Japan",
+  "arrival": "2024-12-01",
+  "cost": 3800,
+  "description": "An exciting adventure in the vibrant capital of Japan, blending traditional culture with modern attractions.",
+  "rating": 4.9,
+  "tripdays": 7,
+  "numberOfSale": 50,
+  "filterParam": "Trending",
+  "image": "Japan.jpg",
+  "fullimage": "Japan.jpg",
+  "review": 5,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Shinjuku Gyoen National Garden visit",
+      "meals_included": "Dinner",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 2,
+      "activities": "Tokyo Tower, Shibuya Crossing",
+      "meals_included": "Breakfast",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 3,
+      "activities": "Day trip to Mount Fuji",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 4,
+      "activities": "Meiji Shrine, Takeshita Street shopping",
+      "meals_included": "Breakfast, Dinner",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 5,
+      "activities": "Asakusa Temple, Sumida River Cruise",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 6,
+      "activities": "Ghibli Museum, Inokashira Park",
+      "meals_included": "Breakfast",
+      "hotel": "The Ritz-Carlton Tokyo"
+    },
+    {
+      "day": 7,
+      "activities": "Odaiba, TeamLab Borderless Museum",
+      "meals_included": "Breakfast, Dinner",
+      "hotel": "The Ritz-Carlton Tokyo"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Shinjuku Gyoen",
+      "content": [
+        "Welcome to Tokyo",
+        "Check-in at The Ritz-Carlton Tokyo",
+        "Visit Shinjuku Gyoen National Garden",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Tokyo Tower and Shibuya",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Visit Tokyo Tower",
+        "Explore Shibuya Crossing",
+        "Lunch at a local shop",
+        "Free evening to explore"
+      ]
+    },
+    {
+      "title": "Day 3: Mount Fuji Day Trip",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Day trip to Mount Fuji",
+        "Lunch included",
+        "Return to Tokyo",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Meiji Shrine and Takeshita Street",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Visit Meiji Shrine",
+        "Shop at Takeshita Street",
+        "Dinner at a local restaurant"
+      ]
+    },
+    {
+      "title": "Day 5: Asakusa Temple and Sumida River Cruise",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Visit Asakusa Temple",
+        "Sumida River Cruise",
+        "Lunch on the boat"
+      ]
+    },
+    {
+      "title": "Day 6: Ghibli Museum and Inokashira Park",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Explore Ghibli Museum",
+        "Relax at Inokashira Park"
+      ]
+    },
+    {
+      "title": "Day 7: Odaiba and TeamLab Borderless Museum",
+      "content": [
+        "Breakfast at The Ritz-Carlton Tokyo",
+        "Visit Odaiba and explore its futuristic attractions",
+        "Experience TeamLab Borderless Museum",
+        "Farewell dinner"
+      ]
+    }
+  ],
+"details": "<h5>Itinerary Description</h5><p>Immerse yourself in the fascinating blend of modernity and tradition in Tokyo with this 7-day adventure. From tranquil gardens and historic landmarks to bustling city streets, a day trip to the iconic Mount Fuji, and futuristic exhibitions, this itinerary offers a comprehensive experience of Japan's culture and natural beauty.</p><h5>What You'll Experience on This Trip</h5><ul><li>Relaxing stroll in Shinjuku Gyoen National Garden</li><li>Panoramic views from Tokyo Tower</li><li>Cross the famous Shibuya Crossing</li><li>A scenic day trip to Mount Fuji</li><li>Visit Meiji Shrine and Asakusa Temple</li><li>Ghibli Museum and TeamLab Borderless</li><li>Sumida River Cruise and Odaiba exploration</li><li>Delicious Japanese cuisine and authentic local experiences</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Ritz-Carlton Tokyo, offering breathtaking views of the city skyline and unparalleled comfort in the heart of the city.</p>"
+},
+{
+  "itinerary_id": 25,
+  "destination": "Rome, Italy",
+  "arrival": "2024-10-15",
+  "cost": 2700,
+  "description": "Experience the rich history, art, and culinary delights of Rome, from ancient ruins to modern gelato.",
+  "rating": 4.7,
+  "tripdays": 5,
+  "numberOfSale": 85,
+  "filterParam": "Popularity",
+  "image": "Italy.jpg",
+  "fullimage": "Rome.jpg",
+  "review": 2,
+
+  "days": [
+      {
+          "day": 1,
+          "activities": "Arrival, Colosseum and Roman Forum tour",
+          "meals_included": "Dinner",
+          "hotel": "Hotel de Russie"
+      },
+      {
+          "day": 2,
+          "activities": "Vatican City, Sistine Chapel",
+          "meals_included": "Breakfast",
+          "hotel": "Hotel de Russie"
+      },
+      {
+          "day": 3,
+          "activities": "Trastevere exploration, Gelato tasting",
+          "meals_included": "Breakfast, Lunch",
+          "hotel": "Hotel de Russie"
+      },
+      {
+          "day": 4,
+          "activities": "Day trip to Pompeii, Vesuvius hike",
+          "meals_included": "Breakfast, Lunch",
+          "hotel": "Hotel de Russie"
+      },
+      {
+          "day": 5,
+          "activities": "Villa Borghese Gardens, shopping on Via del Corso",
+          "meals_included": "Breakfast, Farewell Dinner",
+          "hotel": "Hotel de Russie"
+      }
+  ],
+  "iternaryDetails": [
+      {
+          "title": "Day 1: Arrival and Ancient Rome",
+          "content": [
+              "Welcome to Rome",
+              "Check-in at Hotel de Russie",
+              "Colosseum and Roman Forum tour",
+              "Evening dinner"
+          ]
+      },
+      {
+          "title": "Day 2: Vatican City",
+          "content": [
+              "Breakfast at Hotel de Russie",
+              "Visit Vatican City",
+              "Explore the Sistine Chapel",
+              "Visiting all the well known churches",
+              "Free evening to explore"
+          ]
+      },
+      {
+          "title": "Day 3: Trastevere and Gelato",
+          "content": [
+              "Breakfast at Hotel de Russie",
+              "Explore Trastevere neighborhood",
+              "Gelato tasting experience",
+              "Lunch included",
+              "Farewell dinner"
+          ]
+      },
+      {
+          "title": "Day 4: Pompeii and Vesuvius",
+          "content": [
+              "Breakfast at Hotel de Russie",
+              "Day trip to Pompeii",
+              "Guided hike up Mount Vesuvius",
+              "Lunch included",
+              "Return to Rome"
+          ]
+      },
+      {
+          "title": "Day 5: Villa Borghese and Shopping",
+          "content": [
+              "Breakfast at Hotel de Russie",
+              "Relax at Villa Borghese Gardens",
+              "Shopping along Via del Corso",
+              "Farewell dinner at a local restaurant"
+          ]
+      }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Uncover the heart of Italy with this 5-day tour of Rome. From the ancient Colosseum to Pompeii's ruins, you'll experience the perfect blend of history, culture, and cuisine in the Eternal City.</p><h5>What You'll Experience on This Trip</h5><ul><li>Walk through the Colosseum and Roman Forum</li><li>Visit the Vatican and admire the Sistine Chapel</li><li>Explore the charming Trastevere neighborhood</li><li>Taste authentic Italian gelato</li><li>Hike up Mount Vesuvius and visit Pompeii</li><li>Relax in the Villa Borghese Gardens</li><li>Shop along Via del Corso</li></ul><h5>Accommodation</h5><p>Stay at the elegant Hotel de Russie, a luxury 5-star hotel situated near Piazza del Popolo, offering lush gardens and world-class service.</p>"
+},
+{
+  "itinerary_id": 26,
+  "destination": "Rome, Italy",
+  "arrival": "2024-10-15",
+  "cost": 3700,
+  "description": "Experience the rich history, art, and culinary delights of Rome, from ancient ruins to modern gelato.",
+  "rating": 4.7,
+  "tripdays": 7,
+  "numberOfSale": 85,
+  "filterParam": "Popularity",
+  "image": "Italy.jpg",
+  "fullimage": "Rome.jpg",
+  "review": 2,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Colosseum and Roman Forum tour",
+      "meals_included": "Dinner",
+      "hotel": "Hotel de Russie"
+    },
+    {
+      "day": 2,
+      "activities": "Vatican City, Sistine Chapel",
+      "meals_included": "Breakfast",
+      "hotel": "Hotel de Russie"
+    },
+    {
+      "day": 3,
+      "activities": "Trastevere exploration, Gelato tasting",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Hotel de Russie"
+    },
+    {
+      "day": 4,
+      "activities": "Pantheon, Piazza Navona, and Trevi Fountain",
+      "meals_included": "Breakfast, Dinner",
+      "hotel": "Hotel de Russie"
+    },
+    {
+      "day": 5,
+      "activities": "Borghese Gallery and Gardens",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Hotel de Russie"
+    },
+    {
+      "day": 6,
+      "activities": "Day trip to Pompeii",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Hotel de Russie"
+    },
+    {
+      "day": 7,
+      "activities": "Shopping at Via del Corso, Farewell dinner",
+      "meals_included": "Breakfast, Dinner",
+      "hotel": "Hotel de Russie"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Ancient Rome",
+      "content": [
+        "Welcome to Rome",
+        "Check-in at Hotel de Russie",
+        "Colosseum and Roman Forum tour",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Vatican City",
+      "content": [
+        "Breakfast at Hotel de Russie",
+        "Visit Vatican City",
+        "Explore the Sistine Chapel",
+        "Visiting all the well known churches",
+        "Free evening to explore"
+      ]
+    },
+    {
+      "title": "Day 3: Trastevere and Gelato",
+      "content": [
+        "Breakfast at Hotel de Russie",
+        "Explore Trastevere neighborhood",
+        "Gelato tasting experience",
+        "Lunch included",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Pantheon and Trevi Fountain",
+      "content": [
+        "Breakfast at Hotel de Russie",
+        "Visit the Pantheon",
+        "Walk through Piazza Navona",
+        "Throw a coin at Trevi Fountain",
+        "Dinner at a local trattoria"
+      ]
+    },
+    {
+      "title": "Day 5: Borghese Gallery and Gardens",
+      "content": [
+        "Breakfast at Hotel de Russie",
+        "Tour of the Borghese Gallery",
+        "Stroll in Borghese Gardens",
+        "Lunch at a garden cafe"
+      ]
+    },
+    {
+      "title": "Day 6: Pompeii Day Trip",
+      "content": [
+        "Breakfast at Hotel de Russie",
+        "Travel to Pompeii",
+        "Guided tour of Pompeii ruins",
+        "Lunch near the ruins",
+        "Return to Rome in the evening"
+      ]
+    },
+    {
+      "title": "Day 7: Shopping and Farewell",
+      "content": [
+        "Breakfast at Hotel de Russie",
+        "Shopping at Via del Corso",
+        "Farewell dinner in Rome"
+      ]
+    }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Discover the essence of Rome with this 7-day tour. From ancient ruins to Renaissance art, immerse yourself in the beauty, history, and cuisine of the Eternal City. Explore its famous landmarks and enjoy day trips to nearby attractions like Pompeii.</p><h5>What You'll Experience on This Trip</h5><ul><li>Walk through the Colosseum and Roman Forum</li><li>Visit the Vatican and admire the Sistine Chapel</li><li>Explore the charming Trastevere neighborhood</li><li>Day trip to Pompeii</li><li>Taste authentic Italian gelato</li><li>Savor exquisite Italian cuisine</li><li>Shop at Rome's finest boutiques</li></ul><h5>Accommodation</h5><p>Stay at the elegant Hotel de Russie, a luxury 5-star hotel situated near Piazza del Popolo, offering lush gardens and world-class service.</p>"
+},
+{
+  "itinerary_id": 27,
+  "destination": "Barcelona, Spain",
+  "arrival": "2024-11-05",
+  "cost": 2500,
+  "description": "Discover the unique architecture, vibrant culture, and delicious tapas of Barcelona.",
+  "rating": 4.6,
+  "tripdays": 5,
+  "numberOfSale": 55,
+  "filterParam": "Featured",
+  "image": "Spain.jpg",
+  "fullimage": "Barcelona.jpg",
+  "review": 3,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Park Güell visit",
+      "meals_included": "Dinner",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 2,
+      "activities": "Sagrada Familia, Gothic Quarter",
+      "meals_included": "Breakfast",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 3,
+      "activities": "Day trip to Montserrat",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 4,
+      "activities": "La Rambla, Boqueria Market, Beachside relaxation",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 5,
+      "activities": "Picasso Museum, Free time, Departure",
+      "meals_included": "Breakfast",
+      "hotel": "Hotel Arts Barcelona"
+    }
+  ],
+
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Park Güell",
+      "content": [
+        "Welcome to Barcelona",
+        "Check-in at Hotel Arts Barcelona",
+        "Visit Park Güell",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Sagrada Familia and Gothic Quarter",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Tour of Sagrada Familia",
+        "Explore the Gothic Quarter",
+        "Free evening to enjoy tapas"
+      ]
+    },
+    {
+      "title": "Day 3: Montserrat Day Trip",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Day trip to Montserrat",
+        "Lunch included",
+        "Return to Barcelona",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: La Rambla and Beachside Relaxation",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Stroll along La Rambla",
+        "Explore the Boqueria Market",
+        "Lunch at a local restaurant",
+        "Relaxation time at the beach",
+        "Evening free for leisure"
+      ]
+    },
+    {
+      "title": "Day 5: Picasso Museum and Departure",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Visit the Picasso Museum",
+        "Free time for last-minute shopping or exploration",
+        "Check-out and Departure"
+      ]
+    }
+  ],
+
+  "details": "<h5>Itinerary Description</h5><p>Experience the vibrant culture of Barcelona with this 5-day getaway. From the stunning architecture of the Sagrada Familia to the historic charm of the Gothic Quarter, and scenic day trips to Montserrat and the local markets, this itinerary offers an immersive exploration of Spain’s Catalonia region.</p><h5>What You'll Experience on This Trip</h5><ul><li>A visit to Gaudí's famous Park Güell</li><li>The iconic Sagrada Familia</li><li>Exploring the medieval streets of the Gothic Quarter</li><li>A day trip to Montserrat and its monastery</li><li>Relaxing on the beach and strolling along La Rambla</li><li>Exploring the vibrant Boqueria Market</li><li>Visiting the Picasso Museum</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Hotel Arts Barcelona, a 5-star beachfront hotel offering stunning views of the Mediterranean Sea and the city skyline.</p>"
+},
+{
+  "itinerary_id": 28,
+  "destination": "Barcelona, Spain",
+  "arrival": "2024-11-05",
+  "cost": 3600,
+  "description": "Discover the unique architecture, vibrant culture, and delicious tapas of Barcelona.",
+  "rating": 4.6,
+  "tripdays": 7,
+  "numberOfSale": 45,
+  "filterParam": "Featured",
+  "image": "Spain.jpg",
+  "fullimage": "Barcelona.jpg",
+  "review": 3,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Park Güell visit",
+      "meals_included": "Dinner",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 2,
+      "activities": "Sagrada Familia, Gothic Quarter",
+      "meals_included": "Breakfast",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 3,
+      "activities": "Day trip to Montserrat",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 4,
+      "activities": "Picasso Museum, La Rambla",
+      "meals_included": "Breakfast",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 5,
+      "activities": "Barcelona Aquarium, Beach day at Barceloneta",
+      "meals_included": "Breakfast, Dinner",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 6,
+      "activities": "Day trip to Costa Brava",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Hotel Arts Barcelona"
+    },
+    {
+      "day": 7,
+      "activities": "Relaxation at the hotel, Departure",
+      "meals_included": "Breakfast",
+      "hotel": "Hotel Arts Barcelona"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Park Güell",
+      "content": [
+        "Welcome to Barcelona",
+        "Check-in at Hotel Arts Barcelona",
+        "Visit Park Güell",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Sagrada Familia and Gothic Quarter",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Tour of Sagrada Familia",
+        "Explore the Gothic Quarter",
+        "Free evening to enjoy tapas"
+      ]
+    },
+    {
+      "title": "Day 3: Montserrat Day Trip",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Day trip to Montserrat",
+        "Lunch included",
+        "Return to Barcelona",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Picasso Museum and La Rambla",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Visit the Picasso Museum",
+        "Walk down the iconic La Rambla",
+        "Evening at leisure"
+      ]
+    },
+    {
+      "title": "Day 5: Aquarium and Barceloneta Beach",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Tour of Barcelona Aquarium",
+        "Beach day at Barceloneta",
+        "Dinner at a beachfront restaurant"
+      ]
+    },
+    {
+      "title": "Day 6: Costa Brava Day Trip",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Full-day trip to Costa Brava",
+        "Lunch at a seaside restaurant",
+        "Return to Barcelona"
+      ]
+    },
+    {
+      "title": "Day 7: Relaxation and Departure",
+      "content": [
+        "Breakfast at Hotel Arts Barcelona",
+        "Free morning for relaxation",
+        "Check-out and departure"
+      ]
+    }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Experience the vibrant culture of Barcelona with this 7-day getaway. From the stunning architecture of the Sagrada Familia to the scenic coastline of Costa Brava, this itinerary offers an immersive exploration of Spain’s Catalonia region, combining art, history, and relaxation.</p><h5>What You'll Experience on This Trip</h5><ul><li>A visit to Gaudí's famous Park Güell</li><li>The iconic Sagrada Familia</li><li>Exploring the medieval streets of the Gothic Quarter</li><li>A day trip to Montserrat and its monastery</li><li>A scenic trip to Costa Brava</li><li>Relaxing at Barceloneta Beach</li><li>Delicious Spanish cuisine including tapas and local specialties</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Hotel Arts Barcelona, a 5-star beachfront hotel offering stunning views of the Mediterranean Sea and the city skyline.</p>"
+},
+{
+  "itinerary_id": 29,
+  "destination": "New York City, USA",
+  "arrival": "2024-10-20",
+  "cost": 2500,
+  "description": "Experience the hustle and bustle of NYC, visiting iconic sites and enjoying diverse cuisine.",
+  "rating": 4.8,
+  "tripdays": 5,
+  "numberOfSale": 65,
+  "filterParam": "Featured",
+  "image": "NewYork.jpg",
+  "fullimage": "NewYork.jpg",
+  "review": 1,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Times Square exploration",
+      "meals_included": "Dinner",
+      "hotel": "The St. Regis New York"
+    },
+    {
+      "day": 2,
+      "activities": "Statue of Liberty, Central Park",
+      "meals_included": "Breakfast",
+      "hotel": "The St. Regis New York"
+    },
+    {
+      "day": 3,
+      "activities": "Broadway show, Rockefeller Center",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "The St. Regis New York"
+    },
+    {
+      "day": 4,
+      "activities": "Empire State Building, Fifth Avenue Shopping",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "The St. Regis New York"
+    },
+    {
+      "day": 5,
+      "activities": "Museum of Modern Art (MoMA), Departure",
+      "meals_included": "Breakfast",
+      "hotel": "The St. Regis New York"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Times Square",
+      "content": [
+        "Welcome to New York City",
+        "Check-in at The St. Regis New York",
+        "Times Square exploration",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Statue of Liberty and Central Park",
+      "content": [
+        "Breakfast at The St. Regis New York",
+        "Visit Statue of Liberty",
+        "Explore Central Park",
+        "Free evening to enjoy NYC nightlife"
+      ]
+    },
+    {
+      "title": "Day 3: Broadway and Rockefeller Center",
+      "content": [
+        "Breakfast at The St. Regis New York",
+        "Attend a Broadway show",
+        "Visit Rockefeller Center",
+        "Lunch included",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Empire State Building and Shopping",
+      "content": [
+        "Breakfast at The St. Regis New York",
+        "Visit Empire State Building for stunning views of the city",
+        "Lunch at a local NYC cafe",
+        "Afternoon shopping along Fifth Avenue"
+      ]
+    },
+    {
+      "title": "Day 5: Museum of Modern Art and Departure",
+      "content": [
+        "Breakfast at The St. Regis New York",
+        "Morning visit to the Museum of Modern Art (MoMA)",
+        "Afternoon checkout and departure"
+      ]
+    }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Discover the energy of New York City with this 5-day adventure. From the lights of Times Square to the grandeur of the Statue of Liberty, iconic Central Park, and cultural landmarks like the Empire State Building and MoMA, you'll experience the best that NYC has to offer.</p><h5>What You'll Experience on This Trip</h5><ul><li>Times Square's vibrant energy</li><li>A visit to the Statue of Liberty</li><li>Central Park's natural beauty</li><li>A Broadway show experience</li><li>Empire State Building views</li><li>Shopping along Fifth Avenue</li><li>Exploring MoMA's world-class art collection</li><li>Exquisite New York City cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious The St. Regis New York, a 5-star hotel located in the heart of Manhattan, offering upscale amenities and world-class service.</p>"
+},
+{
+  "itinerary_id": 30,
+  "destination": "New York City, USA",
+  "arrival": "2024-10-20",
+  "cost": 3500,
+  "description": "Experience the hustle and bustle of NYC, visiting iconic sites and enjoying diverse cuisine over a full week.",
+  "rating": 4.8,
+  "tripdays": 7,
+  "numberOfSale": 85,
+  "filterParam": "Featured",
+  "image": "NewYork.jpg",
+  "fullimage": "NewYork.jpg",
+  "review": 1,
+  "days": [
+      {
+          "day": 1,
+          "activities": "Arrival, Times Square exploration",
+          "meals_included": "Dinner",
+          "hotel": "The St. Regis New York"
+      },
+      {
+          "day": 2,
+          "activities": "Statue of Liberty, Central Park",
+          "meals_included": "Breakfast",
+          "hotel": "The St. Regis New York"
+      },
+      {
+          "day": 3,
+          "activities": "Broadway show, Rockefeller Center",
+          "meals_included": "Breakfast, Lunch",
+          "hotel": "The St. Regis New York"
+      },
+      {
+          "day": 4,
+          "activities": "Empire State Building, The Met",
+          "meals_included": "Breakfast",
+          "hotel": "The Plaza Hotel"
+      },
+      {
+          "day": 5,
+          "activities": "Brooklyn Bridge, DUMBO exploration",
+          "meals_included": "Breakfast, Lunch",
+          "hotel": "The Plaza Hotel"
+      },
+      {
+          "day": 6,
+          "activities": "9/11 Memorial, Wall Street, One World Observatory",
+          "meals_included": "Breakfast",
+          "hotel": "Four Seasons Hotel New York Downtown"
+      },
+      {
+          "day": 7,
+          "activities": "Shopping at Fifth Avenue, Departure",
+          "meals_included": "Breakfast",
+          "hotel": "Four Seasons Hotel New York Downtown"
+      }
+  ],
+  "iternaryDetails": [
+      {
+          "title": "Day 1: Arrival and Times Square",
+          "content": [
+              "Welcome to New York City",
+              "Check-in at The St. Regis New York",
+              "Times Square exploration",
+              "Evening dinner"
+          ]
+      },
+      {
+          "title": "Day 2: Statue of Liberty and Central Park",
+          "content": [
+              "Breakfast at The St. Regis New York",
+              "Visit Statue of Liberty",
+              "Explore Central Park",
+              "Free evening to enjoy NYC nightlife"
+          ]
+      },
+      {
+          "title": "Day 3: Broadway and Rockefeller Center",
+          "content": [
+              "Breakfast at The St. Regis New York",
+              "Attend a Broadway show",
+              "Visit Rockefeller Center",
+              "Lunch included",
+              "Farewell dinner"
+          ]
+      },
+      {
+          "title": "Day 4: Empire State Building and The Met",
+          "content": [
+              "Breakfast at The Plaza Hotel",
+              "Visit the Empire State Building",
+              "Tour the Metropolitan Museum of Art (The Met)",
+              "Free evening to explore local restaurants"
+          ]
+      },
+      {
+          "title": "Day 5: Brooklyn Bridge and DUMBO",
+          "content": [
+              "Breakfast at The Plaza Hotel",
+              "Walk across the Brooklyn Bridge",
+              "Explore DUMBO neighborhood and local shops",
+              "Lunch included at a Brooklyn restaurant",
+              "Evening free for leisure"
+          ]
+      },
+      {
+          "title": "Day 6: 9/11 Memorial, Wall Street, and One World Observatory",
+          "content": [
+              "Breakfast at Four Seasons Hotel New York Downtown",
+              "Visit 9/11 Memorial and Museum",
+              "Walk through Wall Street",
+              "Visit One World Observatory for panoramic views"
+          ]
+      },
+      {
+          "title": "Day 7: Fifth Avenue Shopping and Departure",
+          "content": [
+              "Breakfast at Four Seasons Hotel New York Downtown",
+              "Last-minute shopping at Fifth Avenue",
+              "Check-out and departure"
+          ]
+      }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Experience a full week in New York City with this 7-day itinerary. From Times Square and Central Park to the Empire State Building, Brooklyn, and beyond, you'll explore the best of the Big Apple, dine at top restaurants, and shop in some of the world's most famous districts.</p><h5>What You'll Experience on This Trip</h5><ul><li>Times Square's vibrant energy</li><li>A visit to the Statue of Liberty</li><li>Central Park's natural beauty</li><li>A Broadway show experience</li><li>Iconic views from the Empire State Building and One World Observatory</li><li>Exploring Brooklyn's DUMBO</li><li>Shopping at Fifth Avenue</li><li>Luxurious hotel stays at The St. Regis, The Plaza, and Four Seasons New York Downtown</li></ul><h5>Accommodation</h5><p>Stay at world-renowned hotels, including The St. Regis New York, The Plaza Hotel, and Four Seasons New York Downtown, offering unmatched service and luxury.</p>"
+},
+{
+  "itinerary_id": 31,
+  "destination": "Sydney, Australia",
+  "arrival": "2024-12-15",
+  "cost": 3100,
+  "description": "Explore the stunning landscapes, beaches, and culture of Sydney, from the Opera House to Bondi Beach.",
+  "rating": 4.7,
+  "tripdays": 5,
+  "numberOfSale": 50,
+  "filterParam": "Popularity",
+  "image": "Sydney.jpeg",
+  "fullimage": "Sydney.jpeg",
+  "review": 2,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Sydney Opera House tour",
+      "meals_included": "Dinner",
+      "hotel": "Sydney Harbour Marriott"
+    },
+    {
+      "day": 2,
+      "activities": "Bondi Beach, Coastal Walk",
+      "meals_included": "Breakfast",
+      "hotel": "Sydney Harbour Marriott"
+    },
+    {
+      "day": 3,
+      "activities": "Day trip to Blue Mountains",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Sydney Harbour Marriott"
+    },
+    {
+      "day": 4,
+      "activities": "Taronga Zoo, Sydney Harbour Bridge Climb",
+      "meals_included": "Breakfast",
+      "hotel": "Sydney Harbour Marriott"
+    },
+    {
+      "day": 5,
+      "activities": "Manly Beach, Ferry ride, and farewell dinner",
+      "meals_included": "Breakfast, Dinner",
+      "hotel": "Sydney Harbour Marriott"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Sydney Opera House",
+      "content": [
+        "Welcome to Sydney",
+        "Check-in at Sydney Harbour Marriott",
+        "Sydney Opera House tour",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Bondi Beach and Coastal Walk",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Visit Bondi Beach",
+        "Enjoy the Coastal Walk",
+        "Free evening to explore Sydney"
+      ]
+    },
+    {
+      "title": "Day 3: Blue Mountains Day Trip",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Day trip to Blue Mountains",
+        "Lunch included",
+        "Return to Sydney",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Taronga Zoo and Sydney Harbour Bridge Climb",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Visit Taronga Zoo",
+        "Climb Sydney Harbour Bridge",
+        "Free time for shopping"
+      ]
+    },
+    {
+      "title": "Day 5: Manly Beach and Farewell Dinner",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Ferry ride to Manly Beach",
+        "Relax on the beach",
+        "Farewell dinner at a local restaurant"
+      ]
+    }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Discover the vibrant city of Sydney with this 5-day adventure. From the iconic Sydney Opera House to the picturesque Bondi Beach, the stunning Blue Mountains, and the thrill of the Harbour Bridge climb, this itinerary offers a perfect blend of urban excitement and natural beauty.</p><h5>What You'll Experience on This Trip</h5><ul><li>A guided tour of the world-famous Sydney Opera House</li><li>Relaxation on the sandy shores of Bondi and Manly Beach</li><li>Scenic Coastal Walk with breathtaking ocean views</li><li>A full day exploring the majestic Blue Mountains</li><li>An exciting climb on the Sydney Harbour Bridge</li><li>Delicious Australian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the Sydney Harbour Marriott, a luxurious 5-star hotel offering breathtaking views of the harbour and easy access to Sydney's top attractions.</p>"
+},
+{
+  "itinerary_id": 32,
+  "destination": "Sydney, Australia",
+  "arrival": "2024-12-15",
+  "cost": 4200,
+  "description": "Explore the stunning landscapes, beaches, and culture of Sydney, from the Opera House to Bondi Beach.",
+  "rating": 4.7,
+  "tripdays": 7,
+  "numberOfSale": 70,
+  "filterParam": "Popularity",
+  "image": "Sydney.jpeg",
+  "fullimage": "Sydney.jpeg",
+  "review": 5,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Sydney Opera House tour",
+      "meals_included": "Dinner",
+      "hotel": "Sydney Harbour Marriott"
+    },
+    {
+      "day": 2,
+      "activities": "Bondi Beach, Coastal Walk",
+      "meals_included": "Breakfast",
+      "hotel": "Sydney Harbour Marriott"
+    },
+    {
+      "day": 3,
+      "activities": "Day trip to Blue Mountains",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Sydney Harbour Marriott"
+    },
+    {
+      "day": 4,
+      "activities": "Taronga Zoo, Sydney Harbour Cruise",
+      "meals_included": "Breakfast",
+      "hotel": "Sydney Harbour Marriott"
+    },
+    {
+      "day": 5,
+      "activities": "Manly Beach, Kayaking",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Manly Pacific Hotel"
+    },
+    {
+      "day": 6,
+      "activities": "Royal Botanic Garden, Art Gallery of NSW",
+      "meals_included": "Breakfast",
+      "hotel": "Sydney Harbour Marriott"
+    },
+    {
+      "day": 7,
+      "activities": "Free day for shopping and exploration, Departure",
+      "meals_included": "Breakfast, Farewell Dinner",
+      "hotel": "Sydney Harbour Marriott"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Sydney Opera House",
+      "content": [
+        "Welcome to Sydney",
+        "Check-in at Sydney Harbour Marriott",
+        "Sydney Opera House tour",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Bondi Beach and Coastal Walk",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Visit Bondi Beach",
+        "Enjoy the Coastal Walk",
+        "Free evening to explore Sydney"
+      ]
+    },
+    {
+      "title": "Day 3: Blue Mountains Day Trip",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Day trip to Blue Mountains",
+        "Lunch included",
+        "Return to Sydney",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Taronga Zoo and Harbour Cruise",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Morning visit to Taronga Zoo",
+        "Afternoon Sydney Harbour Cruise",
+        "Free evening for leisure"
+      ]
+    },
+    {
+      "title": "Day 5: Manly Beach and Kayaking",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Ferry ride to Manly Beach",
+        "Kayaking session at Manly",
+        "Lunch at local seafood restaurant",
+        "Check-in at Manly Pacific Hotel"
+      ]
+    },
+    {
+      "title": "Day 6: Royal Botanic Garden and Art Gallery of NSW",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Stroll through the Royal Botanic Garden",
+        "Visit the Art Gallery of NSW",
+        "Free afternoon for shopping"
+      ]
+    },
+    {
+      "title": "Day 7: Free Day and Departure",
+      "content": [
+        "Breakfast at Sydney Harbour Marriott",
+        "Free day for shopping or additional sightseeing",
+        "Farewell dinner",
+        "Transfer to airport for departure"
+      ]
+    }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Discover the vibrant city of Sydney with this 7-day adventure. From the iconic Sydney Opera House to the picturesque Bondi Beach and the stunning Blue Mountains, this itinerary offers a perfect blend of urban excitement and natural beauty. Plus, visit Taronga Zoo, enjoy a Sydney Harbour Cruise, and relax at Manly Beach.</p><h5>What You'll Experience on This Trip</h5><ul><li>A guided tour of the world-famous Sydney Opera House</li><li>Relaxation on the sandy shores of Bondi and Manly Beach</li><li>Scenic Coastal Walk with breathtaking ocean views</li><li>A full day exploring the majestic Blue Mountains</li><li>A visit to Taronga Zoo and a Sydney Harbour Cruise</li><li>Art and nature at the Royal Botanic Garden and Art Gallery of NSW</li><li>Delicious Australian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Sydney Harbour Marriott for most of your stay, with a night at Manly Pacific Hotel for easy access to Manly Beach.</p>"
+},
+{
+  "itinerary_id": 33,
+  "destination": "Rio de Janeiro, Brazil",
+  "arrival": "2024-11-18",
+  "cost": 1900,
+  "description": "Discover the vibrant culture and stunning beaches of Rio, from Copacabana to Christ the Redeemer.",
+  "rating": 4.8,
+  "tripdays": 5,
+  "numberOfSale": 75,
+  "filterParam": "Popularity",
+  "image": "Rio.jpg",
+  "fullimage": "Rio.jpg",
+  "review": 2,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Sugarloaf Mountain",
+      "meals_included": "Dinner",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 2,
+      "activities": "Christ the Redeemer, Ipanema Beach",
+      "meals_included": "Breakfast",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 3,
+      "activities": "Day trip to Tijuca National Park",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 4,
+      "activities": "Visit to Santa Teresa neighborhood, Selarón Steps",
+      "meals_included": "Breakfast",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 5,
+      "activities": "Boat tour of Guanabara Bay, Museum of Tomorrow",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Copacabana Palace"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Sugarloaf Mountain",
+      "content": [
+        "Welcome to Rio de Janeiro",
+        "Check-in at Copacabana Palace",
+        "Visit Sugarloaf Mountain",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Christ the Redeemer and Ipanema Beach",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Visit Christ the Redeemer statue",
+        "Relax at Ipanema Beach",
+        "Free evening to enjoy Rio's nightlife"
+      ]
+    },
+    {
+      "title": "Day 3: Tijuca National Park",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Day trip to Tijuca National Park",
+        "Lunch included",
+        "Return to Rio",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Santa Teresa and Selarón Steps",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Explore the artistic Santa Teresa neighborhood",
+        "Visit the colorful Selarón Steps",
+        "Free afternoon for shopping or relaxation"
+      ]
+    },
+    {
+      "title": "Day 5: Guanabara Bay and Museum of Tomorrow",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Boat tour of the scenic Guanabara Bay",
+        "Visit the futuristic Museum of Tomorrow",
+        "Lunch included",
+        "Final farewell in Rio"
+      ]
+    }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the lively spirit of Rio de Janeiro with this 5-day adventure. From the breathtaking views atop Sugarloaf Mountain to the iconic Christ the Redeemer statue, the serene beaches of Copacabana and Ipanema, the artistic Santa Teresa neighborhood, and the futuristic Museum of Tomorrow, this itinerary offers a perfect balance of cultural exploration and natural beauty.</p><h5>What You'll Experience on This Trip</h5><ul><li>Spectacular views from Sugarloaf Mountain</li><li>A visit to the awe-inspiring Christ the Redeemer statue</li><li>Relaxation on the world-famous Ipanema Beach</li><li>An adventure through the lush Tijuca National Park</li><li>A stroll through the artistic streets of Santa Teresa and the colorful Selarón Steps</li><li>A scenic boat tour of Guanabara Bay</li><li>Visit to the Museum of Tomorrow</li><li>Delicious Brazilian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Copacabana Palace, a historic 5-star hotel overlooking the famous Copacabana Beach, offering refined comfort and elegant amenities.</p>"
+},
+{
+  "itinerary_id": 34,
+  "destination": "Rio de Janeiro, Brazil",
+  "arrival": "2024-11-18",
+  "cost": 4900,
+  "description": "Discover the vibrant culture and stunning beaches of Rio, from Copacabana to Christ the Redeemer.",
+  "rating": 4.8,
+  "tripdays": 7,
+  "numberOfSale": 75,
+  "filterParam": "Popularity",
+  "image": "Rio.jpg",
+  "fullimage": "Rio.jpg",
+  "review": 2,
+
+  "days": [
+    {
+      "day": 1,
+      "activities": "Arrival, Sugarloaf Mountain",
+      "meals_included": "Dinner",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 2,
+      "activities": "Christ the Redeemer, Ipanema Beach",
+      "meals_included": "Breakfast",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 3,
+      "activities": "Day trip to Tijuca National Park",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 4,
+      "activities": "Explore Santa Teresa neighborhood, Selarón Steps",
+      "meals_included": "Breakfast",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 5,
+      "activities": "Visit Maracanã Stadium, Botanical Garden",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 6,
+      "activities": "Day trip to Ilha Grande (boat tour)",
+      "meals_included": "Breakfast, Lunch",
+      "hotel": "Copacabana Palace"
+    },
+    {
+      "day": 7,
+      "activities": "Free day for shopping, Evening departure",
+      "meals_included": "Breakfast, Dinner",
+      "hotel": "Copacabana Palace"
+    }
+  ],
+  "iternaryDetails": [
+    {
+      "title": "Day 1: Arrival and Sugarloaf Mountain",
+      "content": [
+        "Welcome to Rio de Janeiro",
+        "Check-in at Copacabana Palace",
+        "Visit Sugarloaf Mountain",
+        "Evening dinner"
+      ]
+    },
+    {
+      "title": "Day 2: Christ the Redeemer and Ipanema Beach",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Visit Christ the Redeemer statue",
+        "Relax at Ipanema Beach",
+        "Free evening to enjoy Rio's nightlife"
+      ]
+    },
+    {
+      "title": "Day 3: Tijuca National Park",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Day trip to Tijuca National Park",
+        "Lunch included",
+        "Return to Rio",
+        "Farewell dinner"
+      ]
+    },
+    {
+      "title": "Day 4: Explore Santa Teresa neighborhood",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Walk through the artsy Santa Teresa neighborhood",
+        "Visit the famous Selarón Steps",
+        "Explore local cafes and art galleries"
+      ]
+    },
+    {
+      "title": "Day 5: Maracanã Stadium and Botanical Garden",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Tour Maracanã Stadium, one of the world's most iconic football venues",
+        "Explore Rio's beautiful Botanical Garden",
+        "Lunch at a local Brazilian restaurant"
+      ]
+    },
+    {
+      "title": "Day 6: Day Trip to Ilha Grande",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Take a boat trip to Ilha Grande, known for its pristine beaches and hiking trails",
+        "Lunch at a beachside restaurant",
+        "Return to Rio in the evening"
+      ]
+    },
+    {
+      "title": "Day 7: Free Day and Departure",
+      "content": [
+        "Breakfast at Copacabana Palace",
+        "Spend the morning shopping or exploring local markets",
+        "Evening farewell dinner and prepare for departure"
+      ]
+    }
+  ],
+  "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the lively spirit of Rio de Janeiro with this 7-day adventure. From the breathtaking views atop Sugarloaf Mountain to the iconic Christ the Redeemer statue and the serene beaches of Copacabana and Ipanema, this itinerary offers a perfect balance of cultural exploration, sports, and natural beauty.</p><h5>What You'll Experience on This Trip</h5><ul><li>Spectacular views from Sugarloaf Mountain</li><li>A visit to the awe-inspiring Christ the Redeemer statue</li><li>Relaxation on the world-famous Ipanema Beach</li><li>An adventure through the lush Tijuca National Park</li><li>A tour of Maracanã Stadium</li><li>A boat trip to the stunning Ilha Grande</li><li>Delicious Brazilian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Copacabana Palace, a historic 5-star hotel overlooking the famous Copacabana Beach, offering refined comfort and elegant amenities.</p>"
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 ]
