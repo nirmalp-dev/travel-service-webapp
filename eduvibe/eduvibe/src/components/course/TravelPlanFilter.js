@@ -1,48 +1,76 @@
 import React, { useState, useEffect } from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import CourseTypeOne from './CourseTypeOne';
-import CourseData from '../../data/course/CourseData.json';
-import TripData from '../../data/traveliternary/traveliternary.json';
+import axios from 'axios';
 
-const CourseTypeFilter = ({ itemToShow, showLoadMore, incrementPerClick }) => {
-    const FilterControls = [...new Set(TripData.map(item => item.filterParam))];
-    console.log(FilterControls);
-    FilterControls.unshift( 'All' );
+const TravelPlanFilter = ({ itemToShow, showLoadMore, incrementPerClick }) => {
+    const [tripData, setTripData] = useState([]);
+    const [filterControls, setFilterControls] = useState(['All']);
     const numberOfCourses = itemToShow || 6;
     const dataIncrement = incrementPerClick || 3;
-    const [noMorePost, setNoMorePost] = useState( false );
-    const [dataVisibleCount, setDataVisibleCount] = useState( numberOfCourses );
-    const [activeFilter, setActiveFilter] = useState( '' );
-    const [visibleItems, setVisibleItems] = useState( [] );
-    useEffect( () => {
-        setActiveFilter(FilterControls[0].toLowerCase());
-        setVisibleItems(TripData.filter((item) => item.itinerary_id <= dataVisibleCount));
-        console.log(visibleItems);
-    }, [] );
+    const [noMorePost, setNoMorePost] = useState(false);
+    const [dataVisibleCount, setDataVisibleCount] = useState(numberOfCourses);
+    const [activeFilter, setActiveFilter] = useState('');
+    const [visibleItems, setVisibleItems] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    const handleChange = ( e ) => {
-        e.preventDefault();
-        setActiveFilter( e.target.textContent.toLowerCase() );
-        let tempData;
-        if (e.target.textContent.toLowerCase() === FilterControls[0].toLowerCase()) {
-            tempData = TripData.filter((data) => data.itinerary_id <= dataVisibleCount);
-        } else {
-            tempData = TripData.filter((data) => data.filterParam.toLowerCase() === e.target.textContent.toLowerCase() &&
-                data.itinerary_id <= dataVisibleCount);
+    useEffect(() => {
+        fetchPackages();
+    }, []);
+
+    const fetchPackages = async () => {
+        try {
+            setIsLoading(true);
+            const response = await axios.get('http://localhost:8000/packages');
+            setTripData(response.data);
+            const filters = ['All', ...new Set(response.data.map(item => item.filterParam))];
+            setFilterControls(filters);
+            setActiveFilter('all');
+            setVisibleItems(response.data.slice(0, dataVisibleCount));
+            setIsLoading(false);
+        } catch (err) {
+            setError('Failed to fetch packages. Please try again later.');
+            setIsLoading(false);
         }
-        setVisibleItems( tempData );
-    }
+    };
+
+    const handleChange = (e) => {
+        e.preventDefault();
+        const filter = e.target.textContent.toLowerCase();
+        setActiveFilter(filter);
+        let tempData;
+        if (filter === 'all') {
+            tempData = tripData.slice(0, dataVisibleCount);
+        } else {
+            tempData = tripData.filter((data) =>
+                data.filterParam.toLowerCase() === filter &&
+                tripData.indexOf(data) < dataVisibleCount
+            );
+        }
+        setVisibleItems(tempData);
+    };
 
     const handleLoadMoreBtn = (e) => {
         e.preventDefault();
         let tempCount = dataVisibleCount + dataIncrement;
-        if (dataVisibleCount >= TripData.length) {
-            setNoMorePost( true );
-        } else {
-            setDataVisibleCount(tempCount);
-            setVisibleItems(TripData.filter((data) => data.itinerary_id <= tempCount));
+        if (tempCount >= tripData.length) {
+            setNoMorePost(true);
+            tempCount = tripData.length;
         }
-    }
+        setDataVisibleCount(tempCount);
+        if (activeFilter === 'all') {
+            setVisibleItems(tripData.slice(0, tempCount));
+        } else {
+            setVisibleItems(tripData.filter((data) =>
+                data.filterParam.toLowerCase() === activeFilter &&
+                tripData.indexOf(data) < tempCount
+            ));
+        }
+    };
+
+    if (isLoading) return <div>Loading...</div>;
+    if (error) return <div>{error}</div>;
 
     return (
         <>
@@ -55,7 +83,7 @@ const CourseTypeFilter = ({ itemToShow, showLoadMore, incrementPerClick }) => {
                 </div>
                 <div className="col-lg-6">
                     <div className="button-group isotop-filter filters-button-group d-flex justify-content-start justify-content-lg-end">
-                        {FilterControls.map( ( filter, i ) => (
+                        {filterControls.map( ( filter, i ) => (
                             <button
                                 onClick={handleChange}
                                 key={i}
@@ -110,4 +138,4 @@ const CourseTypeFilter = ({ itemToShow, showLoadMore, incrementPerClick }) => {
     )
 }
 
-export default CourseTypeFilter;
+export default TravelPlanFilter;

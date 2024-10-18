@@ -1,19 +1,14 @@
-import React, { useState, useContext } from 'react';
-import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import { Accordion } from 'react-bootstrap';
-import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+import React, {useContext, useState, useEffect} from 'react';
+import {useParams} from 'react-router-dom';
+import {Accordion} from 'react-bootstrap';
+import {useAccordionButton} from 'react-bootstrap/AccordionButton';
 import AccordionContext from 'react-bootstrap/AccordionContext';
-import { slugify } from '../../utils';
 import SEO from '../../common/SEO';
 import Layout from '../../common/Layout';
-import BreadcrumbOne from '../../common/breadcrumb/BreadcrumbOne';
 import CourseInfo from '../../components/course/CourseInfo';
-import RelatedCourses from '../../components/course/RelatedCourses';
-import CourseData from '../../data/course/CourseData.json';
-import InstructorData from '../../data/instructor/InstructorData.json';
-import CurriculumTabContent from '../../data/course/CurriculumTabContent.json';
-import TravelIternary from '../../data/traveliternary/traveliternary.json';
+import axios from 'axios';
+
+
 const CustomToggle = ({ children, eventKey }) => {
     const { activeEventKey } = useContext(AccordionContext);
     const decoratedOnClick = useAccordionButton( eventKey );
@@ -62,15 +57,27 @@ const CurriculumContent = ({ iternaryDetails }) => {
 
 const CourseDetails = () => {
     const { id } = useParams();
-    const travelId = parseInt( id, 10 );
-    const data = TravelIternary.filter( travel => travel.itinerary_id === travelId );
-    const travelItem = data[0];
+    const [travelItem, setTravelItem] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
-    // const indexOfInstructor = InstructorData.findIndex( function( instructor ) {
-    //     return slugify( instructor.name ) === slugify( "System" );
-    // } );
-    // const instructor = InstructorData[indexOfInstructor];
-    const instructorExcerpt  = "System" + "...";
+    useEffect(() => {
+        const fetchTravelDetails = async () => {
+            try {
+                const response = await axios.get(`http://localhost:8000/packages/${id}`);
+                setTravelItem(response.data);
+                setLoading(false);
+                console.log(response);
+            } catch (err) {
+                console.log("response");
+
+                setError('Error fetching travel details');
+                setLoading(false);
+            }
+        };
+
+        fetchTravelDetails();
+    }, [id]);
 
     const [contentTab, setContentTab] = useState( 'overview' );
     const handleTab = ( content ) => {
@@ -80,13 +87,13 @@ const CourseDetails = () => {
         else if ( content === 'itinerary' ) {
             setContentTab( 'itinerary' );
         }
-        // else if ( content === 'instructor' ) {
-        //     setContentTab( 'instructor' );
-        // }
         else if ( content === 'reviews' ) {
             setContentTab( 'reviews' );
         }
     }
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>{error}</div>;
+    if (!travelItem) return <div>No travel package found</div>;
 
     return (
         <>

@@ -2,7 +2,7 @@ import React from 'react';
 import SEO from '../../common/SEO';
 import Layout from '../../common/Layout';
 import BreadcrumbOne from '../../common/breadcrumb/BreadcrumbOne';
-import CourseTypeFilter from '../../components/course/CourseTypeFilter';
+import TravelPlanFilter from '../../components/course/TravelPlanFilter';
 
 const TripPlans = () => {
     return (
@@ -17,7 +17,7 @@ const TripPlans = () => {
                 />
                     <div className="edu-course-area course-three-wrapper edu-section-gap bg-color-white position-relative">
                         <div className="container">
-                            <CourseTypeFilter showLoadMore="enable" />
+                            <TravelPlanFilter showLoadMore="enable" />
                         </div>
                     </div>
             </Layout>
