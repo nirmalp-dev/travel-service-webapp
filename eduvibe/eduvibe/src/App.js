@@ -27,7 +27,7 @@ import CourseTwo from './pages/course/CourseTwo';
 import CourseThree from './pages/course/CourseThree';
 import CourseFour from './pages/course/CourseFour';
 import CourseFive from './pages/course/CourseFive';
-import CourseFilterOne from './pages/course/CourseFilterOne';
+import TripPlans from './pages/course/TripPlans';
 import CourseFilterTwo from './pages/course/CourseFilterTwo';
 import CourseCarousel from './pages/course/CourseCarousel';
 import CourseLoadMore from './pages/course/CourseLoadMore';
@@ -85,7 +85,7 @@ function App() {
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-3'}`} element={<CourseThree/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-4'}`} element={<CourseFour/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-5'}`} element={<CourseFive/>}/>
-                    <Route exact path={`${process.env.PUBLIC_URL + '/course-filter-1'}`} element={<CourseFilterOne/>}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/trip-plans'}`} element={<TripPlans/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-filter-2'}`} element={<CourseFilterTwo/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-carousel'}`} element={<CourseCarousel/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/course-load-more'}`} element={<CourseLoadMore/>}/>

@@ -92,13 +92,13 @@ const CourseDetails = () => {
         <>
             <SEO title={ travelItem.title } />
             <Layout>
-                <BreadcrumbOne 
-                    title="Course Details"
-                    rootUrl="/"
-                    parentUrl="Home"
-                    currentUrl="Course Details"
-                />
-                <div className="edu-course-details-area edu-section-gap bg-color-white">
+                {/*<BreadcrumbOne */}
+                {/*    title="Package Details"*/}
+                {/*    rootUrl="/"*/}
+                {/*    parentUrl="Home"*/}
+                {/*    currentUrl="Package Details"*/}
+                {/*/>*/}
+                <div className="edu-course-details-area bg-color-white">
                     <div className="container">
                         <div className="row g-5">
                             <div className="col-lg-12">

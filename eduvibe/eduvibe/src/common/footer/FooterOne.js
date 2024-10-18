@@ -34,7 +34,7 @@ const FooterOne = () => {
                                         <ul className="footer-link link-hover">
                                             <li><Link to="/home"><i className="icon-Double-arrow"></i>Home</Link></li>
                                             <li><Link to="/about-us-1"><i className="icon-Double-arrow"></i>About Us</Link></li>
-                                            <li><Link to="/course-filter-1"><i className="icon-Double-arrow"></i>Trip Plans</Link></li>
+                                            <li><Link to="/trip-plans"><i className="icon-Double-arrow"></i>Trip Plans</Link></li>
                                             <li><Link to="/contact-us"><i className="icon-Double-arrow"></i>Contact Us</Link></li>
                                         </ul>
                                     </div>
