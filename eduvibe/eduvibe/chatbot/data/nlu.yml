@@ -34,9 +34,19 @@ nlu:
     - The travel date is [next Monday](travel_date)
     - I will leave on [September 30th](travel_date)
     - Let's plan for [4 Days](days)
+    - I want to visit the [beach](destination)
+    - I'm planning a trip to the [desert](destination)
+    - I want to explore the [city](destination)
+    - Let's travel to [Europe](destination)
+    - The trip will be to a [beach](destination)
+    - I want to go on an adventure in the [desert](destination)
 
 - lookup: destination
   examples: |
+    - beach
+    - desert
+    - city
+    - Europe
     - Paris
     - New York City
     - Tokyo
