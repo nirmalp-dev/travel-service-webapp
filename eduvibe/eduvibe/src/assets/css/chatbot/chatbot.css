@@ -234,3 +234,22 @@ div.chats > span.botMsg > ol {
     margin-right: 5px;
     /* border: 2px solid  #060DCF ; */
 }
+
+.button-link {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 1px;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ffa41b; /* Button background color */
+    color: white; /* Text color */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.button-link:hover {
+    background-color: #ff8025; /* Darker background on hover */
+}

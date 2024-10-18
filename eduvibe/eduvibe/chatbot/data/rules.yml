@@ -31,7 +31,7 @@ rules:
   - action: utter_slots_values
   - action: action_recommend_travel_plan
   - action: utter_thank_you  # Thank the user after submitting travel form
-  - action: reset_slots
+  - action: action_restart
 
 
 - rule: Greet the user when they say hello
