@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
+import axiosClient from '../../utils/axiosClient'; // Adjust the path as needed
 
 const CourseInfo = ( { data }) => {
     const [toggler, setToggler] = useState(false);
@@ -29,12 +30,29 @@ const CourseInfo = ( { data }) => {
             [name]: value
         });
     };
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // You can process or send the formData to an API here
-        console.log(formData);
-        // Close the modal after submission
-        closeModal();
+        try {
+            const orderCreate = {
+                name: formData.name,
+                age: parseInt(formData.age),
+                passport_number: formData.passportNumber,
+                credit_card_number: formData.creditCard,
+                address: formData.address
+            };
+            try {
+                const addToCartResponse = await axiosClient.post('http://localhost:8000/cart/add', {'package_id': data._id});
+            } catch (error){
+                console.log(error);
+            }
+            const response = await axiosClient.post('http://localhost:8000/order/checkout', orderCreate);
+            console.log('Order created:', response.data);
+            // Handle successful order creation (e.g., show a success message, redirect to order confirmation page)
+            closeModal();
+        } catch (error) {
+            console.error('Error creating order:', error);
+            // Handle error (e.g., show error message to user)
+        }
     };
 
     return (
