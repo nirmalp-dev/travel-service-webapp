@@ -40,23 +40,6 @@ const FooterOne = () => {
                                     </div>
                                 </div>
                             </div>
-
-                            {/* <div className="col-lg-3 col-md-6 col-sm-6 col-12">
-                                <div className="edu-footer-widget quick-link-widget">
-                                    <h5 className="widget-title">Useful Links</h5>
-                                    <div className="inner">
-                                        <ul className="footer-link link-hover">
-                                            <li><Link to="/contact-us"><i className="icon-Double-arrow"></i>Contact Us</Link></li>
-                                            <li><Link to="/pricing"><i className="icon-Double-arrow"></i>Pricing Plan</Link></li>
-                                            <li><Link to="/instructor-details/james-carlson"><i className="icon-Double-arrow"></i>Instructor Profile</Link></li>
-                                            <li><Link to="/purchase-guide"><i className="icon-Double-arrow"></i>Purchase Guide</Link></li>
-                                            <li><Link to="/course-1"><i className="icon-Double-arrow"></i>Popular Courses</Link></li>
-                                            <li><Link to="/event-details/1"><i className="icon-Double-arrow"></i>Event Details</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> */}
-
                             <div className="col-lg-3 col-md-6 col-sm-6 col-12">
                                 <div className="edu-footer-widget">
                                     <h5 className="widget-title">Contact Info</h5>
@@ -92,7 +75,7 @@ const FooterOne = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="inner text-center">
-                                    <p>Copyright 2022 <a href="#">Travel-Vibe</a> Designed By SmartDevelopers. All Rights
+                                    <p><a href="#">Travel-Vibe</a> Designed By SmartDevelopers. All Rights
                                         Reserved</p>
                                 </div>
                             </div>

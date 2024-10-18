@@ -8,7 +8,6 @@ import AboutSix from '../../components/about/AboutSix';
 import AboutOne from '../../components/about/AboutThree';
 import AboutUsOneTeam from '../../components/about-us-one/AboutUsOneTeam';
 import HomeTwoTestimonial from '../../components/home-two/HomeTwoTestimonial';
-// import FooterTwo from '../../common/footer/FooterTwo';
 import FooterOne from '../../common/footer/FooterOne';
 import HomeOneInstructor from '../../components/home-one/HomeOneInstructor';
 
