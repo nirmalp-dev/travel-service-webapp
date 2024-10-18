@@ -41,18 +41,36 @@ class ActionRecommendTravelPlan(Action):
     def run(self, dispatcher, tracker, domain):
         # Fetch user input from slots
         url = "http://127.0.0.1:8000/packages/"
-        city_name = tracker.get_slot("destination")  # Assuming slot 'destination' only contains the city
+        city_name = tracker.get_slot("destination")  # Could be a specific city or a category (like 'beach')
         days_slot = tracker.get_slot('days')
         days = int(re.search(r'\d+', days_slot).group()) if days_slot else None
 
-        # Load the travel packages from the JSON file
+        # Define a mapping for broad categories like beach, desert, etc.
+        category_to_destination = {
+            "beach": ["Bangkok"],
+            "desert": ["Cairo", "Dubai"],
+            "city": ["New York", "Tokyo", "Paris", "Singapore"],
+            "europe": ["Paris", "Rome", "London"],
+            # Add more mappings as needed
+        }
+
+        # Check if the user input matches a category
+        if city_name.lower() in category_to_destination:
+            possible_destinations = category_to_destination[city_name.lower()]
+        else:
+            # If no category match, assume it's a specific city
+            possible_destinations = [city_name]
+
+        # Fetch travel packages from the API
         response = requests.get(url)
         if response.status_code == 200:
             travel_packages = response.json()  # Parse JSON response
-        # Find matching travel plans based on city name (case-insensitive)
+
+            # Find matching travel plans based on city name or category (case-insensitive)
             matching_packages = [
                 package for package in travel_packages
-                if city_name.lower() in package["destination"].lower().split(',')[0] and package["tripdays"] == days
+                if any(destination.lower() in package["destination"].lower().split(',')[0] for destination in possible_destinations)
+                and package["tripdays"] == days
             ]
 
             if matching_packages:
@@ -62,8 +80,11 @@ class ActionRecommendTravelPlan(Action):
                     web_link = f"http://localhost:3000/course-details/{str(package['_id'])}"
                     message = (
                         f"I found a travel plan to {package['destination']} for {package['tripdays']} days. "
+                        f"\n<br/>"
+                        f"\n<br/>"
                         f"It costs ${package['cost']} and includes: {package['description']} "
                         f"\nActivities include: {', '.join(day['activities'] for day in package['days'])}. "
+                        f"\n<br/>"
                         f"\n<br/>"
                         f'\n<a href="{web_link}" target="_blank" class="button-link">View Package</a>'
                     )
@@ -76,6 +97,7 @@ class ActionRecommendTravelPlan(Action):
         else:
             # Handle case where API returns an error
             dispatcher.utter_message(text="Sorry, there was a problem fetching travel packages.")
+        
         return []
 
 # class ActionResetSlots(Action):
