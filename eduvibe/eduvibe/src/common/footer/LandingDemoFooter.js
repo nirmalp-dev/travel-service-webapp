@@ -10,7 +10,7 @@ const LandingDemoFooter = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="inner text-center">
-                                <h3 className="title color-white mb--50">Build Best Educational Sites <br /> with EduVibe React Template</h3>
+                                <h3 className="title color-white mb--50">Best travel website </h3>
                                 <div className="button-group">
                                     <a className="edu-btn purchase-btn" href="https://1.envato.market/e4x0yZ" target="_blank">
                                         Get EduVibe <i className="icon-arrow-right-line-right"></i>

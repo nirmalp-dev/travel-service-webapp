@@ -76,7 +76,7 @@ const FooterTwo = () => {
                                     <div className="edu-footer-widget">
                                         <div className="logo">
                                             <Link to={process.env.PUBLIC_URL + "/"}>
-                                                <img className="logo-light" src="/images/logo/logo-white.png" alt="Footer Logo" />
+                                                <img className="logo-light" src="/images/logo/travel-vibe-white.png" alt="Footer Logo" />
                                             </Link>
                                         </div>
                                         <p className="description">It is a long established fact that a reader will be distracted by the readable content of a

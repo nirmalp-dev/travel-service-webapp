@@ -14,7 +14,7 @@ const ComingSoon = () => {
                             <div className="content text-center">
                                 <div className="logo">
                                     <Link to="/">
-                                        <img src="/images/logo/logo.png" alt="Logo Thumb" />
+                                        <img src="/images/logo/Travel-vibe.png" alt="Logo Thumb" />
                                     </Link>
                                 </div>
                                 <h1 className="title">We Are Making <br /> Something Specials</h1>

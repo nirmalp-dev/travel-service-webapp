@@ -30,7 +30,7 @@ const NavLandingResponsiveMenu = ( { show, onClose, showSearch, onSearch } ) => 
                     <div className="header-top">
                         <div className="logo">
                             <Link to={process.env.PUBLIC_URL + '/' }>
-                                <img src="/images/logo/logo.png" alt="Main Logo" />
+                                <img src="/images/logo/Travel-vibe.png" alt="Main Logo" />
                             </Link>
                         </div>
                         <div className="close-menu">
