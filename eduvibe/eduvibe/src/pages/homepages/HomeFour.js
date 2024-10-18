@@ -15,7 +15,7 @@ import Chatbot from "../chatbot/chatbot";
 const HomeFour = () => {
     return (
         <>
-            <SEO title="Home 4" />
+            <SEO title="Home" />
             
             <Layout>
 

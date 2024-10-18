@@ -44,7 +44,7 @@ const AboutEight = () => {
                             </div>
                             <div className="read-more-btn mt--75 mt_lg--30 mt_md--40 mt_sm--40">
                                 <ScrollAnimation animateIn="fadeInUp" animateOut="fadeInOut" animateOnce={ true }>
-                                    <Link className="edu-btn" to="/about-us-1">Know About Us<i className="icon-arrow-right-line-right"></i></Link>
+                                    <Link className="edu-btn" to="/about-us">Know About Us<i className="icon-arrow-right-line-right"></i></Link>
                                     <a className="info-btn" href="tel: +288 (394) 2783"><i className="icon-call"></i>+288 (394) 2783</a>
                                 </ScrollAnimation>
                             </div>

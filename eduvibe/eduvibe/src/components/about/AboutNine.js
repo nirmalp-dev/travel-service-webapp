@@ -63,7 +63,7 @@ const AboutNine = () => {
                                 </div>
                             }
                             <div className="read-more-btn">
-                                <Link className="edu-btn" to="/about-us-1">Know About Us<i className="icon-arrow-right-line-right"></i></Link>
+                                <Link className="edu-btn" to="/about-us">Know About Us<i className="icon-arrow-right-line-right"></i></Link>
                             </div>
                             <div className="shape shape-6 about-parallax-2 d-xl-block d-none">
                                 <img src="/images/shapes/shape-07.png" alt="Shape Thumb" />

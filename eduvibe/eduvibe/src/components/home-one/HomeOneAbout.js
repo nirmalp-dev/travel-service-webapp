@@ -82,7 +82,7 @@ const HomeOneAbout = () => {
                                 className="read-more-btn"
                                 animateOnce={ true }
                             >
-                                <Link className="edu-btn" to="/about-us-1">Know About Us<i className="icon-arrow-right-line-right"></i></Link>
+                                <Link className="edu-btn" to="/about-us">Know About Us<i className="icon-arrow-right-line-right"></i></Link>
                             </ScrollAnimation>
                             <div className="shape shape-6 about-parallax-2 d-xl-block d-none">
                                 <img src="/images/shapes/shape-07.png" alt="Shape Thumb" />

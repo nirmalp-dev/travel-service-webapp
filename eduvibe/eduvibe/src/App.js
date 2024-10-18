@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ScrollToTop from './components/scrolltotop/ScrollToTop';
 //import CourseFilterSidebar from './pages/course/CourseFilterSidebar';
 import AboutUsOne from './pages/innerpages/AboutUsOne';
@@ -55,8 +55,7 @@ import LoginRegister from './pages/innerpages/LoginRegister';
 //import Testimonial from './pages/innerpages/Testimonial';
 //import InstructorDetails from './pages/detailspages/InstructorDetails';
 //import Error from './pages/innerpages/Error';
-
-// Import Css Here 
+// Import Css Here
 import './assets/scss/style.scss';
 
 function App() {
@@ -70,7 +69,7 @@ function App() {
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-3'}`} element={<HomeThree/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-4'}`} element={<HomeFour/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-5'}`} element={<HomeFive/>}/> */}
-                    <Route exact path={`${process.env.PUBLIC_URL + '/about-us-1'}`} element={<AboutUsOne/>}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/about-us'}`} element={<AboutUsOne/>}/>
                     {/*<Route exact path={`${process.env.PUBLIC_URL + '/about-us-2'}`} element={<AboutUsTwo/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/about-us-3'}`} element={<AboutUsThree/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/coming-soon'}`} element={<ComingSoon/>}/>

@@ -27,7 +27,7 @@ const AboutUsOne = () => {
 
             <AboutSeven />
             
-            <AboutUsOneService />
+            {/*<AboutUsOneService />*/}
 
             {/* <AboutSix /> */}
 
