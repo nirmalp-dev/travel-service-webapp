@@ -2,7 +2,41 @@ import React, { useState } from 'react';
 import FsLightbox from 'fslightbox-react';
 
 const CourseInfo = ( { data }) => {
-    const [toggler, setToggler] = useState( false );
+    const [toggler, setToggler] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [formData, setFormData] = useState({
+        name: '',
+        age: '',
+        creditCard: '',
+        passportNumber: '',
+        address: '',
+        id: data._id || ''
+    });
+
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // You can process or send the formData to an API here
+        console.log(formData);
+        // Close the modal after submission
+        closeModal();
+    };
+
     return (
         <div className="eduvibe-sidebar course-details-sidebar">
             <div className="inner">
@@ -36,7 +70,8 @@ const CourseInfo = ( { data }) => {
                                 </a>
                             </div>
                             <div className="read-more-btn mt--15">
-                                <a href="#" className="edu-btn w-100 text-center">Buy Now</a>
+                                <button onClick={openModal} className="edu-btn w-100 text-center">Buy Now</button>
+                                {/*<a href="#" className="edu-btn w-100 text-center">Buy Now</a>*/}
                             </div>
                             <div className="read-more-btn mt--30 text-center">
                                 <div className="eduvibe-post-share">
@@ -51,6 +86,92 @@ const CourseInfo = ( { data }) => {
                     </div>
                 </div>
             </div>
+            {isModalOpen && (
+                <div className="custom-modal-overlay">
+                    <div className="custom-modal-content bg-color-white edu-section-gap">
+                        <div className="container">
+                            <div className="row g-5">
+                                
+                            </div>
+                            <div className="row g-5">
+                                <div className="col-lg-12">
+                                    <form onSubmit={handleSubmit} className="checkout-page-style">
+                                        {/* Hidden field for data._id */}
+                                        <input
+                                            type="hidden"
+                                            name="id"
+                                            value={formData.id}
+                                            onChange={handleChange}
+                                        />
+
+                                        <div className="form-group">
+                                            <label>Name:</label>
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                                required
+                                                className="form-control"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label>Age:</label>
+                                            <input
+                                                type="number"
+                                                name="age"
+                                                value={formData.age}
+                                                onChange={handleChange}
+                                                required
+                                                className="form-control"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label>Credit Card Number:</label>
+                                            <input
+                                                type="number"
+                                                name="creditCard"
+                                                value={formData.creditCard}
+                                                onChange={handleChange}
+                                                required
+                                                className="form-control"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label>Passport Number:</label>
+                                            <input
+                                                type="text"
+                                                name="passportNumber"
+                                                value={formData.passportNumber}
+                                                onChange={handleChange}
+                                                required
+                                                className="form-control"
+                                            />
+                                        </div>
+                                        <div className="form-group">
+                                            <label>Address:</label>
+                                            <input
+                                                type="text"
+                                                name="address"
+                                                value={formData.address}
+                                                onChange={handleChange}
+                                                required
+                                                className="form-control"
+                                            />
+                                        </div>
+                                        <div className="modal-buttons mt--30 text-center">
+                                            <button onClick={closeModal} type="button" className="edu-btn btn-bg-alt w-100 text-center">Cancel</button>
+                                            <button type="submit" className="edu-btn w-100 text-center mt--10">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            
         </div>
     )
 }
