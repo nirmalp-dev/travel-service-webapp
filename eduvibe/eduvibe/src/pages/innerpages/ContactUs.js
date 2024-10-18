@@ -37,8 +37,8 @@ const ContactUs = () => {
                                                     </div>
                                                     <div className="content">
                                                         <h6 className="title">Our Website</h6>
-                                                        <p><a href="https://themeforest.net/user/devsvibe/eduvibe">www.eduvibe.com</a></p>
-                                                        <p><a href="https://themeforest.net/user/devsvibe">www.wpvive.com</a></p>
+                                                        <p><a href="www.example.com">www.travel-vibe.com</a></p>
+                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -51,8 +51,10 @@ const ContactUs = () => {
                                                     </div>
                                                     <div className="content">
                                                         <h6 className="title">Call Us On</h6>
-                                                        <p><a href="tel: +2763 (388) 2930">+2763 (388) 2930</a></p>
-                                                        <p><a href="tel: +4875 (356) 2568">+4875 (356) 2568</a></p>
+                                                        <p><a href="tel: +2763 (388) 2930">+ 1 (312) 687-4627</a></p>
+                                                        <p><a href="tel: +4875 (356) 2568">+ 1 (312) 687-4627</a></p>
+                                                        <p><a href="tel: +4875 (356) 2568">+ 1 (224) 460-2294</a></p>
+                                                        <p><a href="tel: +4875 (356) 2568">+ 1 (312) 284-9207</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -65,8 +67,7 @@ const ContactUs = () => {
                                                     </div>
                                                     <div className="content">
                                                         <h6 className="title">Email Us</h6>
-                                                        <p><a href="mailto:eduvibe@mail.com">eduvibe@mail.com</a></p>
-                                                        <p><a href="mailto:wpvive@mail.com">wpvive@mail.com</a></p>
+                                                        <p><a href="mailto:exmaple@mail.com">scarlet@hawk.iit.edu</a></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -79,7 +80,7 @@ const ContactUs = () => {
                                                     </div>
                                                     <div className="content">
                                                         <h6 className="title">Our Location</h6>
-                                                        <p>486 Normana Avenue Morningtide, 4223</p>
+                                                        <p>10 W 35th St, Chicago, IL 60616</p>
                                                     </div>
                                                 </div>
                                             </div>

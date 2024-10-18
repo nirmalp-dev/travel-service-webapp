@@ -49,7 +49,7 @@ const NavLandingDemo = () => {
                 </Link>
             </li>
             <li>
-                <a className="landing-demo-nav-btn" href="https://docs.devsvibe.com/eduvibe-react/index.html" target="_blank" rel="noreferrer">
+                <a className="landing-demo-nav-btn" href="www.example.com" target="_blank" rel="noreferrer">
                     Documentation
                 </a>
             </li>

@@ -13,15 +13,16 @@ const FooterOne = () => {
                                 <div className="edu-footer-widget">
                                     <div className="logo">
                                         <Link to={process.env.PUBLIC_URL + "/"}>
-                                            <img className="logo-light" src="/images/logo/logo-white.png" alt="Footer Logo" />
+                                            <img className="logo-light" src="/images/logo/travel-vibe-white.png" alt="Footer Logo" />
                                         </Link>
                                     </div>
                                     <p className="description">Discover your next adventure! Our travel website offers destination info, easy bookings, and personalized trip suggestions tailored just for you.</p>
                                     <ul className="social-share">
-                                        <li><a href="#"><i className="icon-Fb"></i></a></li>
-                                        <li><a href="#"><i className="icon-linkedin"></i></a></li>
-                                        <li><a href="#"><i className="icon-Pinterest"></i></a></li>
-                                        <li><a href="#"><i className="icon-Twitter"></i></a></li>
+                                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="icon-Fb"></i></a></li>
+                                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin"></i></a></li>
+                                    <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"><i className="icon-Pinterest"></i></a></li>
+                                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="icon-Twitter"></i></a></li>
+
                                     </ul>
                                 </div>
                             </div>
