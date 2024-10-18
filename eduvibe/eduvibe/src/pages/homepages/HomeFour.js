@@ -22,23 +22,23 @@ const HomeFour = () => {
                 <BannerFour />
                 <Chatbot/>
 
-                <HomeFourServices />
+                {/* <HomeFourServices /> */}
 
-                {/*<CustomWidget />*/}
+                {/* <CustomWidget /> */}
 
                 <HomeFourAbout />
 
-                <HomeFourCourses />
+                {/* <HomeFourCourses /> */}
 
                 <VideoSectionOne />
 
-                <HomeFourTeam />
+                {/* <HomeFourTeam /> */}
 
-                <CallToActionTwo />
+                {/* <CallToActionTwo /> */}
 
-                <TestimonialSectionOne />
+                {/* <TestimonialSectionOne /> */}
 
-                <HomeFourBlog />
+                {/* <HomeFourBlog /> */}
 
             </Layout>
         </>
