@@ -156,16 +156,6 @@ const PackageDetails = () => {
                                                 Itinerary
                                             </button>
                                         </li>
-                                       {/* <li className="nav-item">
-                                            <button
-                                                className={contentTab === 'instructor' ? 'nav-link active' : 'nav-link'}
-                                                type="button"
-                                                aria-label="Instructor"
-                                                onClick={() => handleTab('instructor')}
-                                            >
-                                                Instructor
-                                            </button>
-                                        </li>*/}
                                         <li className="nav-item">
                                             <button
                                                 className={contentTab === 'reviews' ? 'nav-link active' : 'nav-link'}
@@ -192,40 +182,7 @@ const PackageDetails = () => {
                                                 </div>
                                             </div>
                                         }
-                                      {/*  { contentTab === 'curriculum' &&
-                                            <div className={`tab-pane fade show ${contentTab === 'curriculum' ? 'active' : '' } `}>
-                                                <div className="course-tab-content">
-                                                    <CurriculumContent />
-                                                </div>
-                                            </div>
-                                        }*/}
-                                        {/*{ contentTab === 'instructor' &&
-                                            <div className={`tab-pane fade show ${contentTab === 'instructor' ? 'active' : '' } `}>
-                                                <div className="course-tab-content">
-                                                    <div className="course-author-wrapper">
-                                                        <div className="thumbnail">
-                                                            <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( travelItem.instructor ) }`}>
-                                                                <img src={`${process.env.PUBLIC_URL}/images/instructor/course-details/${instructor.image}`} alt="Author Thumb" />
-                                                            </Link>
-                                                        </div>
-                                                        <div className="author-content">
-                                                            <h6 className="title">
-                                                                <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( travelItem.instructor ) }`}>{instructor.name}</Link>
-                                                            </h6>
-                                                            <span className="subtitle">{instructor.designation}</span>
-                                                            <p>{ instructorExcerpt }</p>
-                                                            <ul className="social-share border-style">
-                                                                <li><a href={instructor.facebookUrl}><i className="icon-Fb"></i></a></li>
-                                                                <li><a href={instructor.linkedInUrl}><i className="icon-linkedin"></i></a></li>
-                                                                <li><a href={instructor.pinterest}><i className="icon-Pinterest"></i></a></li>
-                                                                <li><a href={instructor.twitterUrl}><i className="icon-Twitter"></i></a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        }*/}
-
+                                                                          
                                         { contentTab === 'reviews' && 
                                             <div className={`tab-pane fade show ${contentTab === 'reviews' ? 'active' : '' } `}>
                                                 <div className="course-tab-content">
@@ -334,7 +291,6 @@ const PackageDetails = () => {
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                {/*<RelatedCourses courseID={ travelItem.id } />*/}
                             </div>
                         </div>
                     </div>

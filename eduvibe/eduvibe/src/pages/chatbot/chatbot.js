@@ -11,7 +11,6 @@ const Chatbot = () => {
 
 
     useEffect(() => {
-        // Function to dynamically load scripts
         const loadScript = (src) => {
             return new Promise((resolve, reject) => {
                 const script = document.createElement('script');
@@ -23,7 +22,6 @@ const Chatbot = () => {
             });
         };
 
-        // Load all the required scripts
         Promise.all([
             loadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'),
             loadScript('static/js/lib/materialize.min.js'),
@@ -40,7 +38,6 @@ const Chatbot = () => {
             });
 
         return () => {
-            // Logic to remove scripts if needed
         };
     }, []);
 
