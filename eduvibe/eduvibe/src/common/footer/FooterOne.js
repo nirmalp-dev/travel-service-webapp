@@ -32,7 +32,7 @@ const FooterOne = () => {
                                     <h5 className="widget-title">Explore</h5>
                                     <div className="inner">
                                         <ul className="footer-link link-hover">
-                                            <li><Link to="/home"><i className="icon-Double-arrow"></i>Home</Link></li>
+                                            <li><Link to="/"><i className="icon-Double-arrow"></i>Home</Link></li>
                                             <li><Link to="/about-us"><i className="icon-Double-arrow"></i>About Us</Link></li>
                                             <li><Link to="/trip-plans"><i className="icon-Double-arrow"></i>Trip Plans</Link></li>
                                             <li><Link to="/contact-us"><i className="icon-Double-arrow"></i>Contact Us</Link></li>
