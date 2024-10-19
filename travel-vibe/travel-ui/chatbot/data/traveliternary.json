@@ -1,0 +1,944 @@
+[
+  {
+    "itinerary_id": 1,
+    "destination": "Paris, France",
+    "arrival": "2024-11-10",
+    "cost": 1500,
+    "description": "A romantic getaway in the City of Lights, exploring iconic landmarks and savoring French cuisine.",
+    "rating": 4.8,
+    "tripdays": 3,
+    "numberOfSale": 50,
+    "filterParam": "Featured",
+    "image": "Paris.jpeg",
+    "fullimage": "Paris.jpeg",
+    "review": 1,
+
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Eiffel Tower tour",
+        "meals_included": "Dinner",
+        "hotel": "Le Meurice"
+      },
+      {
+        "day": 2,
+        "activities": "Louvre Museum, Seine River cruise",
+        "meals_included": "Breakfast",
+        "hotel": "Le Meurice"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Versailles",
+        "meals_included": "Breakfast",
+        "hotel": "Le Meurice"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Eiffel Tower",
+        "content": [
+          "Welcome to Paris",
+          "Check-in at Le Meurice",
+          "Eiffel Tower tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Art and River Cruise",
+        "content": [
+          "Breakfast at Le Meurice",
+          "Visit to the Louvre Museum",
+          "Lunch at a local café",
+          "Seine River cruise",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Versailles Day Trip",
+        "content": [
+          "Breakfast at Le Meurice",
+          "Day trip to Versailles",
+          "Tour of the Palace of Versailles",
+          "Explore the Gardens of Versailles",
+          "Return to Paris",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Experience the magic of Paris with this 3-day romantic getaway. From the iconic Eiffel Tower to the world-renowned Louvre Museum, and a day trip to the magnificent Palace of Versailles, this itinerary offers a perfect blend of Parisian charm and French history.</p><h5>What You'll Experience on This Trip</h5><ul><li>Breathtaking views from the Eiffel Tower</li><li>World-class art at the Louvre Museum</li><li>Scenic Seine River cruise</li><li>The opulent Palace of Versailles and its stunning gardens</li><li>Exquisite French cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Le Meurice, a 5-star hotel in the heart of Paris, offering stunning views of the Tuileries Garden.</p>"
+  },
+  {
+    "itinerary_id": 2,
+    "destination": "Tokyo, Japan",
+    "arrival": "2024-12-01",
+    "cost": 1800,
+    "description": "An exciting adventure in the vibrant capital of Japan, blending traditional culture with modern attractions.",
+    "rating": 4.9,
+    "tripdays": 3,
+    "filterParam": "Trending",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Shinjuku Gyoen National Garden visit",
+        "meals_included": "Dinner",
+        "hotel": "The Ritz-Carlton Tokyo"
+      },
+      {
+        "day": 2,
+        "activities": "Tokyo Tower, Shibuya Crossing",
+        "meals_included": "Breakfast",
+        "hotel": "The Ritz-Carlton Tokyo"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Mount Fuji",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "The Ritz-Carlton Tokyo"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Shinjuku Gyoen",
+        "content": [
+          "Welcome to Tokyo",
+          "Check-in at The Ritz-Carlton Tokyo",
+          "Visit Shinjuku Gyoen National Garden",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Tokyo Tower and Shibuya",
+        "content": [
+          "Breakfast at The Ritz-Carlton Tokyo",
+          "Visit Tokyo Tower",
+          "Explore Shibuya Crossing",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Mount Fuji Day Trip",
+        "content": [
+          "Breakfast at The Ritz-Carlton Tokyo",
+          "Day trip to Mount Fuji",
+          "Lunch included",
+          "Return to Tokyo",
+          "Farewell dinner"
+        ]
+      }
+    ]
+  },
+  {
+    "itinerary_id": 3,
+    "destination": "Rome, Italy",
+    "arrival": "2024-10-15",
+    "cost": 1700,
+    "description": "Experience the rich history, art, and culinary delights of Rome, from ancient ruins to modern gelato.",
+    "rating": 4.7,
+    "tripdays": 3,
+    "filterParam": "Popularity",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Colosseum and Roman Forum tour",
+        "meals_included": "Dinner",
+        "hotel": "Hotel de Russie"
+      },
+      {
+        "day": 2,
+        "activities": "Vatican City, Sistine Chapel",
+        "meals_included": "Breakfast",
+        "hotel": "Hotel de Russie"
+      },
+      {
+        "day": 3,
+        "activities": "Trastevere exploration, Gelato tasting",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Hotel de Russie"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Ancient Rome",
+        "content": [
+          "Welcome to Rome",
+          "Check-in at Hotel de Russie",
+          "Colosseum and Roman Forum tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Vatican City",
+        "content": [
+          "Breakfast at Hotel de Russie",
+          "Visit Vatican City",
+          "Explore the Sistine Chapel",
+          "Free evening to explore"
+        ]
+      },
+      {
+        "title": "Day 3: Trastevere and Gelato",
+        "content": [
+          "Breakfast at Hotel de Russie",
+          "Explore Trastevere neighborhood",
+          "Gelato tasting experience",
+          "Lunch included",
+          "Farewell dinner"
+        ]
+      }
+    ]
+  },
+  {
+    "itinerary_id": 4,
+    "destination": "Barcelona, Spain",
+    "arrival": "2024-11-05",
+    "cost": 1600,
+    "description": "Discover the unique architecture, vibrant culture, and delicious tapas of Barcelona.",
+    "rating": 4.6,
+    "tripdays": 3,
+    "filterParam": "Featured",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Park Güell visit",
+        "meals_included": "Dinner",
+        "hotel": "Hotel Arts Barcelona"
+      },
+      {
+        "day": 2,
+        "activities": "Sagrada Familia, Gothic Quarter",
+        "meals_included": "Breakfast",
+        "hotel": "Hotel Arts Barcelona"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Montserrat",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Hotel Arts Barcelona"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Park Güell",
+        "content": [
+          "Welcome to Barcelona",
+          "Check-in at Hotel Arts Barcelona",
+          "Visit Park Güell",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Sagrada Familia and Gothic Quarter",
+        "content": [
+          "Breakfast at Hotel Arts Barcelona",
+          "Tour of Sagrada Familia",
+          "Explore the Gothic Quarter",
+          "Free evening to enjoy tapas"
+        ]
+      },
+      {
+        "title": "Day 3: Montserrat Day Trip",
+        "content": [
+          "Breakfast at Hotel Arts Barcelona",
+          "Day trip to Montserrat",
+          "Lunch included",
+          "Return to Barcelona",
+          "Farewell dinner"
+        ]
+      }
+    ]
+  },
+  {
+    "itinerary_id": 5,
+    "destination": "New York City, USA",
+    "arrival": "2024-10-20",
+    "cost": 2000,
+    "description": "Experience the hustle and bustle of NYC, visiting iconic sites and enjoying diverse cuisine.",
+    "rating": 4.8,
+    "tripdays": 3,
+    "filterParam": "Featured",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Times Square exploration",
+        "meals_included": "Dinner",
+        "hotel": "The St. Regis New York"
+      },
+      {
+        "day": 2,
+        "activities": "Statue of Liberty, Central Park",
+        "meals_included": "Breakfast",
+        "hotel": "The St. Regis New York"
+      },
+      {
+        "day": 3,
+        "activities": "Broadway show, Rockefeller Center",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "The St. Regis New York"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Times Square",
+        "content": [
+          "Welcome to New York City",
+          "Check-in at The St. Regis New York",
+          "Times Square exploration",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Statue of Liberty and Central Park",
+        "content": [
+          "Breakfast at The St. Regis New York",
+          "Visit Statue of Liberty",
+          "Explore Central Park",
+          "Free evening to enjoy NYC nightlife"
+        ]
+      },
+      {
+        "title": "Day 3: Broadway and Rockefeller Center",
+        "content": [
+          "Breakfast at The St. Regis New York",
+          "Attend a Broadway show",
+          "Visit Rockefeller Center",
+          "Lunch included",
+          "Farewell dinner"
+        ]
+      }
+    ]
+  },
+  {
+    "itinerary_id": 6,
+    "destination": "Sydney, Australia",
+    "arrival": "2024-12-15",
+    "cost": 2100,
+    "description": "Explore the stunning landscapes, beaches, and culture of Sydney, from the Opera House to Bondi Beach.",
+    "rating": 4.7,
+    "tripdays": 3,
+    "filterParam": "Popularity",
+    "image": "Sydney.jpeg",
+    "fullimage": "Sydney.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Sydney Opera House tour",
+        "meals_included": "Dinner",
+        "hotel": "Sydney Harbour Marriott"
+      },
+      {
+        "day": 2,
+        "activities": "Bondi Beach, Coastal Walk",
+        "meals_included": "Breakfast",
+        "hotel": "Sydney Harbour Marriott"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Blue Mountains",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Sydney Harbour Marriott"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Sydney Opera House",
+        "content": [
+          "Welcome to Sydney",
+          "Check-in at Sydney Harbour Marriott",
+          "Sydney Opera House tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Bondi Beach and Coastal Walk",
+        "content": [
+          "Breakfast at Sydney Harbour Marriott",
+          "Visit Bondi Beach",
+          "Enjoy the Coastal Walk",
+          "Free evening to explore Sydney"
+        ]
+      },
+      {
+        "title": "Day 3: Blue Mountains Day Trip",
+        "content": [
+          "Breakfast at Sydney Harbour Marriott",
+          "Day trip to Blue Mountains",
+          "Lunch included",
+          "Return to Sydney",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Discover the vibrant city of Sydney with this 3-day adventure. From the iconic Sydney Opera House to the picturesque Bondi Beach and the stunning Blue Mountains, this itinerary offers a perfect blend of urban excitement and natural beauty.</p><h5>What You'll Experience on This Trip</h5><ul><li>A guided tour of the world-famous Sydney Opera House</li><li>Relaxation on the sandy shores of Bondi Beach</li><li>Scenic Coastal Walk with breathtaking ocean views</li><li>A full day exploring the majestic Blue Mountains</li><li>Delicious Australian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the Sydney Harbour Marriott, a luxurious 5-star hotel offering breathtaking views of the harbour and easy access to Sydney's top attractions.</p>"
+  },
+  {
+    "itinerary_id": 7,
+    "destination": "Rio de Janeiro, Brazil",
+    "arrival": "2024-11-18",
+    "cost": 1900,
+    "description": "Discover the vibrant culture and stunning beaches of Rio, from Copacabana to Christ the Redeemer.",
+    "rating": 4.8,
+    "tripdays": 3,
+    "filterParam": "Popularity",
+    "image": "Rio.jpg",
+    "fullimage": "Rio.jpg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Sugarloaf Mountain",
+        "meals_included": "Dinner",
+        "hotel": "Copacabana Palace"
+      },
+      {
+        "day": 2,
+        "activities": "Christ the Redeemer, Ipanema Beach",
+        "meals_included": "Breakfast",
+        "hotel": "Copacabana Palace"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Tijuca National Park",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Copacabana Palace"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Sugarloaf Mountain",
+        "content": [
+          "Welcome to Rio de Janeiro",
+          "Check-in at Copacabana Palace",
+          "Visit Sugarloaf Mountain",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Christ the Redeemer and Ipanema Beach",
+        "content": [
+          "Breakfast at Copacabana Palace",
+          "Visit Christ the Redeemer statue",
+          "Relax at Ipanema Beach",
+          "Free evening to enjoy Rio's nightlife"
+        ]
+      },
+      {
+        "title": "Day 3: Tijuca National Park",
+        "content": [
+          "Breakfast at Copacabana Palace",
+          "Day trip to Tijuca National Park",
+          "Lunch included",
+          "Return to Rio",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the lively spirit of Rio de Janeiro with this 3-day adventure. From the breathtaking views atop Sugarloaf Mountain to the iconic Christ the Redeemer statue and the serene beaches of Copacabana and Ipanema, this itinerary offers a perfect balance of cultural exploration and natural beauty.</p><h5>What You'll Experience on This Trip</h5><ul><li>Spectacular views from Sugarloaf Mountain</li><li>A visit to the awe-inspiring Christ the Redeemer statue</li><li>Relaxation on the world-famous Ipanema Beach</li><li>An adventure through the lush Tijuca National Park</li><li>Delicious Brazilian cuisine</li></ul><h5>Accommodation</h5><p>Stay at the luxurious Copacabana Palace, a historic 5-star hotel overlooking the famous Copacabana Beach, offering refined comfort and elegant amenities.</p>"
+  },
+  {
+    "itinerary_id": 8,
+    "destination": "London, UK",
+    "arrival": "2024-11-12",
+    "cost": 1750,
+    "description": "A classic trip to London, exploring history, culture, and iconic landmarks.",
+    "rating": 4.9,
+    "tripdays": 3,
+    "filterParam": "Featured",
+    "image": "London.jpeg",
+    "fullimage": "London.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, London Eye",
+        "meals_included": "Dinner",
+        "hotel": "The Savoy"
+      },
+      {
+        "day": 2,
+        "activities": "Tower of London, Buckingham Palace",
+        "meals_included": "Breakfast",
+        "hotel": "The Savoy"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Windsor Castle",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "The Savoy"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and London Eye",
+        "content": [
+          "Welcome to London",
+          "Check-in at The Savoy",
+          "London Eye experience",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Tower of London and Buckingham Palace",
+        "content": [
+          "Breakfast at The Savoy",
+          "Visit the Tower of London",
+          "Explore Buckingham Palace",
+          "Free evening to enjoy London's West End"
+        ]
+      },
+      {
+        "title": "Day 3: Windsor Castle Day Trip",
+        "content": [
+          "Breakfast at The Savoy",
+          "Day trip to Windsor Castle",
+          "Lunch included",
+          "Return to London",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Experience the rich history and vibrant culture of London with this 3-day classic adventure. From the iconic London Eye to the historic Tower of London and the grandeur of Windsor Castle, this itinerary is designed to immerse you in the essence of one of the world's most beloved cities.</p><h5>What You'll Experience on This Trip</h5><ul><li>Stunning views of the city from the London Eye</li><li>A guided tour of the historic Tower of London</li><li>A visit to the majestic Buckingham Palace</li><li>A day trip to the royal Windsor Castle</li><li>Delicious British cuisine</li></ul><h5>Accommodation</h5><p>Stay at The Savoy, an iconic 5-star hotel that combines luxurious comfort with an excellent location on the banks of the River Thames, close to many of London's key attractions.</p>"
+  },
+  {
+    "itinerary_id": 9,
+    "destination": "Bangkok, Thailand",
+    "arrival": "2024-12-15",
+    "cost": 1400,
+    "description": "Explore the vibrant street life, ornate temples, and delicious food of Bangkok.",
+    "rating": 4.6,
+    "tripdays": 3,
+    "filterParam": "Trending",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Wat Pho temple tour",
+        "meals_included": "Dinner",
+        "hotel": "The Peninsula Bangkok"
+      },
+      {
+        "day": 2,
+        "activities": "Grand Palace, Chao Phraya River cruise",
+        "meals_included": "Breakfast",
+        "hotel": "The Peninsula Bangkok"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Ayutthaya",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "The Peninsula Bangkok"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Wat Pho",
+        "content": [
+          "Welcome to Bangkok",
+          "Check-in at The Peninsula Bangkok",
+          "Wat Pho temple tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Grand Palace and River Cruise",
+        "content": [
+          "Breakfast at The Peninsula Bangkok",
+          "Visit the Grand Palace",
+          "Chao Phraya River cruise",
+          "Free evening to explore Bangkok's night markets"
+        ]
+      },
+      {
+        "title": "Day 3: Ayutthaya Day Trip",
+        "content": [
+          "Breakfast at The Peninsula Bangkok",
+          "Day trip to Ayutthaya",
+          "Lunch included",
+          "Return to Bangkok",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Immerse yourself in the vibrant culture and rich history of Bangkok with this 3-day adventure. Explore ornate temples, indulge in delicious street food, and take in the sights of the Grand Palace and the historic city of Ayutthaya, making this trip a feast for the senses.</p><h5>What You'll Experience on This Trip</h5><ul><li>A guided tour of the stunning Wat Pho temple</li><li>Visit to the magnificent Grand Palace</li><li>A scenic cruise along the Chao Phraya River</li><li>A day trip to the ancient city of Ayutthaya</li><li>Authentic Thai cuisine and local delicacies</li></ul><h5>Accommodation</h5><p>Stay at The Peninsula Bangkok, a luxurious riverside hotel known for its exceptional service and stunning views of the city, providing the perfect base for your exploration of Bangkok.</p>"
+  },
+  {
+    "itinerary_id": 10,
+    "destination": "Vienna, Austria",
+    "arrival": "2024-11-30",
+    "cost": 1600,
+    "description": "Experience the imperial culture, stunning architecture, and classical music of Vienna.",
+    "rating": 4.7,
+    "tripdays": 3,
+    "filterParam": "Trending",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Schönbrunn Palace tour",
+        "meals_included": "Dinner",
+        "hotel": "Hotel Sacher"
+      },
+      {
+        "day": 2,
+        "activities": "Belvedere Palace, Vienna State Opera",
+        "meals_included": "Breakfast",
+        "hotel": "Hotel Sacher"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Wachau Valley",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Hotel Sacher"
+      }
+    ],
+    "iternaryDetails": [
+      {
+        "title": "Day 1: Arrival and Schönbrunn Palace",
+        "content": [
+          "Welcome to Vienna",
+          "Check-in at Hotel Sacher",
+          "Schönbrunn Palace tour",
+          "Evening dinner"
+        ]
+      },
+      {
+        "title": "Day 2: Belvedere Palace and Vienna State Opera",
+        "content": [
+          "Breakfast at Hotel Sacher",
+          "Visit Belvedere Palace",
+          "Explore Vienna State Opera",
+          "Free evening to enjoy a classical concert"
+        ]
+      },
+      {
+        "title": "Day 3: Wachau Valley Day Trip",
+        "content": [
+          "Breakfast at Hotel Sacher",
+          "Day trip to Wachau Valley",
+          "Lunch included",
+          "Return to Vienna",
+          "Farewell dinner"
+        ]
+      }
+    ],
+    "details": "<h5>Itinerary Description</h5><p>Discover the imperial charm and rich musical heritage of Vienna with this captivating 3-day itinerary. Experience stunning architecture, explore grand palaces, and enjoy classical concerts that make Vienna a cultural hub of Europe.</p><h5>What You'll Experience on This Trip</h5><ul><li>A guided tour of Schönbrunn Palace, a UNESCO World Heritage site</li><li>Visit to the opulent Belvedere Palace</li><li>An evening at the renowned Vienna State Opera</li><li>A picturesque day trip to Wachau Valley, famous for its vineyards and charming towns</li><li>Authentic Viennese cuisine and exquisite dining experiences</li></ul><h5>Accommodation</h5><p>Stay at Hotel Sacher, an iconic luxury hotel known for its historic significance and exceptional service, located in the heart of Vienna, providing the perfect base for your exploration of this magnificent city.</p>"
+  },
+  {
+    "itinerary_id": 11,
+    "destination": "Cairo, Egypt",
+    "arrival": "2024-12-10",
+    "cost": 1900,
+    "description": "Discover the ancient wonders of Egypt, including the Pyramids of Giza and the Sphinx.",
+    "rating": 4.8,
+    "tripdays": 3,
+    "filterParam": "Featured",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Giza Plateau tour",
+        "meals_included": "Dinner",
+        "hotel": "Four Seasons Hotel Cairo"
+      },
+      {
+        "day": 2,
+        "activities": "Egyptian Museum, Khan El Khalili bazaar",
+        "meals_included": "Breakfast",
+        "hotel": "Four Seasons Hotel Cairo"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Luxor",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Four Seasons Hotel Cairo"
+      }
+    ]
+  },
+  {
+    "itinerary_id": 12,
+    "destination": "Istanbul, Turkey",
+    "arrival": "2024-11-25",
+    "cost": 1650,
+    "description": "Explore the rich history and vibrant culture of Istanbul, where East meets West.",
+    "rating": 4.7,
+    "tripdays": 3,
+    "filterParam": "Popularity",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Hagia Sophia visit",
+        "meals_included": "Dinner",
+        "hotel": "Ciragan Palace Kempinski"
+      },
+      {
+        "day": 2,
+        "activities": "Topkapi Palace, Grand Bazaar",
+        "meals_included": "Breakfast",
+        "hotel": "Ciragan Palace Kempinski"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Cappadocia",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Ciragan Palace Kempinski"
+      }
+    ]
+  },
+  {
+    "itinerary_id": 13,
+    "destination": "Singapore",
+    "arrival": "2024-12-12",
+    "cost": 1750,
+    "description": "Experience the modern marvels and rich heritage of Singapore, from Gardens by the Bay to Little India.",
+    "rating": 4.8,
+    "tripdays": 3,
+    "filterParam": "Popularity",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Marina Bay Sands visit",
+        "meals_included": "Dinner",
+        "hotel": "Marina Bay Sands"
+      },
+      {
+        "day": 2,
+        "activities": "Sentosa Island, Universal Studios",
+        "meals_included": "Breakfast",
+        "hotel": "Marina Bay Sands"
+      },
+      {
+        "day": 3,
+        "activities": "Chinatown, Orchard Road shopping",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Marina Bay Sands"
+      }
+    ]
+  },
+  {
+    "itinerary_id": 14,
+    "destination": "Dubai, UAE",
+    "arrival": "2024-11-15",
+    "cost": 2200,
+    "description": "Experience the luxury and modernity of Dubai, from the Burj Khalifa to desert safaris.",
+    "rating": 4.9,
+    "tripdays": 3,
+    "filterParam": "Popularity",
+    "image": "Paris.jpeg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Burj Khalifa tour",
+        "meals_included": "Dinner",
+        "hotel": "Burj Al Arab"
+      },
+      {
+        "day": 2,
+        "activities": "Desert safari, Dubai Marina",
+        "meals_included": "Breakfast",
+        "hotel": "Burj Al Arab"
+      },
+      {
+        "day": 3,
+        "activities": "Visit to Dubai Mall, Atlantis Aquaventure Waterpark",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Burj Al Arab"
+      }
+    ]
+  },
+  {
+    "itinerary_id": 15,
+    "destination": "Amsterdam, Netherlands",
+    "arrival": "2024-10-25",
+    "cost": 1600,
+    "description": "Explore the picturesque canals, rich art scene, and vibrant culture of Amsterdam.",
+    "rating": 4.6,
+    "tripdays": 3,
+    "filterParam": "Trending",
+    "image": "Amsterdam.jpg",
+    "fullimage": "Amsterdam.jpg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Anne Frank House visit",
+        "meals_included": "Dinner",
+        "hotel": "Hotel Pulitzer Amsterdam"
+      },
+      {
+        "day": 2,
+        "activities": "Van Gogh Museum, Rijksmuseum",
+        "meals_included": "Breakfast",
+        "hotel": "Hotel Pulitzer Amsterdam"
+      },
+      {
+        "day": 3,
+        "activities": "Canal cruise, Jordaan district exploration",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Hotel Pulitzer Amsterdam"
+      }
+    ]
+  },
+  {
+    "itinerary_id": 16,
+    "destination": "Lisbon, Portugal",
+    "arrival": "2024-11-20",
+    "cost": 1500,
+    "description": "Discover the stunning landscapes, rich culture, and delicious cuisine of Lisbon.",
+    "rating": 4.7,
+    "tripdays": 3,
+    "filterParam": "Trending",
+    "image": "Lisbon.jpg",
+    "fullimage": "Lisbon.jpg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Alfama district exploration",
+        "meals_included": "Dinner",
+        "hotel": "Pestana Palace Lisboa"
+      },
+      {
+        "day": 2,
+        "activities": "Belém Tower, Jerónimos Monastery",
+        "meals_included": "Breakfast",
+        "hotel": "Pestana Palace Lisboa"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Sintra",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Pestana Palace Lisboa"
+      }
+    ]
+  },
+  {
+    "itinerary_id": 17,
+    "destination": "Seoul, South Korea",
+    "arrival": "2024-10-30",
+    "cost": 1700,
+    "description": "Experience the dynamic culture and modern attractions of Seoul, from palaces to bustling markets.",
+    "rating": 4.8,
+    "tripdays": 3,
+    "filterParam": "Featured",
+    "image": "Seoul.jpg",
+    "fullimage": "Seoul.jpg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Gyeongbokgung Palace tour",
+        "meals_included": "Dinner",
+        "hotel": "The Shilla Seoul"
+      },
+      {
+        "day": 2,
+        "activities": "Bukchon Hanok Village, N Seoul Tower",
+        "meals_included": "Breakfast",
+        "hotel": "The Shilla Seoul"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to DMZ",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "The Shilla Seoul"
+      }
+    ]
+  },
+  {
+    "itinerary_id": 18,
+    "destination": "Kyoto, Japan",
+    "arrival": "2024-12-20",
+    "cost": 1750,
+    "description": "Immerse yourself in the rich traditions, stunning temples, and serene gardens of Kyoto.",
+    "rating": 4.8,
+    "tripdays": 3,
+    "filterParam": "Trending",
+    "image": "Kyoto.jpg",
+    "fullimage": "Kyoto.jpg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Fushimi Inari Shrine",
+        "meals_included": "Dinner",
+        "hotel": "The Ritz-Carlton Kyoto"
+      },
+      {
+        "day": 2,
+        "activities": "Kinkaku-ji, Arashiyama Bamboo Grove",
+        "meals_included": "Breakfast",
+        "hotel": "The Ritz-Carlton Kyoto"
+      },
+      {
+        "day": 3,
+        "activities": "Nijo Castle, Philosopher's Path",
+        "meals_included": "Breakfast",
+        "hotel": "The Ritz-Carlton Kyoto"
+      }
+    ]
+  },
+  {
+    "itinerary_id": 19,
+    "destination": "Toronto, Canada",
+    "arrival": "2024-11-28",
+    "cost": 1600,
+    "description": "Explore the vibrant multicultural city of Toronto, from the CN Tower to diverse neighborhoods.",
+    "rating": 4.6,
+    "tripdays": 3,
+    "filterParam": "Trending",
+    "image": "Toronto.jpg",
+    "fullimage": "Toronto.jpg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, CN Tower visit",
+        "meals_included": "Dinner",
+        "hotel": "Shangri-La Toronto"
+      },
+      {
+        "day": 2,
+        "activities": "Royal Ontario Museum, Distillery District",
+        "meals_included": "Breakfast",
+        "hotel": "Shangri-La Toronto"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Niagara Falls",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Shangri-La Toronto"
+      }
+    ]
+  },
+  {
+    "itinerary_id": 20,
+    "destination": "Rio de Janeiro, Brazil",
+    "arrival": "2024-10-15",
+    "cost": 2000,
+    "description": "Experience the vibrant culture and stunning beaches of Rio de Janeiro.",
+    "rating": 4.7,
+    "tripdays": 3,
+    "filterParam": "Popularity",
+    "image": "Rio.jpg",
+    "fullimage": "Rio.jpg",
+    "days": [
+      {
+        "day": 1,
+        "activities": "Arrival, Copacabana Beach visit",
+        "meals_included": "Dinner",
+        "hotel": "Copacabana Palace"
+      },
+      {
+        "day": 2,
+        "activities": "Sugarloaf Mountain, Christ the Redeemer",
+        "meals_included": "Breakfast",
+        "hotel": "Copacabana Palace"
+      },
+      {
+        "day": 3,
+        "activities": "Day trip to Tijuca National Park",
+        "meals_included": "Breakfast, Lunch",
+        "hotel": "Copacabana Palace"
+      }
+    ]
+  }
+
+]
