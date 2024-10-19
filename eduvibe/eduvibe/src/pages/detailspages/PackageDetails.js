@@ -7,7 +7,7 @@ import SEO from '../../common/SEO';
 import Layout from '../../common/Layout';
 import CourseInfo from '../../components/course/CourseInfo';
 import axios from 'axios';
-
+import BreadcrumbOne from '../../common/breadcrumb/BreadcrumbOne';
 
 const CustomToggle = ({ children, eventKey }) => {
     const { activeEventKey } = useContext(AccordionContext);
@@ -99,12 +99,13 @@ const PackageDetails = () => {
         <>
             <SEO title={ travelItem.title } />
             <Layout>
-                {/*<BreadcrumbOne */}
-                {/*    title="Package Details"*/}
-                {/*    rootUrl="/"*/}
-                {/*    parentUrl="Home"*/}
-                {/*    currentUrl="Package Details"*/}
-                {/*/>*/}
+                <BreadcrumbOne
+                    title={travelItem.destination}
+                    rootUrl="/"
+                    parentUrl="Home"
+                   currentUrl="Trip Plans"/>
+                
+
                 <div className="edu-course-details-area bg-color-white">
                     <div className="container">
                         <div className="row g-5">
@@ -120,14 +121,7 @@ const PackageDetails = () => {
                                 <div className="course-details-content">
 
                                     <div className="content-top">
-                                        {/*<div className="author-meta">*/}
-                                        {/*    <div className="author-thumb">*/}
-                                        {/*        <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( travelItem.instructor ) }`}>*/}
-                                        {/*            <img src={`${process.env.PUBLIC_URL}/images/instructor/instructor-small/${instructor.image}`} alt="Author Thumb" />*/}
-                                        {/*            <span className="author-title">By { travelItem.instructor }</span>*/}
-                                        {/*        </Link>*/}
-                                        {/*    </div>*/}
-                                        {/*</div>*/}
+                                        
                                         <div className="edu-rating rating-default eduvibe-course-rating-stars">
                                             <div className="rating eduvibe-course-rating-stars">
                                                 <i className="icon-Star"></i>
