@@ -5,7 +5,7 @@ import BannerFour from '../../components/banner/BannerFour';
 import HomeFourServices from '../../components/home-four/HomeFourServices';
 import HomeFourAbout from '../../components/home-four/HomeFourAbout';
 import HomeFourCourses from '../../components/home-four/HomeFourCourses';
-import VideoSectionOne from '../../components/video-section/VideoSectionOne';
+import TravelVideoSection from '../../components/video-section/VideoSectionOne';
 import HomeFourTeam from '../../components/home-four/HomeFourTeam';
 import CallToActionTwo from '../../components/cta/CallToActionTwo';
 import TestimonialSectionOne from '../../components/testimonial-section/TestimonialSectionOne';
@@ -30,15 +30,15 @@ const HomeFour = () => {
 
                 <HomeFourCourses />
 
-                <VideoSectionOne />
+                <TravelVideoSection />
 
                 <HomeFourTeam />
 
-                <CallToActionTwo />
+                {/* <CallToActionTwo /> */}
 
                 <TestimonialSectionOne />
 
-                <HomeFourBlog />
+                {/* <HomeFourBlog /> */}
 
             </Layout>
         </>

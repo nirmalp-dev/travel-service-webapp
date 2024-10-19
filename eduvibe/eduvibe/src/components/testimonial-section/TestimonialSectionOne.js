@@ -1,9 +1,9 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import TestimonialTwo from '../testimonial/TestimonialTwo';
+import TestimonialTwo from '../testimonial/TestimonialTwo'; // Ensure this component is updated for travel testimonials
 import SectionTitle from '../sectionTitle/SectionTitle';
 
-const TestimonialSectionOne = () => {
+const TravelTestimonialSection = () => {
     return (
         <div className="eduvibe-home-four-testimonial edu-testimonial-area edu-section-gap bg-color-white">
             <div className="container eduvibe-animated-shape">
@@ -13,11 +13,11 @@ const TestimonialSectionOne = () => {
                             animateIn="fadeIn"
                             animateOut="fadeInOut"
                             className="testimonial-left-image pr--80"
-                            animateOnce={ true }
+                            animateOnce={true}
                         >
                             <div className="thumbnail">
                                 <div className="circle-image-wrapper">
-                                    <img className="radius-round" src="/images/testimonial-section/client-banner-left.jpg" alt="Testimonial Section Thumb" />
+                                    <img className="radius-round" src="/images/testimonial-section/client-banner-left.jpg" alt="Travel Testimonial Section Thumb" />
                                     <div className="circle-image">
                                         <span></span>
                                         <span></span>
@@ -29,9 +29,9 @@ const TestimonialSectionOne = () => {
                     <div className="col-lg-6">
                         <div className="testimonial-wrapper">
                             <SectionTitle
-                                classes = "text-start mb--40"
-                                slogan = "Testimonial"
-                                title = "Our Students Feedback"
+                                classes="text-start mb--40"
+                                slogan="Traveler Testimonials"
+                                title="What Our Travelers Say"
                             />
                             <TestimonialTwo />
                         </div>
@@ -54,4 +54,4 @@ const TestimonialSectionOne = () => {
     )
 }
 
-export default TestimonialSectionOne;
+export default TravelTestimonialSection;

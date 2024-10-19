@@ -5,27 +5,27 @@ import SectionTitle from '../sectionTitle/SectionTitle';
 
 const HomeFourAbout = () => {
     return (
-        <div className=" eduvibe-home-four-about edu-about-area about-style-2 edu-section-gap bg-color-white">
+        <div className="eduvibe-home-four-about edu-about-area about-style-2 edu-section-gap bg-color-white">
             <div className="container eduvibe-animated-shape">
                 <div className="row row--50">
                     <div className="col-lg-6">
                         <div className="about-image-gallery">
                             <div className="eduvibe-about-1-img-wrapper">
-                                <img className="image-1" src="/images/about/about-07/about-image-01.png" alt="About Images" />
+                                <img className="image-1" src={`${process.env.PUBLIC_URL}/images/travel-details/Japan.jpg`} alt="About Travel" />
                                 <span className="eduvibe-about-blur">
                                     <img src="/images/about/about-07/about-blur.png" alt="About Blur" />
                                 </span>
                             </div>
                             <div className="circle-image-wrapper">
-                                <img className="image-2" src="/images/about/about-07/about-image-02.png" alt="About Images" />
+                                <img className="image-2" src={`${process.env.PUBLIC_URL}/images/travelplaces/270by200/image.png`} alt="About Travel" />
                                 <div className="circle-image">
                                     <span></span>
                                 </div>
                             </div>
                             <div className="finished-session">
                                 <div className="inner">
-                                    <div className="text">2.98</div>
-                                    <span className="finished-title">Finished <br /> Sessions</span>
+                                    <div className="text">1,200+</div>
+                                    <span className="finished-title">Successful <br /> Trips</span>
                                 </div>
                             </div>
                         </div>
@@ -33,17 +33,17 @@ const HomeFourAbout = () => {
                     <div className="col-lg-6">
                         <div className="inner mt_md--40 mt_sm--40">
                             <SectionTitle
-                                classes = "text-start"
-                                slogan = "About Us"
-                                title = "Knowledge is power, Information is liberating."
+                                classes="text-start"
+                                slogan="About Us"
+                                title="Travel is the only thing you buy that makes you richer."
                             />
                             <ScrollAnimation 
                                 animateIn="fadeInUp"
                                 animateOut="fadeInOut"
                                 animateOnce={true}
                             >
-                                <p className="description mt--40 mt_md--20 mt_sm--20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, venenatis dictum et nec. Fringilla dictum tristique cras pellentesque consequat.</p>
-                                <h6 className="subtitle mb--20">People Love To Learn With Us</h6>
+                                <p className="description mt--40 mt_md--20 mt_sm--20">At Travel Vibe, we offer customized travel plans that cater to your unique preferences, helping you explore the world with ease.</p>
+                                <h6 className="subtitle mb--20">Join the Journey with Us</h6>
                             </ScrollAnimation>
 
                             <ScrollAnimation 
@@ -56,16 +56,16 @@ const HomeFourAbout = () => {
                                     <div className="col-lg-6">
                                         <div className="feature-style-3">
                                             <div className="feature-content">
-                                                <h6 className="feature-title">90%</h6>
-                                                <p className="feature-description">90% of students see their course through to completion.</p>
+                                                <h6 className="feature-title">95%</h6>
+                                                <p className="feature-description">95% of our travelers recommend us for their next adventure.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-lg-6">
                                         <div className="feature-style-3">
                                             <div className="feature-content">
-                                                <h6 className="feature-title">9/10</h6>
-                                                <p className="feature-description">9/10 users reported better learning outcomes.</p>
+                                                <h6 className="feature-title">4.8/5</h6>
+                                                <p className="feature-description">4.8/5 average rating from our satisfied customers.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -78,9 +78,8 @@ const HomeFourAbout = () => {
                                 className="read-more-btn mt--40"
                                 animateOnce={true}
                             >
-                                <Link className="edu-btn" to="#">Learn More<i className="icon-arrow-right-line-right"></i></Link>
+                                <Link className="edu-btn" to="#">Explore More <i className="icon-arrow-right-line-right"></i></Link>
                             </ScrollAnimation>
-
                         </div>
                     </div>
                 </div>

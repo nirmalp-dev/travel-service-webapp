@@ -9,9 +9,9 @@ const HomeFourServices = () => {
                 <div className="row">
                     <div className="col-lg-12">
                         <SectionTitle
-                            classes = "text-center"
-                            slogan = "What We Offer"
-                            title = "Learn New Skills When And <br /> Where You Like"
+                            classes="text-center"
+                            slogan="What We Offer"
+                            title="Discover Unique Travel Plans Tailored To <br /> Your Needs"
                         />
                     </div>
                 </div>
