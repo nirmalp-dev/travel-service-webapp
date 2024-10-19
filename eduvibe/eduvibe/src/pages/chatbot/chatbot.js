@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import imagesource from '../../assets/images/chatbot/botAvatar.png';
+import imagesource from '../../assets/images/chatbot/bot.jpg';
 import '../../assets/css/chatbot/chatbot.css';
 // import '../../assets/css/chatbot/style.css'
 import { MdMoreVert } from 'react-icons/md';
