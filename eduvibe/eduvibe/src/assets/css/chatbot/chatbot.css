@@ -9,12 +9,14 @@
 .imgProfile {
     box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 #00000096;
     border-radius: 50px;
-    width: 60%;
+    width: 50%;
 }
 
 .profile_div {
     /* display: none; */
     position: fixed;
+    margin-bottom: 20px;
+    margin-right: -50px;
     padding: 5px;
     width: 10%;
     bottom: 0;
