@@ -2,7 +2,9 @@ from bson import ObjectId
 
 from app.db.mongodb import get_database
 from app.models.order import Order, OrderCreate, OrderItem
+from app.models.travel import TravelPackage
 from app.services.cart_service import list_cart, clear_cart
+from app.services.travel_service import get_package
 
 
 async def create_order(username: str, order_create: OrderCreate):
@@ -23,7 +25,8 @@ async def create_order(username: str, order_create: OrderCreate):
         order_items.append(OrderItem(
             package_id=item['package_id'],
             quantity=item['quantity'],
-            price=package['cost']
+            price=package['cost'],
+            package_details = package
         ))
 
     # Create order

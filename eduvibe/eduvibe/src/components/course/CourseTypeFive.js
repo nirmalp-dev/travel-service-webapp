@@ -43,7 +43,7 @@ const CourseTwo = ({ data, classes }) => {
                     <div className="card-bottom">
                         <div className="read-more-btn">
                             <Link className="btn-transparent" to={process.env.PUBLIC_URL + `/package-details/${data.id}`}>
-                                Enroll Now<i className="icon-arrow-right-line-right"></i>
+                                View Details<i className="icon-arrow-right-line-right"></i>
                             </Link>
                         </div>
                     </div>

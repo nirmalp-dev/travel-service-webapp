@@ -112,7 +112,7 @@ const CourseTypeOne = ({ data, classes }) => {
                     */}
                     <div className="read-more-btn">
                         <Link className="edu-btn btn-medium btn-white" to={process.env.PUBLIC_URL + `/package-details/${data._id}`}>
-                            Enroll Now<i className="icon-arrow-right-line-right"></i>
+                            View Details<i className="icon-arrow-right-line-right"></i>
                         </Link>
                     </div>
                 </div>

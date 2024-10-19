@@ -15,6 +15,9 @@ const Nav = () => {
             <li className="">
                 <Link to="/trip-plans">Trip Plans</Link>
             </li>
+            <li className="">
+                <Link to="/order">Orders</Link>
+            </li>
             
             {/* <li className="has-droupdown">
                 <Link to="#">Pages</Link>

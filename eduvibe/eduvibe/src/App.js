@@ -57,6 +57,7 @@ import LoginRegister from './pages/innerpages/LoginRegister';
 //import Error from './pages/innerpages/Error';
 // Import Css Here
 import './assets/scss/style.scss';
+import OrderPage from "./pages/innerpages/OrderPage";
 
 function App() {
     return (
@@ -70,6 +71,7 @@ function App() {
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-4'}`} element={<HomeFour/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/home-5'}`} element={<HomeFive/>}/> */}
                     <Route exact path={`${process.env.PUBLIC_URL + '/about-us'}`} element={<AboutUsOne/>}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/order'}`} element={<OrderPage/>}/>
                     {/*<Route exact path={`${process.env.PUBLIC_URL + '/about-us-2'}`} element={<AboutUsTwo/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/about-us-3'}`} element={<AboutUsThree/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/coming-soon'}`} element={<ComingSoon/>}/>
