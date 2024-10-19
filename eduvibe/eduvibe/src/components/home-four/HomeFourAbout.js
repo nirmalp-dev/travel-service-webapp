@@ -8,7 +8,7 @@ const HomeFourAbout = () => {
         <div className=" eduvibe-home-four-about edu-about-area about-style-2 edu-section-gap bg-color-white">
             <div className="container eduvibe-animated-shape">
                 <div className="row row--50">
-                    <div className="col-lg-6">
+                    {/* <div className="col-lg-6">
                         <div className="about-image-gallery">
                             <div className="eduvibe-about-1-img-wrapper">
                                 <img className="image-1" src="/images/about/about-07/about-image-01.png" alt="About Images" />
@@ -29,21 +29,20 @@ const HomeFourAbout = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="col-lg-6">
                         <div className="inner mt_md--40 mt_sm--40">
                             <SectionTitle
                                 classes = "text-start"
-                                slogan = "About Us"
-                                title = "Knowledge is power, Information is liberating."
+                                slogan = "Explore Freely"
+                                title = "We believe in a world where everyone can be Well-Traveled"
                             />
                             <ScrollAnimation 
                                 animateIn="fadeInUp"
                                 animateOut="fadeInOut"
                                 animateOnce={true}
                             >
-                                <p className="description mt--40 mt_md--20 mt_sm--20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, venenatis dictum et nec. Fringilla dictum tristique cras pellentesque consequat.</p>
-                                <h6 className="subtitle mb--20">People Love To Learn With Us</h6>
+                                <p className="description mt--40 mt_md--20 mt_sm--20">Discover new horizons and make every journey unforgettable!</p>
                             </ScrollAnimation>
 
                             <ScrollAnimation 
@@ -52,7 +51,7 @@ const HomeFourAbout = () => {
                                 className="about-feature-list"
                                 animateOnce={true}
                             >
-                                <div className="row g-5">
+                                {/* <div className="row g-5">
                                     <div className="col-lg-6">
                                         <div className="feature-style-3">
                                             <div className="feature-content">
@@ -69,7 +68,7 @@ const HomeFourAbout = () => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </ScrollAnimation>
 
                             <ScrollAnimation 
@@ -78,7 +77,7 @@ const HomeFourAbout = () => {
                                 className="read-more-btn mt--40"
                                 animateOnce={true}
                             >
-                                <Link className="edu-btn" to="#">Learn More<i className="icon-arrow-right-line-right"></i></Link>
+                                <Link className="edu-btn" to="trip-plans">Explore Now!<i className="icon-arrow-right-line-right"></i></Link>
                             </ScrollAnimation>
 
                         </div>
