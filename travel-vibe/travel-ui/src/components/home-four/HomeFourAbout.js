@@ -10,9 +10,9 @@ const HomeFourAbout = () => {
                 <div className="row row--50">
                     {/* <div className="col-lg-6">
                         <div className="about-image-gallery">
-                            <div className="eduvibe-about-1-img-wrapper">
+                            <div className="travel-ui-about-1-img-wrapper">
                                 <img className="image-1" src="/images/about/about-07/about-image-01.png" alt="About Images" />
-                                <span className="eduvibe-about-blur">
+                                <span className="travel-ui-about-blur">
                                     <img src="/images/about/about-07/about-blur.png" alt="About Blur" />
                                 </span>
                             </div>

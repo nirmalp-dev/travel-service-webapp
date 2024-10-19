@@ -24,7 +24,7 @@ const CourseTypeOne = ({ data, classes }) => {
                     </div>
                     {/* 
                     <div className="top-position status-group left-bottom">
-                        <Link className="eduvibe-status status-03" to={process.env.PUBLIC_URL + `/course-category/${ slugify( data.categories.slice( 0, 1 ) ) }`}>
+                        <Link className="travel-ui-status status-03" to={process.env.PUBLIC_URL + `/course-category/${ slugify( data.categories.slice( 0, 1 ) ) }`}>
                             {data.categories.slice(0, 1)}
                         </Link>
                     </div>    
@@ -75,7 +75,7 @@ const CourseTypeOne = ({ data, classes }) => {
                     <div className="content-top">
                         {/*
                             <div className="top-status-bar">
-                                <Link className="eduvibe-status status-03" to={process.env.PUBLIC_URL + `/course-category/${slugify(data.categories.slice(0, 1))}`}>
+                                <Link className="travel-ui-status status-03" to={process.env.PUBLIC_URL + `/course-category/${slugify(data.categories.slice(0, 1))}`}>
                                     {data.categories.slice(0, 1)}
                                 </Link>
                             </div>

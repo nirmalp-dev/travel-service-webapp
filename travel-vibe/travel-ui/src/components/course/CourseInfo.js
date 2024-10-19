@@ -80,7 +80,7 @@ const CourseInfo = ( { data }) => {
                                 {/*{ data.language && <li><span><i className="icon-translate"></i> Language</span><span>{data.language}</span></li> }*/}
                                 {/*{ data.quizzes && <li><span><i className="icon-artboard-line"></i> Quizzes</span><span>{data.quizzes}</span></li> }*/}
                                 {/*{ data.certificate && <li><span><i className="icon-award-line"></i> Certificate</span><span>{data.certificate === 'available' ? 'Yes' : 'No'}</span></li> }*/}
-                                {/*{ data.passPercentage && <li><span><img className="eduvibe-course-sidebar-img-icon" src="/images/icons/percent.svg" alt="icon Thumb" />Pass Percentage</span><span>{data.passPercentage}%</span></li> }*/}
+                                {/*{ data.passPercentage && <li><span><img className="travel-ui-course-sidebar-img-icon" src="/images/icons/percent.svg" alt="icon Thumb" />Pass Percentage</span><span>{data.passPercentage}%</span></li> }*/}
                                 {/*{ data.deadline && <li><span><i className="icon-calendar-2-line"></i> Deadline</span><span>{data.deadline}</span></li> }*/}
                                 {/*{ data.instructor && <li><span><i className="icon-user-2-line_tie"></i> Instructor</span><span>{data.instructor}</span></li> }*/}
                             </ul>

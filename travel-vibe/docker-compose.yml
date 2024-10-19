@@ -3,13 +3,13 @@ version: '3.8'
 services:
   react-app:
     build:
-      context: ./eduvibe
+      context: travel-ui
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
-      - ./eduvibe/src:/app/src
-      - ./eduvibe/public:/app/public
+      - ./travel-ui/src:/app/src
+      - ./travel-ui/public:/app/public
     environment:
       - CHOKIDAR_USEPOLLING=true
     stdin_open: true
