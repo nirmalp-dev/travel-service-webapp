@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import SectionTitle from '../components/sectionTitle/SectionTitle';
 import axiosClient from '../utils/axiosClient';
+import '../../src/assets/css/order.css'
 
 const OrderHistory = (props) => {
     const [orders, setOrders] = useState([]);
@@ -24,7 +25,7 @@ const OrderHistory = (props) => {
     };
 
     const OrderItem = ({ order }) => (
-        <div className="edu-course course-style-4 course-style-8 bg-white">
+        <div className="travel-orders course-style-4 course-style-8 bg-white">
             <div className="inner">
                 <div className="content">
                     <h6 className="title">Order ID: {order.id}</h6>

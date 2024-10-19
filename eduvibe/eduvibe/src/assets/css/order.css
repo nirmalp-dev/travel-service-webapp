@@ -1,0 +1,48 @@
+.travel-orders {
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the container */
+    margin-bottom: 20px; /* Space between each order */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff; /* White background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+    .travel-orders:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+    }
+
+    .travel-orders .title {
+        font-size: 18px; /* Adjust the font size */
+        font-weight: bold; /* Make the title bold */
+        color: #333; /* Dark text for title */
+        margin-bottom: 10px; /* Space below title */
+    }
+
+    .travel-orders .course-meta {
+        list-style-type: none; /* Remove default bullet points */
+        padding: 0; /* Remove padding */
+        margin: 0 0 15px; /* Space between list and content */
+        color: #666; /* Grey color for meta info */
+    }
+
+        .travel-orders .course-meta li {
+            margin-bottom: 5px; /* Space between each meta item */
+            font-size: 14px; /* Font size for meta items */
+        }
+
+            .travel-orders .course-meta li i {
+                margin-right: 8px; /* Space between icon and text */
+                color: #888; /* Color for icons */
+            }
+
+    .travel-orders p {
+        font-size: 16px; /* Font size for the content text */
+        color: #555; /* Slightly dark color for text */
+        margin: 5px 0; /* Space between paragraphs */
+    }
+
+        .travel-orders p:last-child {
+            font-weight: bold; /* Highlight the last paragraph (status) */
+        }
