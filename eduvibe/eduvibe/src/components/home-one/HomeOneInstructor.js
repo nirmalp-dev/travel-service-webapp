@@ -26,7 +26,7 @@ const HomeOneInstructor = () => {
                                 <div className="inner">
                                     <div className="thumbnail">
                                         <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'James Carlson' ) }`}>
-                                            <img src="/images/instructor/instructor-03/instructor-1.jpg" alt="team images" />
+                                            <img src="/images/somephotos/Nirmal.jpg" alt="team images" />
                                         </Link>
                                     </div>
                                     <div className="edu-instructor-info">
@@ -50,7 +50,7 @@ const HomeOneInstructor = () => {
                                 <div className="inner">
                                     <div className="thumbnail">
                                         <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'Nancy Phipps' ) }`}>
-                                            <img src="/images/instructor/instructor-03/instructor-2.jpg" alt="team images" />
+                                            <img src="/images/somephotos/Heyt.jpg" alt="team images" />
                                         </Link>
                                     </div>
                                     <div className="edu-instructor-info">
@@ -74,7 +74,7 @@ const HomeOneInstructor = () => {
                                 <div className="inner">
                                     <div className="thumbnail">
                                         <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'Troy Hall' ) }`}>
-                                            <img src="/images/instructor/instructor-03/instructor-3.jpg" alt="team images" />
+                                            <img src="/images/somephotos/JayGohel.jpg" alt="team images" />
                                         </Link>
                                     </div>
                                     <div className="edu-instructor-info">
@@ -98,7 +98,7 @@ const HomeOneInstructor = () => {
                                 <div className="inner">
                                     <div className="thumbnail">
                                         <Link to={process.env.PUBLIC_URL + `/instructor-details/${slugify( 'Isabelle Bruner' ) }`}>
-                                            <img src="/images/instructor/instructor-03/instructor-4.jpg" alt="team images" />
+                                            <img src="/images/somephotos/Rishabh.jpg" alt="team images" />
                                         </Link>
                                     </div>
                                     <div className="edu-instructor-info">

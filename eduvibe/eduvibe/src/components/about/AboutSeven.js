@@ -10,23 +10,23 @@ const AboutSeven = () => {
                     <div className="col-lg-6">
                         <div className="about-image-gallery">
                             <div className="eduvibe-about-1-img-wrapper">
-                                <img className="image-1" src="/images/about/about-07/about-image-01.png" alt="About Images" />
+                                <img className="image-1" src="/images/somephotos/Plane.jpg" alt="About Images" />
                                 <span className="eduvibe-about-blur">
                                     <img src="/images/about/about-07/about-blur.png" alt="About Blur" />
                                 </span>
                             </div>
                             <div className="circle-image-wrapper">
-                                <img className="image-2" src="/images/about/about-07/about-image-02.png" alt="About Images" />
+                                <img className="image-2" src="/images/somephotos/beachmountain.jpg" alt="About Images" />
                                 <div className="circle-image">
                                     <span></span>
                                 </div>
                             </div>
-                            <div className="finished-session">
+                            {/* <div className="finished-session">
                                 <div className="inner">
                                     <div className="text">500B+</div>
                                     <span className="finished-title">AI predictions</span>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="col-lg-6">

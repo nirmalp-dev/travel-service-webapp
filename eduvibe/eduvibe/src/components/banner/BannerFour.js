@@ -10,30 +10,30 @@ const BannerFour = () => {
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="inner mt_md--10 mt_sm--10">
                                 <div className="content text-start">
-                                    <span className="pre-title">Learn New Things Daily updated</span>
-                                    <h1 className="title">Education Is A Path To Success In Life</h1>
-                                    <p className="description">Sed eu volutpat arcu, a tincidunt nulla quam, feugiat sit amet ipsum a, dapibus porta velit. </p>
-                                    <div className="read-more-btn">
+                                    {/* <span className="pre-title">Learn New Things Daily updated</span> */}
+                                    <h1 className="title">Travel Made Easy</h1>
+                                    <p className="description">Your journey starts with a click </p>
+                                    {/* <div className="read-more-btn">
                                         <Link className="edu-btn" to="#">Get Started Today <i className="icon-arrow-right-line-right"></i></Link>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-6 order-1 order-lg-2">
                             <div className="banner-image">
                                 <div className="thumbnail">
-                                    <img src="/images/banner/banner-04/banner-03.png" alt="Banner Images" />
+                                    <img src="/images/somephotos/travelhomeimage.png" alt="Banner Images" />
                                 </div>
-                                <div className="round-images">
+                                {/* <div className="round-images">
                                     <img src="/images/banner/banner-04/hero-04-round.png" alt="Shape Images" />
-                                </div>
-                                <div className="learner-badge">
+                                </div> */}
+                                {/* <div className="learner-badge">
                                     <div className="badge-inner">
                                         <span className="viewer">28K</span>
                                         <span>Enrolled</span>
                                         <span>Learner</span>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

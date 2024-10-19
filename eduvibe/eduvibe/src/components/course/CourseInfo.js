@@ -202,7 +202,7 @@ const CourseInfo = ( { data }) => {
                                         {/* Modal buttons */}
                                         <div className="modal-buttons mt--30 text-center">
                                             <button onClick={closeModal} type="button" className="edu-btn btn-bg-alt w-100 text-center">Cancel</button>
-                                            <button type="submit" className="edu-btn w-100 text-center">Submit</button>
+                                            <button type="submit" className="edu-btn w-100 ml--10 text-center">Submit</button>
                                         </div>
                                     </form>
                                 </div>
