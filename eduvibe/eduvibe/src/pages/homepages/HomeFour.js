@@ -30,7 +30,7 @@ const HomeFour = () => {
 
                 {/* <HomeFourCourses /> */}
 
-                <VideoSectionOne />
+                {/* <VideoSectionOne /> */}
 
                 {/* <HomeFourTeam /> */}
 
