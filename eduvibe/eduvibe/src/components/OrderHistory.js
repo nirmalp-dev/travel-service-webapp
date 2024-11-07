@@ -24,7 +24,41 @@ const OrderHistory = (props) => {
         }
     };
 
-    const OrderItem = ({ order }) => (
+    const updateOrderStatus = async (orderId, newStatus) => {
+        try {
+            const response = await axiosClient.put(`/order/update-status/${orderId}`, null, {
+                params: { status: newStatus }
+            });
+            // Update order status in the state after a successful update
+            setOrders(orders.map(order => 
+                order.id === orderId ? { ...order, status: response.data.status } : order
+            ));
+        } catch (err) {
+            setError('Failed to update order status. Please try again.');
+        }
+    };
+
+
+    const OrderItem = ({ order }) => {
+        const [newStatus, setNewStatus] = useState(order.status);
+        const [isEditing, setIsEditing] = useState(false); 
+
+        const handleUpdateClick = () => {
+            setIsEditing(true);  // When the user clicks "Update Status", enable editing
+        };
+    
+        const handleStatusUpdate = () => {
+            // Call the function to update the order status, passing the order ID and new status
+            updateOrderStatus(order.id, newStatus);
+            setIsEditing(false);  // Disable editing after the update
+        };
+
+        const handleCloseEdit = () => {
+            setIsEditing(false);  // Close the editing form without updating
+        };
+    
+
+        return (
         <div className="travel-orders course-style-4 course-style-8 bg-white">
             <div className="inner">
                 <div className="content">
@@ -35,10 +69,47 @@ const OrderHistory = (props) => {
                     </ul>
                     <p>Total Amount: ${order.total_amount}</p>
                     <p>Status: {order.status}</p>
+
+                    {!isEditing ? (
+                        <button
+                            onClick={handleUpdateClick}
+                            className="btn-update-status"
+                        >
+                            Update Status
+                        </button>
+                    ) : (
+                        <div className="status-update">
+                            
+                            <label htmlFor="status">Update Status:</label>
+                            <select
+                                value={newStatus}  // Bind select to newStatus state
+                                onChange={(e) => setNewStatus(e.target.value)}
+                                className="status-select"
+                            >
+                                <option value="pending">Pending</option>
+                                <option value="confirmed">Confirmed</option>
+                                <option value="cancelled">Cancelled</option>
+                                <option value="rescheduled">Rescheduled</option>
+                            </select>
+                            <button
+                                onClick={handleStatusUpdate}
+                                className="btn-update-status"
+                            >
+                                Submit
+                            </button>
+                            <button 
+                                onClick={handleCloseEdit}
+                                className="btn-close-status"
+                            >
+                                X
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
-    );
+        );
+    };
 
     if (isLoading) return <div>Loading orders...</div>;
     if (error) return <div>{error}</div>;

@@ -52,3 +52,24 @@ async def list_orders(username: str):
     cursor = db.orders.find({"username": username})
     orders = await cursor.to_list(length=None)
     return [Order(**order) for order in orders]
+
+async def update_order_status(order_id: str, status: str):
+    db = await get_database()
+    
+    # Check if the order exists
+    order = await db.orders.find_one({"id": order_id})
+    if not order:
+        raise ValueError("Order not found")
+
+    # Update the order status
+    result = await db.orders.update_one(
+        {"id": order_id},
+        {"$set": {"status": status}}
+    )
+
+    if result.modified_count == 0:
+        raise ValueError("Failed to update order status")
+
+    # Fetch and return the updated order
+    updated_order = await db.orders.find_one({"id": order_id})
+    return Order(**updated_order)
