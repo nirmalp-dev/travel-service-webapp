@@ -4,7 +4,7 @@ import HeaderOne from '../../common/header/HeaderOne';
 import BreadcrumbOne from '../../common/breadcrumb/BreadcrumbOne';
 import AboutSeven from '../../components/about/AboutSeven';
 import FooterOne from '../../common/footer/FooterOne';
-import HomeOneInstructor from '../../components/home-one/HomeOneInstructor';
+import AboutUs from '../../components/home-four/AboutUs';
 
 const AboutUsOne = () => {
     return (
@@ -23,7 +23,7 @@ const AboutUsOne = () => {
             <AboutSeven />
             
 
-            <HomeOneInstructor />
+            <AboutUs />
 
 
             <FooterOne />
