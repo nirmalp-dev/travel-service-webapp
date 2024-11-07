@@ -64,7 +64,7 @@ const Chatbot = () => {
                     {isDropdownOpen && (
                         <div className="dropdown-container">
                             <ul id="dropdown1" className="dropdown-content">
-                                <li><a href="#" id="clear">Clear</a></li>
+                                <li><a href="/" id="clear">Clear</a></li>
                                 <li><a id="close" onClick={handleToggle}>Close</a></li>
                             </ul>
                         </div>

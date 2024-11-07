@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import SectionTitle from '../components/sectionTitle/SectionTitle';
+import SectionTitle from './sectionTitle/SectionTitle';
 import axiosClient from '../utils/axiosClient';
-import '../../src/assets/css/order.css'
+import '../assets/css/order.css'
 
 const OrderHistory = (props) => {
     const [orders, setOrders] = useState([]);
