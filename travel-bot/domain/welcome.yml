@@ -1,0 +1,14 @@
+version: "3.1"
+
+responses:
+  utter_welcome:
+    - text: "Hello! Ready to plan your next adventure?"
+    - text: "Hi there! Looking to explore somewhere new?"
+    - text: "Hey! Need help booking your dream trip?"
+    - text: "Hi! Let's find the perfect getaway for you!"
+    - text: "Hello! Where would you like to travel today?"
+    - text: "Good day! Planning your next vacation?"
+    - text: "Hi! Let's make your travel plans easy and fun!"
+    - text: "Hey! Excited to help you with your travel plans!"
+    - text: "Welcome! Ready to discover your next destination?"
+    - text: "Hello! I'm here to help with your travel and booking needs!"

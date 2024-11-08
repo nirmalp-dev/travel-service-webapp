@@ -1,0 +1,5 @@
+# flows:
+#   welcome:
+#     description: this is a travel flow and user lands here first, greet the user and ask how you can help
+#     steps:
+#       - action: utter_welcome

@@ -10,7 +10,6 @@ code
 
  
  rasa train
-
  
  rasa shell
 
