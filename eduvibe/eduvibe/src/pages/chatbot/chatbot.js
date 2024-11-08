@@ -55,7 +55,7 @@ const Chatbot = () => {
         <div className="chatbot-container">
             <div className={`widget ${isOpen ? 'open' : 'closed'}`} style={{ display: isOpen ? 'block' : 'none' }}>
                 <div className="chat_header">
-                    <span className="chat_header_title">Sara</span>
+                    <span className="chat_header_title">Travel Guide</span>
                     {!isDropdownOpen && (
                         <span className="dropdown-trigger" data-target="dropdown1" onClick={handleDropdownToggle}>
                             <MdMoreVert />

@@ -1,0 +1,14 @@
+# flows:
+#   say_hello:
+#     description: "Greet the user"
+#     steps:
+#       - action: "utter_greet"
+#       - link: "collect_personal_preference"
+  
+#   collect_personal_preference: 
+#     description: "gather personal preferences about travel destination, and number of days for vacation from user, be creative in finding out what user wants."
+#     steps:
+#     - collect: "destination"
+#     - collect: "category"
+#     - collect: "days"
+#     - link: "recommend_flow"

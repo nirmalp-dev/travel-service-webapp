@@ -1,0 +1,46 @@
+slots:
+  destination:
+    type: text
+    mappings:
+      - type: from_llm
+  Nooftraveldays:
+    type: text
+    mappings:
+      - type: from_llm  
+  order_id:
+    type: text
+    mappings:
+      - type: from_llm
+  # traveldate:
+  #   type: text
+  #   mappings:
+  #     - type: from_llm 
+  # username:
+  #   type: text
+  #   mappings:
+  #     - type: from_llm
+
+responses:
+  utter_greet:
+    - text: "Hello. How may i help you today?" 
+
+  utter_ask_destination:
+    - text: "Where would you love to travel?"
+  
+  utter_ask_Nooftraveldays:
+    - text: "How many days do you plan to travel."
+  
+  utter_traveldetails:
+    - text: "All done. You plan to travel to {destination} on {traveldate} for {Nooftraveldays} days." 
+  
+  utter_orderdetails:
+    - text: "All done. {username} has all these orders."
+
+  utter_ask_order_id:
+    - text: "Enter the order id you want to track."
+  
+actions:
+- action_recommend_travel_plan
+- action_order_tracker
+- action_reset_slots
+- action_support_query

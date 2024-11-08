@@ -1,0 +1,40 @@
+# flows:
+#   recommend_travel:
+#     description: recommendation for travel package
+#     steps:
+#       - collect: trip_destination
+#         description: the trip destination could be a specific location, city name, state name or anything like that.
+#       - collect: package_price_range
+#         description: check if user has provided range or specific budget, if budget is provided range will be 0 to budget.
+#       - collect: travel_days
+#         description: number of days user wants to travel.
+#       - action: action_recommend_travel_plan
+#       # - id: "travel_start_date"
+#       #   collect: travel_start_date
+#       #   description: check in date for the travel. These are very important! ALWAYS double check the value before filling it in. Do not fill this slot unless user explicitly specifies it in the conversation.
+#       # - collect: travel_end_date
+#       #   description: check out date for the travel. These are very important! ALWAYS double check the value before filling it in. DO NOT misinterpret the date at any cost. Only fill in what the user says. Do not fill this slot unless user explicitly specifies it in the conversation.
+#       #   next:
+#       #     - if: slots.travel_start_date > slots.travel_end_date
+#       #       then:
+#       #         - action: utter_invalid_date
+#       #         - set_slots:
+#       #             - travel_start_date: null
+#       #             - travel_end_date: null
+#       #           next: travel_start_date
+#       #     - else: initiate_search
+#       # - id: "initiate_search"
+#       #   action: search_packages
+#       # - collect: package_search_results_readable
+#       # - collect: package_name
+#       #   description: Name of the destination which the user has selected. Must be an exact element of the slot "package_search_results_readable". If the user wants an option that isn't listed, do not fill the slot with that value.
+#       # - collect: travel_booking_confirmation
+#       #   ask_before_filling: true
+#       #   next:
+#       #     - if: not slots.travel_booking_confirmation
+#       #       then: 
+#       #         - action: utter_will_not_book_package
+#       #           next: END
+#       #     - else: 
+#       #       - action: utter_confirm_booked_package
+#       #         next: END

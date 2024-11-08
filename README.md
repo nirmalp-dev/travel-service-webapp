@@ -10,7 +10,6 @@ code
 
  
  rasa train
-dv
  
  rasa shell
 

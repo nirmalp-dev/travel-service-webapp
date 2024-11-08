@@ -255,3 +255,57 @@ div.chats > span.botMsg > ol {
 .button-link:hover {
     background-color: #ff8025; /* Darker background on hover */
 }
+
+.userMsg {
+    animation: animateElement linear 0.2s;
+    animation-iteration-count: 1;
+    margin-top: 5px;
+    word-wrap: break-word;
+    padding: 10px;
+    float: right;
+    margin-right: 0.5em;
+    background: #060dcfc7;
+    color: white;
+    margin-bottom: 0.15em;
+    font-size: 13px;
+    max-width: 65%;
+    min-width: 15%;
+    border-radius: 20px 5px 20px 20px;
+    /* box-shadow: 0px 2px 5px 0px #9a828454; */
+}
+
+.botTyping {
+    float: left;
+    margin-top: 5px;
+    background: #e3e7ee;
+    color: #000000;
+    /* box-shadow: 2px 3px 9px 0px #9a82847a; */
+    margin-left: 0.5em;
+    padding: 15px;
+    border-radius: 5px 20px 20px 20px;
+    max-width: 60%;
+    min-width: 20%;
+    word-wrap: break-word;
+    border-radius: 5px 20px 20px 20px;
+}
+
+.botTyping > div {
+    width: 10px;
+    height: 10px;
+    background-color: #060dcfc7;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    margin-right: 5px;
+}
+
+.botTyping .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.botTyping .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
