@@ -46,3 +46,81 @@
         .travel-orders p:last-child {
             font-weight: bold; /* Highlight the last paragraph (status) */
         }
+
+
+        .status-update {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        /* Style the label */
+        .status-update label {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        /* Style the dropdown */
+        .status-select {
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            transition: all 0.3s ease;
+            width: 200px;
+        }
+        
+        .status-select:focus {
+            border-color: #6c63ff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+        }
+        
+        .status-select option {
+            padding: 10px;
+        }
+        
+        /* Style the submit button */
+        .btn-update-status {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-update-status:hover {
+            background-color: #5752cc;
+        }
+        
+        /* Style the update button */
+        .btn-update-status {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #525fe1;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-update-status:hover {
+            background-color: #3e47ab;
+        }
+        .btn-close-status {
+            padding: 5px 5px;
+            font-size: 10px;
+            background-color: #a74128;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
