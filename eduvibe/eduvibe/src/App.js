@@ -9,6 +9,7 @@ import HomeFour from './pages/homepages/HomeFour';
 import LoginRegister from './pages/innerpages/LoginRegister';
 import './assets/scss/style.scss';
 import OrderPage from "./pages/innerpages/OrderPage";
+import SupportPage from "./pages/innerpages/SupportPage";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                     <Route exact path={`${process.env.PUBLIC_URL + '/about-us'}`} element={<AboutUsOne/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/contact-us'}`} element={<ContactUs/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/order'}`} element={<OrderPage/>}/>
+                    <Route exact path={`${process.env.PUBLIC_URL + '/support'}`} element={<SupportPage/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/trip-plans'}`} element={<TripPlans/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/package-details/:id'}`} element={<PackageDetails/>}/>
                     <Route exact path={`${process.env.PUBLIC_URL + '/login-register'}`} element={<LoginRegister/>}/>

@@ -1,0 +1,138 @@
+/* Support Ticket Container */
+.support-ticket {
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the container */
+    margin-bottom: 20px; /* Space between each ticket */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff; /* White background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+.support-ticket:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* Support Ticket Title */
+.support-ticket .title {
+    font-size: 18px; /* Adjust the font size */
+    font-weight: bold; /* Make the title bold */
+    color: #333; /* Dark text for title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+/* Support Ticket Meta Information */
+.support-ticket .ticket-meta {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0 0 15px; /* Space between list and content */
+    color: #666; /* Grey color for meta info */
+}
+
+.support-ticket .ticket-meta li {
+    margin-bottom: 5px; /* Space between each meta item */
+    font-size: 14px; /* Font size for meta items */
+}
+
+.support-ticket .ticket-meta li i {
+    margin-right: 8px; /* Space between icon and text */
+    color: #888; /* Color for icons */
+}
+
+/* Support Ticket Content Text (e.g., Subject) */
+.support-ticket p {
+    font-size: 16px; /* Font size for the content text */
+    color: #555; /* Slightly dark color for text */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Last paragraph (Status) will use a label style instead of bold text */
+
+/* Status Label Styles (Sticker/Label Style) */
+.status-label {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 12px;
+    color: white;
+}
+
+.status-pending {
+    background-color: #ff9800; /* Orange for pending status */
+}
+
+.status-confirmed {
+    background-color: #4caf50; /* Green for confirmed status */
+}
+
+.status-rescheduled {
+    background-color: #2196f3; /* Blue for rescheduled status */
+}
+
+.status-closed {
+    background-color: #f44336; /* Red for closed status */
+}
+
+/* Status Update Section (for editing/updating status) */
+
+.status-update {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Style the label in the status update section */
+.status-update label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style the dropdown select in the status update section */
+.status-select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.status-select option {
+    padding: 10px;
+}
+
+/* Focus state for the select element (highlight on focus) */
+.status-select:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+/* Submit Button Styles (for updating status) */
+
+.btn-update-status {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #525fe1;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-update-status:hover {
+    background-color: #3e47ab;
+}
+
+/* Close Button Styles (for canceling status update) */
+
+.btn-close-status {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #a74128;
+    color: white;
+    border-radius: 5px;
+}
