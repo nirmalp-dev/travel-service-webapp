@@ -3,7 +3,7 @@ language: en
 pipeline:
 - name: SingleStepLLMCommandGenerator
   llm:
-    model_name: gpt-4o-mini
+    model: gpt-4o-mini
 
 policies:
 - name: FlowPolicy

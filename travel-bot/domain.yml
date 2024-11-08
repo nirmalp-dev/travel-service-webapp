@@ -11,6 +11,10 @@ slots:
     type: text
     mappings:
       - type: from_llm
+  booking_number:
+    type: text
+    mappings:
+      - type: from_llm
   # traveldate:
   #   type: text
   #   mappings:
@@ -29,18 +33,18 @@ responses:
   
   utter_ask_Nooftraveldays:
     - text: "How many days do you plan to travel."
-  
-  utter_traveldetails:
-    - text: "All done. You plan to travel to {destination} on {traveldate} for {Nooftraveldays} days." 
-  
+   
   utter_orderdetails:
-    - text: "All done. {username} has all these orders."
+    - text: "All done. {booking_number} is the order number."
 
+  utter_ask_booking_number:
+    - text: "Please enter booking number."
+  
   utter_ask_order_id:
     - text: "Enter the order id you want to track."
   
 actions:
 - action_recommend_travel_plan
 - action_order_tracker
-- action_reset_slots
-- action_support_query
+#- action_reset_slots
+- action_cancel_booking

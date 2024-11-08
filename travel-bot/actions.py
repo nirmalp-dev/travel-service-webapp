@@ -39,7 +39,7 @@ class ActionRecommendTravelPlan(Action):
         response = requests.get(url)
         if response.status_code == 200:
             travel_packages = response.json()  # Parse JSON response
-            print(travel_packages)
+            #print(travel_packages)
             # Find matching travel plans based on city name or category (case-insensitive)
             matching_packages = [
                 package for package in travel_packages
@@ -51,7 +51,7 @@ class ActionRecommendTravelPlan(Action):
                 # Prepare a response message
                 response_messages = []
                 for package in matching_packages:
-                    web_link = f"http://localhost:3000/course-details/{str(package['_id'])}"
+                    web_link = f"http://localhost:3000/package-details/{str(package['_id'])}"
                     message = (
                         f"I found a travel plan to {package['destination']} for {package['tripdays']} days. "
                         f"\n<br/>"
@@ -86,7 +86,7 @@ class Action_Order_Tracker(Action):
         order_id = tracker.get_slot('order_id')
         url = "http://127.0.0.1:8000/order/list"
         headers = {"Authorization": f"Bearer {sender_id}"}
-        print("order_id",order_id)
+        #print("order_id",order_id)
         response = requests.get(url, headers = headers)
         if response.status_code == 200:
             order_history = response.json()  # Parse JSON response
@@ -107,7 +107,7 @@ class Action_Order_Tracker(Action):
                 tripdays = package_details['tripdays']
                 status = order['status']
                 
-                print("Order Details:",order_detail)
+                #print("Order Details:",order_detail)
                 web_link = f"http://localhost:3000/order"
                 message = (
                     f"I found a travel plan to {destination} for {tripdays} days. "
@@ -116,7 +116,6 @@ class Action_Order_Tracker(Action):
                     f"It's Status is {status}"
                     f"\n<br/>"
                     f"\n<br/>"
-                    f'\n<form action="http://127.0.0.1:8000/upload" method="post" enctype="multipart/form-data" target="_blank"> <label for="file">Upload Image:</label><br><br> <input type="file" id="file" name="file"><br><br> <input type="submit" value="Submit"></form>'
                     f'\n<a href="{web_link}" target="_blank" class="button-link">View Order</a>'
                 )
                 response_messages.append(message)
@@ -128,28 +127,29 @@ class Action_Order_Tracker(Action):
             dispatcher.utter_message(text="Sorry, there was a problem fetching travel orders.")
             
         return []
-    
-class ActionSupportQuery(Action):
-    
+
+class ActionOrderCancellation(Action):
     def name(self):
-        return "action_support_query"
-
+        return "action_cancel_booking"
+    
     def run(self, dispatcher, tracker, domain):
-        response_messages = []
-
-        sender_id = tracker.current_state()['sender_id']
-        order_id = tracker.get_slot('order_id')
-        url = "http://127.0.0.1:8000/raise/ticket"
-        headers = {"Authorization": f"Bearer {sender_id}"}
-        print("order_id",order_id)
-        message = (
-            f"Please provide the description and image for your query. "
-            f'\n<form action="http://127.0.0.1:8000/upload" method="post" enctype="multipart/form-data" target="_blank"> <label for="file">Upload Image:</label><br><br> <input type="file" id="file" name="file"><br><br> <input type="submit" value="Submit"></form>'
+              
+        base_url = "http://127.0.0.1:8000"
+        booking_number=tracker.get_slot('booking_number')
+        #order_id = "your_order_id"  # Replace with actual order ID
+        new_status = "cancelled"    # Assuming "cancelled" is the status you want to set
+        # Send the PUT request
+        response = requests.put(
+        f"{base_url}/order/update-status/{booking_number}",
+        params={"status": new_status}
         )
-        response_messages.append(message)
-
-        # Send the response to the user
-        dispatcher.utter_message(text="\n\n".join(response_messages))
+        # Check the response
+        if response.status_code == 200:
+            dispatcher.utter_message(text="Your booking has been cancelled successfully.")
+            #print("Order status updated successfully!")
+        else:
+            dispatcher.utter_message(text="Your booking has not been cancelled due to incorrect booking number.")
+    
         return []
     
 class ActionResetSlots(Action):
