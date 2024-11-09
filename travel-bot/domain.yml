@@ -15,14 +15,10 @@ slots:
     type: text
     mappings:
       - type: from_llm
-  # traveldate:
-  #   type: text
-  #   mappings:
-  #     - type: from_llm 
-  # username:
-  #   type: text
-  #   mappings:
-  #     - type: from_llm
+  order_number:
+    type: text
+    mappings:
+      - type: from_llm
 
 responses:
   utter_greet:
@@ -34,17 +30,17 @@ responses:
   utter_ask_Nooftraveldays:
     - text: "How many days do you plan to travel."
    
-  utter_orderdetails:
-    - text: "All done. {booking_number} is the order number."
-
   utter_ask_booking_number:
     - text: "Please enter booking number."
   
   utter_ask_order_id:
     - text: "Enter the order id you want to track."
   
+  utter_ask_order_number:
+    - text: "Can you please provide with order/booking number."
+  
 actions:
 - action_recommend_travel_plan
 - action_order_tracker
-#- action_reset_slots
 - action_cancel_booking
+- action_fraud_detection
