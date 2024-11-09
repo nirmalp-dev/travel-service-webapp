@@ -1,3 +1,4 @@
+from email import headerregistry
 import json
 import requests
 import re
@@ -27,7 +28,6 @@ class ActionRecommendTravelPlan(Action):
             "europe": ["Paris", "Rome", "London"],
             # Add more mappings as needed
         }
-
         # Check if the user input matches a category
         if city_name.lower() in category_to_destination:
             possible_destinations = category_to_destination[city_name.lower()]
@@ -39,8 +39,6 @@ class ActionRecommendTravelPlan(Action):
         response = requests.get(url)
         if response.status_code == 200:
             travel_packages = response.json()  # Parse JSON response
-            #print(travel_packages)
-            # Find matching travel plans based on city name or category (case-insensitive)
             matching_packages = [
                 package for package in travel_packages
                 if any(destination.lower() in package["destination"].lower().split(',')[0] for destination in possible_destinations)
@@ -86,21 +84,15 @@ class Action_Order_Tracker(Action):
         order_id = tracker.get_slot('order_id')
         url = "http://127.0.0.1:8000/order/list"
         headers = {"Authorization": f"Bearer {sender_id}"}
-        #print("order_id",order_id)
         response = requests.get(url, headers = headers)
         if response.status_code == 200:
-            order_history = response.json()  # Parse JSON response
-            # print("Order History:",order_history)
+            order_history = response.json()  
             response_messages = []
             for order in order_history:
                 if order_id!=None and order_id != order['id']:
                     continue
-                # print("order",order['items'])
                 order_detail = order['items'][0]
-                # print("order_details", order_detail)
                 package_details = order_detail['package_details']
-                # print("package_details",package_details)
-
                     
 
                 destination = package_details['destination']
@@ -136,21 +128,68 @@ class ActionOrderCancellation(Action):
               
         base_url = "http://127.0.0.1:8000"
         booking_number=tracker.get_slot('booking_number')
-        #order_id = "your_order_id"  # Replace with actual order ID
         new_status = "cancelled"    # Assuming "cancelled" is the status you want to set
         # Send the PUT request
+        refund = "processed"
+        
         response = requests.put(
         f"{base_url}/order/update-status/{booking_number}",
         params={"status": new_status}
         )
-        # Check the response
         if response.status_code == 200:
             dispatcher.utter_message(text="Your booking has been cancelled successfully.")
-            #print("Order status updated successfully!")
+            dispatcher.utter_message(text="Your refund has been initiated.")
         else:
             dispatcher.utter_message(text="Your booking has not been cancelled due to incorrect booking number.")
     
         return []
+
+class Action_Fraud_Detection(Action):
+    
+    def name(self):
+        return "action_fraud_detection"
+
+    def run(self, dispatcher, tracker, domain):      
+        sender_id = tracker.current_state()['sender_id']
+        order_id = tracker.get_slot('order_number')
+        url = "http://127.0.0.1:8000/order/list"
+        ticketraiseurl="http://127.0.0.1:8000/ticket/raise"
+        headers = {"Authorization": f"Bearer {sender_id}"}
+        events = tracker.events
+        user_messages = [e for e in events if e['event'] == 'user']   
+        for msg in user_messages:
+            print(f"User said: {msg['text']}")
+            
+        response = requests.get(url, headers = headers)
+        if response.status_code == 200:
+            order_history = response.json()  
+            response_messages = []
+            for order in order_history:
+                if order_id!=None and order_id != order['id']:
+                    continue
+                if(order['status']=='cancelled' & order['refund']== 'processed'):
+                    ticket_data = {
+                            "subject": "Potential Fraud: Cancelled Order",
+                            "description": f"Order ID: {order['id']} was cancelled. Potential fraud case.",
+                            "priority": "High"
+                        }
+                    ticket_response = requests.post(
+                            ticketraiseurl,
+                            json=ticket_data,
+                            headers= headers
+                        )             
+                    ticketinfo= ticket_response.json()
+                    dispatcher.utter_message(text="Refund has already been provided. I will need to escalate it to human agent to discuss further.")
+                    dispatcher.utter_message(text=f"I have raised a ticket. Ticket number is {ticketinfo['id']}")
+                elif(order['status']=='cancelled' & order['refund'] != 'processed'):
+                    dispatcher.utter_message(text="Refund request has been processed. You will receive your refund in short period.")
+                else:
+                    dispatcher.utter_message(text="Refund can be initiated only for cancelled bookings. Please cancel order/booking before asking for refund.")                    
+        else:
+            dispatcher.utter_message(text="Sorry, there was a problem with refund process")
+            
+        return []
+
     
 class ActionResetSlots(Action):
     def name(self):
