@@ -1,0 +1,12 @@
+flows:
+  Order_Agent:
+    description: This flow will help user to track order and status of order
+    steps:
+      - collect: order_id
+      - action: action_order_tracker
+
+  order_cancellation:
+    description: This flow will help user to cancel order
+    steps:
+      - collect: order_number
+      - action: action_cancel_booking

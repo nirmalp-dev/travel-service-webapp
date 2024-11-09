@@ -1,0 +1,12 @@
+flows:
+  Recommendation_Agent:
+    description: This flow will ask user about trip details
+    steps:
+      - link: "travel_plan"
+
+  travel_plan:
+    description: This flow lets user find trips
+    steps:
+      - collect: destination
+      - collect: Nooftraveldays
+      - action: action_recommend_travel_plan

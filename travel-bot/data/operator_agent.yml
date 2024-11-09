@@ -4,11 +4,16 @@
 #     steps:
 #       - action: "utter_greet"
 #       - link: "collect_personal_preference"
-  
-#   collect_personal_preference: 
-#     description: "gather personal preferences about travel destination, and number of days for vacation from user, be creative in finding out what user wants."
+#
+#   collect_personal_preference:
+#     description: "Gather personal preferences about travel destination, and number of days for vacation from user. Handle different intents."
 #     steps:
-#     - collect: "destination"
-#     - collect: "category"
-#     - collect: "days"
-#     - link: "recommend_flow"
+#       - if: "recommendation_intent"  # If intent is recommendation
+#         then:
+#           - link: "Recommendation_Agent"
+#       - if: "order_status_intent"  # If intent is order status
+#         then:
+#           - link: "Order_Status_Agent"
+#       - if: "fraud_detection_intent"  # If intent is fraud detection
+#         then:
+#           - link: "Fraud_Detection_Agent"

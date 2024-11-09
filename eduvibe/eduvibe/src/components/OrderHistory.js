@@ -64,6 +64,11 @@ const OrderHistory = (props) => {
                     </ul>
                     <p>Total Amount: ${order.total_amount}</p>
                     <p>Status: {order.status}</p>
+                    { order.refund!=""? (
+                        <p>Refund Status: {order.refund}</p>
+                    ) : (
+                        <></>
+                    )}
                     {!isEditing ? (
                         <button
                             onClick={handleUpdateClick}

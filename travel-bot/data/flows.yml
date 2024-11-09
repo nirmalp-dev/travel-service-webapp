@@ -1,31 +1,31 @@
-flows:
-  Recommendation_Agent:
-    description: This flow will ask user about trip details
-    steps:
-      - link: "travel_plan"
-
-  travel_plan:
-    description: This flow lets user find trips
-    steps:
-      - collect: destination
-      - collect: Nooftraveldays
-      - action: action_recommend_travel_plan
-  
-  Order_Agent:
-    description: This flow will help user to track order and status of order
-    steps:
-      - collect: order_id
-      - action: action_order_tracker
-
-  order_cancellation:
-    description: This flow will help user to cancel order
-    steps:
-      - collect: order_number
-      - action: action_cancel_booking
- 
-  Fraud_Agent:
-    description: This flow is to detect fraud for the booking refund
-    steps: 
-      - collect: booking_number
-      - action: action_fraud_detection
-
+#flows:
+#  Recommendation_Agent:
+#    description: This flow will ask user about trip details
+#    steps:
+#      - link: "travel_plan"
+#
+#  travel_plan:
+#    description: This flow lets user find trips
+#    steps:
+#      - collect: destination
+#      - collect: Nooftraveldays
+#      - action: action_recommend_travel_plan
+#
+#  Order_Agent:
+#    description: This flow will help user to track order and status of order
+#    steps:
+#      - collect: order_id
+#      - action: action_order_tracker
+#
+#  order_cancellation:
+#    description: This flow will help user to cancel order
+#    steps:
+#      - collect: order_number
+#      - action: action_cancel_booking
+#
+#  Fraud_Agent:
+#    description: This flow is to detect fraud for the booking refund
+#    steps:
+#      - collect: booking_number
+#      - action: action_fraud_detection
+#

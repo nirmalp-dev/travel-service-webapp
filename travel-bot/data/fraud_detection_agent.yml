@@ -1,0 +1,6 @@
+flows:
+  Fraud_Agent:
+    description: This flow is to detect fraud for the booking refund
+    steps:
+      - collect: booking_number
+      - action: action_fraud_detection
