@@ -30,4 +30,5 @@ class Order(BaseModel):
     items_details: Optional[TravelPackage] = Field(default=None)
     total_amount: float
     status: str = "Pending"
+    refund: Optional[str] = ""
     created_at: datetime = Field(default_factory=datetime.utcnow)

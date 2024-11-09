@@ -176,7 +176,7 @@ class Action_Fraud_Detection(Action):
             for order in order_history:
                 if order_id!=None and order_id != order['id']:
                     continue
-                if(order['status']=='cancelled' & order['refund']== 'processed'):
+                if(order['status']=='cancelled' and order['refund']== 'processed'):
                     ticket_data = {
                             "subject": "Potential Fraud: Cancelled Order",
                             "description": f"Order ID: {order['id']} was cancelled. Potential fraud case.",
@@ -190,8 +190,8 @@ class Action_Fraud_Detection(Action):
                     ticketinfo= ticket_response.json()
                     dispatcher.utter_message(text="Refund has already been provided. I will need to escalate it to human agent to discuss further.")
                     dispatcher.utter_message(text=f"I have raised a ticket. Ticket number is {ticketinfo['id']}")
-                elif(order['status']=='cancelled' & order['refund'] != 'processed'):
-                    dispatcher.utter_message(text="Refund request has been processed. You will receive your refund in short period.")
+                elif(order['status']=='cancelled' and order['refund'] != 'processed'):
+                    dispatcher.utter_message(text="Refund request has been initiated. You will receive your refund in short period.")
                 else:
                     dispatcher.utter_message(text="Refund can be initiated only for cancelled bookings. Please cancel order/booking before asking for refund.")
         else:

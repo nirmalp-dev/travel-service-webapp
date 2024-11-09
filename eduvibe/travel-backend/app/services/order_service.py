@@ -61,10 +61,16 @@ async def update_order_status(order_id: str, status: str):
     if not order:
         raise ValueError("Order not found")
     # Update the order status
-    result = await db.orders.update_one(
-        {"id": order_id},
-        {"$set": {"status": status}}
-    )
+    if status == "cancelled":
+        result = await db.orders.update_one(
+            {"id": order_id},
+            {"$set": {"status": status, "refund":"initiated"}}
+        )
+    else:
+        result = await db.orders.update_one(
+            {"id": order_id},
+            {"$set": {"status": status}}
+        )
     if result.modified_count == 0:
         raise ValueError("Failed to update order status")
     # Fetch and return the updated order
