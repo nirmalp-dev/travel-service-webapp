@@ -48,9 +48,10 @@ class ActionRecommendTravelPlan(Action):
             # print(travel_packages)
             # Find matching travel plans based on city name or category (case-insensitive)
             matching_packages = [
-                package for package in travel_packages
-                if any(destination.lower() in package["destination"].lower() for destination in possible_destinations)
-                   and package["tripdays"] == days
+                package
+                for dest in possible_destinations
+                for package in travel_packages
+                if dest.lower() in package["destination"].lower() and package["tripdays"] == days
             ]
 
             if matching_packages:
@@ -136,13 +137,13 @@ class ActionOrderCancellation(Action):
     def run(self, dispatcher, tracker, domain):
               
         base_url = "http://127.0.0.1:8000"
-        booking_number=tracker.get_slot('booking_number')
+        order_number=tracker.get_slot('order_number')
         new_status = "cancelled"    # Assuming "cancelled" is the status you want to set
         # Send the PUT request
         refund = "processed"
 
         response = requests.put(
-        f"{base_url}/order/update-status/{booking_number}",
+        f"{base_url}/order/update-status/{order_number}",
         params={"status": new_status}
         )
         if response.status_code == 200:
@@ -160,16 +161,19 @@ class Action_Fraud_Detection(Action):
 
     def run(self, dispatcher, tracker, domain):
         sender_id = tracker.current_state()['sender_id']
-        order_id = tracker.get_slot('order_number')
+        order_id = tracker.get_slot('booking_number')
         url = "http://127.0.0.1:8000/order/list"
         ticketraiseurl="http://127.0.0.1:8000/ticket/raise"
         headers = {"Authorization": f"Bearer {sender_id}"}
         events = tracker.events
         user_messages = [e for e in events if e['event'] == 'user']
+        user_msg_ls = []
         for msg in user_messages:
-            print(f"User said: {msg['text']}")
-
+            # print(f"User said: {msg['text']}")
+            user_msg_ls.append("User said: " + msg['text'])
+        print(user_msg_ls)
         response = requests.get(url, headers = headers)
+        web_link = f"http://localhost:3000/support/"
         if response.status_code == 200:
             order_history = response.json()
             response_messages = []
@@ -177,10 +181,20 @@ class Action_Fraud_Detection(Action):
                 if order_id!=None and order_id != order['id']:
                     continue
                 if(order['status']=='cancelled' and order['refund']== 'processed'):
+                    openai_res = call_openai_api(
+                        f"The below is the history of user messages to a travel chatbot, you are a part of fraud detection bot action. "
+                        f"{user_msg_ls}. I am creating a support ticket based on this chat, need a subject and description for ticket,"
+                        f"and give in following json format,  "
+                        f'{{"subject":"<give subject of ticket>","description":"<give description of ticket>"}}'
+                    )
+                    print("openai_res", openai_res)
+                    subject = openai_res.get('subject')
+                    description = openai_res.get('description')
                     ticket_data = {
-                            "subject": "Potential Fraud: Cancelled Order",
-                            "description": f"Order ID: {order['id']} was cancelled. Potential fraud case.",
-                            "priority": "High"
+                            "subject": subject,
+                            "description": description,
+                            "priority": "High",
+                            "status": "escalated"
                         }
                     ticket_response = requests.post(
                             ticketraiseurl,
@@ -189,7 +203,9 @@ class Action_Fraud_Detection(Action):
                         )
                     ticketinfo= ticket_response.json()
                     dispatcher.utter_message(text="Refund has already been provided. I will need to escalate it to human agent to discuss further.")
-                    dispatcher.utter_message(text=f"I have raised a ticket. Ticket number is {ticketinfo['id']}")
+                    dispatcher.utter_message(text=f"I have raised a ticket. Ticket number is {ticketinfo['id']}"
+                                                  f"\n<br/>"
+                                                    f'\n<a href="{web_link}" target="_blank" class="button-link">Go To Support</a>')
                 elif(order['status']=='cancelled' and order['refund'] != 'processed'):
                     dispatcher.utter_message(text="Refund request has been initiated. You will receive your refund in short period.")
                 else:
@@ -206,6 +222,7 @@ class ActionResetSlots(Action):
 
     def run(self, dispatcher, tracker, domain):
         # Clearing all slots
+        print("hiiiiiiiiiii")
         return [SlotSet(slot, None) for slot in tracker.slots]
 
 
@@ -219,7 +236,7 @@ def call_openai_api(prompt: str) -> dict:
     }
 
     data = {
-        "model": "gpt-3.5-turbo",  # Use a valid model
+        "model": "gpt-4",  # Use a valid model
         "messages": [
             {"role": "system", "content": "You are a travel assistant."},
             {"role": "user", "content": prompt}

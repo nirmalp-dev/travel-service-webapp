@@ -3,6 +3,7 @@ from bson import ObjectId
 from app.db.mongodb import get_database
 from app.models.ticket import Ticket, TicketCreate, TicketUpdate
 from datetime import datetime
+from pymongo import ASCENDING, DESCENDING  # Import sorting options if needed
 
 async def raise_ticket(username: str, ticket_create: TicketCreate):
     db = await get_database()
@@ -13,7 +14,8 @@ async def raise_ticket(username: str, ticket_create: TicketCreate):
         subject=ticket_create.subject,
         description=ticket_create.description,
         priority=ticket_create.priority,
-        updated_at = datetime.now()
+        updated_at = datetime.now(),
+        status = ticket_create.status,
     )
 
     result = await db.tickets.insert_one(ticket.dict())
@@ -24,7 +26,7 @@ async def raise_ticket(username: str, ticket_create: TicketCreate):
 
 async def list_tickets(username: str):
     db = await get_database()
-    cursor = db.tickets.find({"username": username})
+    cursor = db.tickets.find({"username": username}).sort("created_at", DESCENDING)
     tickets = await cursor.to_list(length=None)
     return [Ticket(**ticket) for ticket in tickets]
 

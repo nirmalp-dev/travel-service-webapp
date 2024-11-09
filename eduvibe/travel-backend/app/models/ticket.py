@@ -8,6 +8,7 @@ class TicketCreate(BaseModel):
     subject: str
     description: str
     priority: Optional[str] = Field(default="Medium")  # Priority levels: Low, Medium, High
+    status: Optional[str] = Field(default="Open")
 
 class TicketUpdate(BaseModel):
     status: str

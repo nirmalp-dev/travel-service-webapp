@@ -32,6 +32,7 @@ const SupportTicketList = (props) => {
                         <h6 className="title">Ticket ID: {ticket.id}</h6>
                         <ul className="ticket-meta">
                             <li><i className="icon-user-2"></i>Subject: {ticket.subject}</li>
+                            <li><i className="icon-user-2"></i>Description: {ticket.description}</li>
                             <li><i
                                 className="icon-calendar-2-line"></i>Date: {new Date(ticket.created_at).toLocaleDateString()}
                             </li>

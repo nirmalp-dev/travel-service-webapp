@@ -37,7 +37,7 @@ responses:
     - text: "Enter the order id you want to track."
   
   utter_ask_order_number:
-    - text: "Can you please provide with order/booking number."
+    - text: "Can you please provide with order number."
   
 actions:
 - action_recommend_travel_plan
