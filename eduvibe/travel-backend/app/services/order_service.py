@@ -1,5 +1,5 @@
 from bson import ObjectId
-
+# import asyncio
 from app.db.mongodb import get_database
 from app.models.order import Order, OrderCreate, OrderItem
 from app.models.travel import TravelPackage
@@ -83,3 +83,36 @@ async def get_order_status(order_id: str):
     
     # Return the order status
     return order.get("status")
+
+# async def simulate_refund_process(order_id: str):
+#     print(f"Starting refund process for order {order_id}...")
+#
+#     await update_order_status(order_id, 'initiated')
+#     print('Status updated to initiated.')
+#     await asyncio.sleep(5)  # Wait for 5 seconds
+#
+#     await update_order_status(order_id, 'in-process')
+#     print('Status updated to in-process.')
+#     await asyncio.sleep(5)  # Wait for 5 seconds
+#
+#     await update_order_status(order_id, 'processed')
+#     print('Status updated to processed.')
+#
+#     print(f"Refund process completed for order {order_id}.")
+#
+#
+# async def initiate_refund(order_id: str):
+#     # Start the refund process in the background without waiting for it to finish
+#     asyncio.create_task(simulate_refund_process(order_id))
+#
+#     # Immediately return response indicating that refund has been initiated
+#     return "Refund process initiated."
+#
+#
+# async def update_order_status_with_refund(order_id: str, status: str):
+#     if status == 'canceled':
+#         # If the status is 'canceled', initiate the refund process asynchronously
+#         return await initiate_refund(order_id)
+#
+#     # Otherwise, just update the order status normally
+#     return await update_order_status(order_id, status)
